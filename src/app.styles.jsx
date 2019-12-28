@@ -9,6 +9,7 @@ export const GlobalStyles = createGlobalStyle`
 `;
 
 export const StyledAppContainer = styled.main`
+  min-height: 100vh;
   color: #fff;
   background-color: #32373a;
   font-family: refrigerator-deluxe, sans-serif;
