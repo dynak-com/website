@@ -1,8 +1,8 @@
 import React from "react";
 import { StyledSlider } from "./slider.styles";
-import Slide1 from "../../assets/images/home/3009.jpg";
-import Slide2 from "../../assets/images/home/3015.png";
-import Slide3 from "../../assets/images/home/3027.jpg";
+import Slide1 from "../../assets/images/home/slide1.png";
+import Slide2 from "../../assets/images/home/slide2.png";
+import Slide3 from "../../assets/images/home/slide3.png";
 
 const Slider = () => {
   return (
