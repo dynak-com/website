@@ -42,7 +42,7 @@ const ProjectsPage = () => {
   return (
     <StyledProjectsPageContainer>
       <h1 className="text-center">Nasze projekty:</h1>
-      <CardList data={cardsData} projects={true} />
+      <CardList data={cardsData} />
       <StyledProjectsPageImageContainer>
         <img src={Image} alt="Machine" />
       </StyledProjectsPageImageContainer>

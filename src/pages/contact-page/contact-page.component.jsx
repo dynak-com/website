@@ -12,17 +12,15 @@ const ContactPage = () => {
             Masz pytania? Chcesz nawiązać współpracę? Napisz do nas! ;-)
           </h2>
           <ContactForm />
-          <h2 className="text-center my-5">Albo... odwiedź nasze profile:</h2>
-          <IconsBar />
         </div>
-        <div className="row col-12 col-md-6 col-lg-5 col-xl-4">
-          <img
-            className="col-6 col-md-auto mx-auto my-3 m-md-0"
-            src={WorkerPicture}
-            alt="Working man :)"
-          />
+        <div className="row d-none d-md-block col-md-5 col-lg-4 col-xl-3">
+          <img className="col my-4" src={WorkerPicture} alt="Working man :)" />
         </div>
       </div>
+      <dir className="text-center px-4">
+        <h2>Albo... odwiedź nasze profile:</h2>
+        <IconsBar />
+      </dir>
     </section>
   );
 };

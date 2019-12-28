@@ -2,16 +2,12 @@ import React from "react";
 import Card from "../card/card.component";
 import {
   StyledCardListContainer,
-  StyledProjectsCardListContainer,
   StyledCardHeader,
   StyledCardWrapper
 } from "./card-list.styles";
 
 const CardList = props => {
-  const {
-    data: { posts },
-    projects
-  } = props;
+  const { posts } = props.data;
   const generateCards = posts.map((data, index) => {
     const { id, text, headerText } = data;
     return (
@@ -33,19 +29,10 @@ const CardList = props => {
       </div>
     );
   });
-  if (!projects) {
-    return (
-      <StyledCardListContainer className="px-3">
-        {generateCards}
-      </StyledCardListContainer>
-    );
-  } else {
-    return (
-      <StyledProjectsCardListContainer className="px-3">
-        {generateCards}
-      </StyledProjectsCardListContainer>
-    );
-  }
+  return (
+    <StyledCardListContainer className="px-3">
+      {generateCards}
+    </StyledCardListContainer>
+  );
 };
-
 export default CardList;
