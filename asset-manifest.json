@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.js": "/static/js/main.c6ed3321.chunk.js",
+    "main.js.map": "/static/js/main.c6ed3321.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b2f638c6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b2f638c6.js.map",
+    "static/css/2.17e5ed98.chunk.css": "/static/css/2.17e5ed98.chunk.css",
+    "static/js/2.5e939345.chunk.js": "/static/js/2.5e939345.chunk.js",
+    "static/js/2.5e939345.chunk.js.map": "/static/js/2.5e939345.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.923c4147cd93ea6dc13150e913636a72.js": "/precache-manifest.923c4147cd93ea6dc13150e913636a72.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.17e5ed98.chunk.css.map": "/static/css/2.17e5ed98.chunk.css.map",
+    "static/js/2.5e939345.chunk.js.LICENSE": "/static/js/2.5e939345.chunk.js.LICENSE",
+    "static/media/machine.png": "/static/media/machine.322b6056.png",
+    "static/media/slide1.png": "/static/media/slide1.9d58e0b1.png",
+    "static/media/slide2.png": "/static/media/slide2.ee9e0e90.png",
+    "static/media/slide3.png": "/static/media/slide3.c309c0ae.png",
+    "static/media/tenby-five.otf": "/static/media/tenby-five.3264c871.otf",
+    "static/media/worker.png": "/static/media/worker.e5a1c095.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b2f638c6.js",
+    "static/css/2.17e5ed98.chunk.css",
+    "static/js/2.5e939345.chunk.js",
+    "static/js/main.c6ed3321.chunk.js"
+  ]
+}
