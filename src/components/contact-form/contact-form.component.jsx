@@ -1,25 +1,25 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import $ from "jquery";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import $ from 'jquery';
 import {
   StyledCheckboxGroupContainer,
   StyledContactFormButton
-} from "./contact-form.styles";
-import Modal from "../modal/modal.component";
+} from './contact-form.styles';
+import Modal from '../modal/modal.component';
 
 class ContactForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      subject: "",
-      message: "",
-      email: "",
+      subject: '',
+      message: '',
+      email: '',
       isRobot: true
     };
   }
   handleChange = e => {
     let { name, value } = e.target;
-    if (name === "isRobot") value = !e.target.checked;
+    if (name === 'isRobot') value = !e.target.checked;
     this.setState({ [name]: value });
   };
   handleSubmit = e => {
@@ -27,13 +27,15 @@ class ContactForm extends React.Component {
     console.log(this.state);
     $(ReactDOM.findDOMNode(this.refs.modal)).modal();
     this.setState({
-      subject: "",
-      message: "",
-      email: "",
+      subject: '',
+      message: '',
+      email: '',
       isRobot: true
     });
   };
+
   render() {
+    const { content } = this.props;
     const { subject, message, email, isRobot } = this.state;
     return (
       <div>
@@ -46,7 +48,7 @@ class ContactForm extends React.Component {
                 name="subject"
                 value={subject}
                 onChange={this.handleChange}
-                placeholder="Temat wiadomości"
+                placeholder={content.subject}
                 required
               />
             </div>
@@ -57,7 +59,7 @@ class ContactForm extends React.Component {
                 name="email"
                 value={email}
                 onChange={this.handleChange}
-                placeholder="Twój adres e-mail"
+                placeholder={content.email}
                 required
               />
             </div>
@@ -69,7 +71,7 @@ class ContactForm extends React.Component {
             rows="10"
             value={message}
             onChange={this.handleChange}
-            placeholder="Treść wiadomości"
+            placeholder={content.message}
             required
           ></textarea>
           <div className="form-row my-3">
@@ -85,7 +87,7 @@ class ContactForm extends React.Component {
                   required
                 />
                 <label htmlFor="isRobot-input" className="custom-control-label">
-                  Nie jestem robotem(wolimy się upewnić ;) )
+                  {content.bot}
                 </label>
               </StyledCheckboxGroupContainer>
             </div>
@@ -93,12 +95,12 @@ class ContactForm extends React.Component {
               <StyledContactFormButton
                 className="btn"
                 type="submit"
-                value="Wyślij"
+                value={content.send}
               />
             </div>
           </div>
         </form>
-        <Modal ref="modal" />
+        <Modal ref="modal" content={content.modal} />
       </div>
     );
   }
