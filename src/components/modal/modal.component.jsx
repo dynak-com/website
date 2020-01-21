@@ -1,11 +1,12 @@
-import React from "react";
+import React from 'react';
 import {
   StyledModalContainer,
   StyledModalDialog,
   StyledModalButton
-} from "./modal.styles";
+} from './modal.styles';
 
 const Modal = React.forwardRef((props, ref) => {
+  const { content } = props;
   return (
     <StyledModalContainer
       className="modal fade"
@@ -20,7 +21,7 @@ const Modal = React.forwardRef((props, ref) => {
         <div className="modal-content">
           <div className="modal-header">
             <h5 className="modal-title" id="formModalLabel">
-              Dziękujemy! :-)
+              {content.thanks}
             </h5>
             <button
               type="button"
@@ -32,7 +33,7 @@ const Modal = React.forwardRef((props, ref) => {
             </button>
           </div>
           <div className="modal-body">
-            <h2 className="text-center">Twoja wiadomość została wysłana.</h2>
+            <h2 className="text-center">{content.sent}</h2>
           </div>
           <div className="text-right p-2">
             <StyledModalButton
@@ -40,7 +41,7 @@ const Modal = React.forwardRef((props, ref) => {
               className="btn btn-sm"
               data-dismiss="modal"
             >
-              Zamknij
+              {content.close}
             </StyledModalButton>
           </div>
         </div>

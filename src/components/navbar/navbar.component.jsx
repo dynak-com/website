@@ -1,7 +1,8 @@
-import React from "react";
-import StyledNavLink, { StyledNavbar } from "./navbar.styles";
+import React from 'react';
+import StyledNavLink, { StyledNavbar } from './navbar.styles';
 
-const Navbar = () => {
+const Navbar = props => {
+  const { content } = props;
   return (
     <StyledNavbar className="navbar navbar-expand-lg navbar-dark">
       <StyledNavLink to="/">
@@ -25,28 +26,28 @@ const Navbar = () => {
           <li className="nav-item">
             <StyledNavLink exact to="/">
               <span className="nav-link d-inline-block d-lg-block px-1 my-1 my-lg-0 mx-lg-3">
-                home
+                {content[0]}
               </span>
             </StyledNavLink>
           </li>
           <li className="nav-item">
             <StyledNavLink exact to="/about">
               <span className="nav-link d-inline-block d-lg-block px-1 my-1 my-lg-0 mx-lg-3">
-                o nas
+                {content[1]}
               </span>
             </StyledNavLink>
           </li>
           <li className="nav-item">
             <StyledNavLink exact to="/projects">
               <span className="nav-link d-inline-block d-lg-block px-1 my-1 my-lg-0 mx-lg-3">
-                projekty
+                {content[2]}
               </span>
             </StyledNavLink>
           </li>
           <li className="nav-item">
             <StyledNavLink exact to="/contact">
               <span className="nav-link d-inline-block d-lg-block px-1 my-1 my-lg-0 mx-lg-3">
-                kontakt
+                {content[3]}
               </span>
             </StyledNavLink>
           </li>

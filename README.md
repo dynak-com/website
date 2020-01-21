@@ -9,3 +9,7 @@ https://www.fontsquirrel.com/fonts/list/foundry/dejavu-fonts
 https://www.fontsquirrel.com/fonts/dejavu-sans
 
 DejaVu Sans Condensed Bold
+
+# deployment
+
+To deploy `npm run deploy`
