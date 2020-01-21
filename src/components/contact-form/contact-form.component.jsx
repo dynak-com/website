@@ -24,7 +24,6 @@ class ContactForm extends React.Component {
   };
   handleSubmit = e => {
     e.preventDefault();
-    console.log(this.state);
     $(ReactDOM.findDOMNode(this.refs.modal)).modal();
     this.setState({
       subject: '',
