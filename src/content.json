@@ -1,0 +1,117 @@
+[{
+    "lang": "pl",
+    "nav": [
+      "home",
+      "o nas",
+      "projekty",
+      "kontakt"
+    ],
+    "home": {
+      "header": "Pracuj z nami - szybciej!",
+      "posts": [{
+          "id": 1,
+          "text": "tekst 1",
+          "headerText": "header1"
+        },
+        {
+          "id": 2,
+          "text": "tekst 2",
+          "headerText": "header2"
+        }
+      ]
+    },
+    "about": {
+      "header": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmon tempor invidunt ut labore et",
+      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos"
+    },
+    "projects": {
+      "header": "Nasze projekty:",
+      "posts": [{
+          "id": 1,
+          "text": "tekst 1",
+          "headerText": "header1"
+        },
+        {
+          "id": 2,
+          "text": "tekst 2",
+          "headerText": "header2"
+        }
+      ]
+    },
+    "contact": {
+      "header": "Masz pytania? Chcesz nawiązać współpracę? Napisz do nas! ;-)",
+      "socials": "Albo... odwiedź nasze profile:",
+      "form": {
+        "subject": "Temat wiadomości",
+        "email": "Twój adres e-mail",
+        "message": "Treść wiadomości",
+        "bot": "Nie jestem robotem(wolimy się upewnić ;) )",
+        "send": "Wyślij",
+        "modal": {
+          "thanks": "Dziękujemy :)",
+          "sent": "Twoja wiadomość została wysłana.",
+          "close": "Zamknij"
+        }
+      }
+    },
+    "error": "Nie ma takiej strony! :("
+  },
+  {
+    "lang": "en",
+    "nav": [
+      "home",
+      "about",
+      "projects",
+      "contact"
+    ],
+    "home": {
+      "header": "Work with Us - faster!",
+      "posts": [{
+          "id": 1,
+          "text": "text 1",
+          "headerText": "enheader1"
+        },
+        {
+          "id": 2,
+          "text": "text 2",
+          "headerText": "enheader2"
+        }
+      ]
+    },
+    "about": {
+      "header": "enLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmon tempor invidunt ut labore et",
+      "text": "enLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos"
+    },
+    "projects": {
+      "header": "Our projects:",
+      "posts": [{
+          "id": 1,
+          "text": "tekst 1",
+          "headerText": "header1"
+        },
+        {
+          "id": 2,
+          "text": "tekst 2",
+          "headerText": "header2"
+        }
+      ]
+    },
+    "contact": {
+      "header": "Questions? Wanna work with Us? Send message! ;-)",
+      "socials": "Or... check our profiles:",
+      "form": {
+        "subject": "Subject",
+        "email": "Your email adress",
+        "message": "Message",
+        "bot": "I'm not a bot!(We need to be sure ;) )",
+        "send": "Send",
+        "modal": {
+          "thanks": "Thanks :)",
+          "sent": "Your message has been sent.",
+          "close": "Close"
+        }
+      }
+    },
+    "error": "Resource not found! :("
+  }
+]
