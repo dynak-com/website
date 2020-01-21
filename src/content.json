@@ -7,7 +7,7 @@
       "kontakt"
     ],
     "home": {
-      "header": "Pracuj z nami - szybciej!",
+      "header": "Zabieramy ludziom pracę!",
       "posts": [{
           "id": 1,
           "text": "tekst 1",
@@ -17,6 +17,11 @@
           "id": 2,
           "text": "tekst 2",
           "headerText": "header2"
+        },
+        {
+          "id": 3,
+          "text": "tekst 3",
+          "headerText": "header3"
         }
       ]
     },
