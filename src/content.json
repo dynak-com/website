@@ -10,47 +10,52 @@
       "header": "Zabieramy ludziom pracę!",
       "posts": [{
           "id": 1,
-          "text": "tekst 1",
-          "headerText": "header1"
+          "text": "To właśnie my! Jesteśmy miłośnikami najnowszych rozwiązań full-stackowych. Tworzymy wygodne i czytelne interfejsy webowe oraz wydajny back-end. Aby nasza współpraca przebiegała sprawnie, rozwijamy projekty, korzystając z metodologii agile.",
+          "headerText": "Szukasz programistów z pasją?"
         },
         {
           "id": 2,
-          "text": "tekst 2",
-          "headerText": "header2"
+          "text": "Wiemy, że brak integracji systemów utrudnia realizację celów biznesowych. Dostarczamy usługi dopasowane do rzeczywistych potrzeb użytkownika. Zarządzanie inteligentnym biurem czy obiektami przemysłowymi to z nami łatwizna.",
+          "headerText": "Chcesz zintegrować działające już systemy?"
         },
         {
           "id": 3,
-          "text": "tekst 3",
-          "headerText": "header3"
+          "text": "Podczas wspólnych warsztatów dokonamy ewaluacji oraz podzielimy drogę do celu na poszczególne etapy. Prosto i transparentnie. Działamy głównie na terenie Wrocławia i okolic, ale świetnie radzimy sobie z pracą zdalną.",
+          "headerText": "Jak przebiega współpraca z nami?"
         }
       ]
     },
     "about": {
-      "header": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmon tempor invidunt ut labore et",
-      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos"
+      "header": "Lorem\n ipsum\n dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmon tempor invidunt ut labore et",
+      "text": "Lorem\n \n ips\num dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos"
     },
     "projects": {
       "header": "Nasze projekty:",
       "posts": [{
           "id": 1,
-          "text": "tekst 1",
-          "headerText": "header1"
+          "text": "Smart Home to już standard - pora na inteligentne biura i obiekty przemysłowe. Im większy obiekt, tym więcej niekoniecznie współgrających ze sobą systemów. Z tych potrzeb zrodziła się aplikacja dynak.io, która integruje systemy automatyki budynkowej. Najbardziej trywialne funkcjonalności mogą być wyceniane na niewyobrażalne kwoty. Czasem też po prostu ich nie ma. Tutaj natomiast może wystarczyć dopisanie jednego modułu.",
+          "headerText": "dynak.io"
         },
         {
           "id": 2,
-          "text": "tekst 2",
-          "headerText": "header2"
+          "text": "Warehouse jest aplikacją usprawniającą procesy powtarzane w magazynach setki razy dziennie - takie jak  przyjmowanie czy wydawanie towaru. Interfejs użytkownika jest zaprojektowany dla wygody i czytelności. Ponieważ działa jako strona, może być uruchamiany na praktycznie każdym urządzeniu z przeglądarką internetową. Dodatkowo współgra z zewnętrzną autoryzacją użytkowników, drukarką naklejek oraz pobiera i zapisuje dane do systemu ERP.",
+          "headerText": "warehouse-app"
+        },
+        {
+          "id": 3,
+          "text": "Nawet do stosunkowo łatwych projektów, takich jak stworzenie strony internetowej, podchodzimy z pełnym zaangażowanej. Social media nie wystarczą. Dobrze zrobiona strona internetowa będzie wspierać Twój biznes. Zrealizujemy projekt zgodnie z Twoją wizją i pozwolimy Ci wyróżnić się na tle konkurencji.  Niezależnie od tego, czy potrzebujesz prostej strony internetowej czy czegoś naprawdę niestandardowego - możesz zrobić to z nami!",
+          "headerText": "strony internetowe"
         }
       ]
     },
     "contact": {
-      "header": "Masz pytania? Chcesz nawiązać współpracę? Napisz do nas! ;-)",
+      "header": "Masz pytania? Chcesz nawiązać współpracę? Napisz do nas!",
       "socials": "Albo... odwiedź nasze profile:",
       "form": {
         "subject": "Temat wiadomości",
         "email": "Twój adres e-mail",
         "message": "Treść wiadomości",
-        "bot": "Nie jestem robotem(wolimy się upewnić ;) )",
+        "bot": "Nie jestem robotem(wolimy się upewnić 😉 )",
         "send": "Wyślij",
         "modal": {
           "thanks": "Dziękujemy :)",
