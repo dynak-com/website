@@ -14,7 +14,7 @@ const contentData = JSON.parse(JSON.stringify(content));
 
 class App extends Component {
   state = {
-    lang: 'en'
+    lang: 'pl'
   };
   content = contentData.find(item => item.lang === this.state.lang);
   render() {
