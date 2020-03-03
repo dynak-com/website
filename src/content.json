@@ -1,14 +1,11 @@
-[{
+[
+  {
     "lang": "pl",
-    "nav": [
-      "home",
-      "o nas",
-      "projekty",
-      "kontakt"
-    ],
+    "nav": ["home", "o nas", "projekty", "kontakt"],
     "home": {
       "header": "Zabieramy ludziom pracę!",
-      "posts": [{
+      "posts": [
+        {
           "id": 1,
           "text": "To właśnie my! Jesteśmy miłośnikami najnowszych rozwiązań full-stackowych. Tworzymy wygodne i czytelne interfejsy webowe oraz wydajny back-end. Aby nasza współpraca przebiegała sprawnie, rozwijamy projekty, korzystając z metodologii agile.",
           "headerText": "Szukasz programistów z pasją?"
@@ -26,12 +23,47 @@
       ]
     },
     "about": {
-      "header": "Lorem\n ipsum\n dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmon tempor invidunt ut labore et",
-      "text": "Lorem\n \n ips\num dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos"
+      "header": "O nas",
+      "technologies": {
+        "title": "Technologie",
+        "content": "Wykorzystujemy zarówno najnowsze narzędzia z branży IT, jak i te, które miały już szansę  zostać solidnie sprawdzone na rynku. Są to przede wszystkim full-stack JavaScript oraz TypeScript, czyli Node.js jako back-end oraz React.js jako front-end."
+      },
+      "team": {
+        "title": "Zespół",
+        "teamData": [
+          {
+            "name": "Bajka",
+            "picture": "https://picsum.photos/180?random=1",
+            "linkedInUrl": "https://www.linkedin.com/m/login/",
+            "githubUrl": "https://github.com/login"
+          },
+          {
+            "name": "Bójka",
+            "picture": "https://picsum.photos/180?random=2",
+            "linkedInUrl": "https://www.linkedin.com/m/login/",
+            "githubUrl": "https://github.com/login"
+          },
+          {
+            "name": "Brawurka",
+            "picture": "https://picsum.photos/180?random=3",
+            "linkedInUrl": "https://www.linkedin.com/m/login/",
+            "githubUrl": "https://github.com/login"
+          }
+        ]
+      },
+      "values": {
+        "title": "Wartości",
+        "content": [
+          "Pamiętasz, gdy będąc dzieckiem, odkrywałeś rzeczy, których działanie jeszcze do niedawna wydawało Ci się magią? Tą samą ścieżką podążał kiedyś każdy programista, który zaczynał poznawać nowe technologie i kształtować dzięki nim otaczającą rzeczywistość. Realizowanie kolejnych zadań przekonało nas, że fascynujące problemy do rozwiązania będą zawsze. Kto wie, może jednym z nich niedługo będzie właśnie Twój projekt?",
+          "Firma dynak.com została założona przez rodzeństwo Emilię i Cezarego Dynaków 20 marca 2019 roku. Dlaczego akurat wtedy? Tak się składa, że właśnie tego dnia obchodzony jest Międzynarodowy Dzień Szczęścia. A naszym celem od początku  było to, aby klienci i pracownicy czerpali radość ze współpracy z nami. To właśnie radość nadaje rzeczom sens i pozwala na realizację naprawdę wartościowych projektów.",
+          "Turkus to motyw kolorystyczny na stronie, ale też symbol ważnych dla nas wartości. Nie opieramy naszej pracy na sztywnej hierarchii, lecz na odpowiedzialności i wzajemnym zaufaniu - co jest charakterystyczne dla tzw. “turkusowych organizacji”. Wszystkie procesy i dokumenty w firmie są jawne. Śmiało podchodzimy do niestandardowych rozwiązań, jeśli wiemy, że przyczynią się do poprawy czyjegoś  życia. Takie podejście współgra ze zwinnym zarządzaniem projektami."
+        ]
+      }
     },
     "projects": {
       "header": "Nasze projekty:",
-      "posts": [{
+      "posts": [
+        {
           "id": 1,
           "text": "Smart Home to już standard - pora na inteligentne biura i obiekty przemysłowe. Im większy obiekt, tym więcej niekoniecznie współgrających ze sobą systemów. Z tych potrzeb zrodziła się aplikacja dynak.io, która integruje systemy automatyki budynkowej. Najbardziej trywialne funkcjonalności mogą być wyceniane na niewyobrażalne kwoty. Czasem też po prostu ich nie ma. Tutaj natomiast może wystarczyć dopisanie jednego modułu.",
           "headerText": "dynak.io"
@@ -68,15 +100,11 @@
   },
   {
     "lang": "en",
-    "nav": [
-      "home",
-      "about",
-      "projects",
-      "contact"
-    ],
+    "nav": ["home", "about", "projects", "contact"],
     "home": {
       "header": "Work with Us - faster!",
-      "posts": [{
+      "posts": [
+        {
           "id": 1,
           "text": "text 1",
           "headerText": "enheader1"
@@ -94,7 +122,8 @@
     },
     "projects": {
       "header": "Our projects:",
-      "posts": [{
+      "posts": [
+        {
           "id": 1,
           "text": "tekst 1",
           "headerText": "header1"
