@@ -32,21 +32,59 @@
         "title": "Zespół",
         "teamData": [
           {
-            "name": "Bajka",
-            "picture": "https://picsum.photos/180?random=1",
-            "linkedInUrl": "https://www.linkedin.com/m/login/",
-            "githubUrl": "https://github.com/login"
-          },
-          {
-            "name": "Bójka",
+            "name": "Emilia Dynak",
             "picture": "https://picsum.photos/180?random=2",
+            "position": "CEO",
+            "linkedInUrl": "https://www.linkedin.com/in/emilia-dynak-b0a3a9140/",
+            "githubUrl": "https://github.com/login"
+          },
+          {
+            "name": "Dominika Konefał",
+            "picture": "https://picsum.photos/180?random=3",
+            "position": "UI/UX Designer",
             "linkedInUrl": "https://www.linkedin.com/m/login/",
             "githubUrl": "https://github.com/login"
           },
           {
-            "name": "Brawurka",
+            "name": "Natalia Borzyszkowska",
             "picture": "https://picsum.photos/180?random=3",
+            "position": "Specjalistka ds. administracji",
+            "linkedInUrl": "https://www.linkedin.com/in/natalia-borzyszkowska-b7814218b/",
+            "githubUrl": "https://github.com/login"
+          },
+          {
+            "name": "Aleksandra Borodziuk",
+            "picture": "https://picsum.photos/180?random=3",
+            "position": "Specjalistka ds. marketingu",
             "linkedInUrl": "https://www.linkedin.com/m/login/",
+            "githubUrl": "https://github.com/login"
+          },
+          {
+            "name": "Cezary Dynak",
+            "picture": "https://picsum.photos/180?random=1",
+            "position": "Node.js Developer, członek zarządu",
+            "linkedInUrl": "https://www.linkedin.com/in/cdynak/",
+            "githubUrl": "https://github.com/login"
+          },
+          {
+            "name": "Mikołaj Tumalewicz",
+            "picture": "https://picsum.photos/180?random=3",
+            "position": "DevOps Engineer",
+            "linkedInUrl": "https://www.linkedin.com/in/mtumalewicz/",
+            "githubUrl": "https://github.com/login"
+          },
+          {
+            "name": "Marcin Banik",
+            "picture": "https://picsum.photos/180?random=3",
+            "position": "Front-end Developer",
+            "linkedInUrl": "https://www.linkedin.com/in/marcin-banik-947954142/",
+            "githubUrl": "https://github.com/login"
+          },
+          {
+            "name": "Bartosz Marciniec",
+            "picture": "https://picsum.photos/180?random=3",
+            "position": "Software Developer",
+            "linkedInUrl": "https://www.linkedin.com/in/bartosz-marciniec-b0917517a/",
             "githubUrl": "https://github.com/login"
           }
         ]

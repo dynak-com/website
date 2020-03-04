@@ -10,7 +10,6 @@ import ValuesArticle from '../../components/values-article/values-article.compon
 
 const AboutPage = props => {
   const { header, technologies, team, values } = props.content;
-  console.log(props.content);
   return (
     <StyledAboutPageContainer className='p-4'>
       <div>

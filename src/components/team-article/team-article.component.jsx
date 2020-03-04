@@ -15,10 +15,11 @@ const TeamArticle = ({ team }) => {
 
 function renderTeamMembers(teamData) {
   return teamData.map(member => {
-    const { name, picture, linkedInUrl, githubUrl } = member;
+    const { name, picture, position, linkedInUrl, githubUrl } = member;
     return (
       <div className='col-12 mx-auto my-3 col-sm-6 col-lg-4' key={name}>
         <h4>{name}</h4>
+        <p>{position}</p>
         <img src={picture} alt={name} />
         <div className='display-4'>
           <StyledLink href={linkedInUrl} className='d-inline-block my-2 mx-2'>
