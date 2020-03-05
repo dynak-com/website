@@ -34,42 +34,42 @@
           {
             "name": "Emilia Dynak",
             "picture": "https://picsum.photos/180?random=2",
-            "position": "CEO",
+            "position": "CEO and co-owner",
             "linkedInUrl": "https://www.linkedin.com/in/emilia-dynak-b0a3a9140/",
             "githubUrl": "https://github.com/login"
           },
           {
-            "name": "Dominika Konefał",
-            "picture": "https://picsum.photos/180?random=3",
-            "position": "UI/UX Designer",
-            "linkedInUrl": "https://www.linkedin.com/m/login/",
+            "name": "Cezary Dynak",
+            "picture": "https://picsum.photos/180?random=1",
+            "position": "CTO and co-owner",
+            "linkedInUrl": "https://www.linkedin.com/in/cdynak/",
             "githubUrl": "https://github.com/login"
           },
           {
             "name": "Natalia Borzyszkowska",
             "picture": "https://picsum.photos/180?random=3",
-            "position": "Specjalistka ds. administracji",
+            "position": "CFO",
             "linkedInUrl": "https://www.linkedin.com/in/natalia-borzyszkowska-b7814218b/",
             "githubUrl": "https://github.com/login"
           },
           {
             "name": "Aleksandra Borodziuk",
             "picture": "https://picsum.photos/180?random=3",
-            "position": "Specjalistka ds. marketingu",
+            "position": "CMO",
             "linkedInUrl": "https://www.linkedin.com/m/login/",
             "githubUrl": "https://github.com/login"
           },
           {
-            "name": "Cezary Dynak",
-            "picture": "https://picsum.photos/180?random=1",
-            "position": "Node.js Developer, członek zarządu",
-            "linkedInUrl": "https://www.linkedin.com/in/cdynak/",
+            "name": "Dominika Konefał",
+            "picture": "https://picsum.photos/180?random=3",
+            "position": "Graphic Designer",
+            "linkedInUrl": "https://www.linkedin.com/m/login/",
             "githubUrl": "https://github.com/login"
           },
           {
             "name": "Mikołaj Tumalewicz",
             "picture": "https://picsum.photos/180?random=3",
-            "position": "DevOps Engineer",
+            "position": "Head of IT Architecture",
             "linkedInUrl": "https://www.linkedin.com/in/mtumalewicz/",
             "githubUrl": "https://github.com/login"
           },
@@ -83,7 +83,7 @@
           {
             "name": "Bartosz Marciniec",
             "picture": "https://picsum.photos/180?random=3",
-            "position": "Software Developer",
+            "position": "Back-end Developer",
             "linkedInUrl": "https://www.linkedin.com/in/bartosz-marciniec-b0917517a/",
             "githubUrl": "https://github.com/login"
           }
