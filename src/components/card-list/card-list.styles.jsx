@@ -1,12 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledCardListContainer = styled.section`
   & > div {
-    & > div + div:hover {
-      transform: scale(1.02) skew(-5deg);
-    }
     article {
-      color: #707a7f;
       background-color: rgba(60, 65, 68);
       opacity: 0.8;
       transition: 0.8s;
@@ -20,21 +16,25 @@ export const StyledCardListContainer = styled.section`
         background-color: rgba(62, 175, 173);
       }
     }
+    @media screen and (min-width: 1025px) {
+      & > div + div:hover {
+        transform: scale(1.02) skew(-5deg);
+      }
+    }
   }
 `;
 
 export const StyledCardHeader = styled.div`
   position: relative;
-  color: #fff;
   h2 {
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 2.4rem;
     transform: translate(-50%, -50%);
     text-align: center;
   }
   @media (max-width: 767px) {
+    margin-bottom: 10vh;
     padding: 20vh 0;
   }
 `;

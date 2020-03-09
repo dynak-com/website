@@ -1,7 +1,24 @@
 [
   {
     "lang": "pl",
-    "nav": ["home", "o nas", "projekty", "kontakt"],
+    "nav": [
+      {
+        "text": "home",
+        "address": "/"
+      },
+      {
+        "text": "o nas",
+        "address": "/about"
+      },
+      {
+        "text": "projekty",
+        "address": "/projects"
+      },
+      {
+        "text": "kontakt",
+        "address": "/contact"
+      }
+    ],
     "home": {
       "header": "Zabieramy ludziom pracę!",
       "posts": [
@@ -128,9 +145,18 @@
         "bot": "Nie jestem robotem(wolimy się upewnić 😉 )",
         "send": "Wyślij",
         "modal": {
-          "thanks": "Dziękujemy :)",
-          "sent": "Twoja wiadomość została wysłana.",
-          "close": "Zamknij"
+          "modal_ok": {
+            "error_message": false,
+            "thanks": "Dziękujemy :)",
+            "sent": "Twoja wiadomość została wysłana.",
+            "close": "Zamknij"
+          },
+          "modal_error": {
+            "error_message": true,
+            "thanks": "Niestety :(",
+            "sent": "Twoja wiadomość nie została wysłana. Nastąpił błąd po stronie serwera. Spróbuj ponownie później. Przepraszamy!",
+            "close": "Zamknij"
+          }
         }
       }
     },

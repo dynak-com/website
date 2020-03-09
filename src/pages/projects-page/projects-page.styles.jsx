@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledProjectsPageContainer = styled.section`
   position: relative;
   z-index: 2;
-  h1 {
+  /* h1 {
     font-size: 4.5rem;
-  }
+  } */
 `;
 
 export const StyledProjectsPageImageContainer = styled.div`

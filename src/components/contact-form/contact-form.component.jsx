@@ -24,12 +24,28 @@ class ContactForm extends React.Component {
   };
   handleSubmit = e => {
     e.preventDefault();
-    $(ReactDOM.findDOMNode(this.refs.modal)).modal();
-    this.setState({
-      subject: '',
-      message: '',
-      email: '',
-      isRobot: true
+    const data = {
+      ...this.state
+    };
+    fetch('/new_message', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    }).then(res => {
+      if (res.status === 200) {
+        $(ReactDOM.findDOMNode(this.refs.modal_ok)).modal();
+        this.setState({
+          subject: '',
+          message: '',
+          email: '',
+          isRobot: true
+        });
+      } else {
+        console.log(res);
+        $(ReactDOM.findDOMNode(this.refs.modal_error)).modal();
+      }
     });
   };
 
@@ -39,23 +55,23 @@ class ContactForm extends React.Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <div className="form-row">
-            <div className="form-group col-md-6">
+          <div className='form-row'>
+            <div className='form-group col-md-6'>
               <input
-                className="form-control text-center"
-                type="text"
-                name="subject"
+                className='form-control text-center'
+                type='text'
+                name='subject'
                 value={subject}
                 onChange={this.handleChange}
                 placeholder={content.subject}
                 required
               />
             </div>
-            <div className="form-group col-md-6">
+            <div className='form-group col-md-6'>
               <input
-                className="form-control text-center"
-                type="email"
-                name="email"
+                className='form-control text-center'
+                type='email'
+                name='email'
                 value={email}
                 onChange={this.handleChange}
                 placeholder={content.email}
@@ -64,42 +80,43 @@ class ContactForm extends React.Component {
             </div>
           </div>
           <textarea
-            className="form-control"
-            name="message"
-            cols="30"
-            rows="10"
+            className='form-control'
+            name='message'
+            cols='30'
+            rows='10'
             value={message}
             onChange={this.handleChange}
             placeholder={content.message}
             required
           ></textarea>
-          <div className="form-row my-3">
-            <div className="form-group col">
-              <StyledCheckboxGroupContainer className="custom-control custom-checkbox mr-sm-2">
+          <div className='form-row my-3'>
+            <div className='form-group col'>
+              <StyledCheckboxGroupContainer className='custom-control custom-checkbox mr-sm-2'>
                 <input
-                  id="isRobot-input"
-                  className="custom-control-input"
-                  type="checkbox"
-                  name="isRobot"
+                  id='isRobot-input'
+                  className='custom-control-input'
+                  type='checkbox'
+                  name='isRobot'
                   checked={!isRobot}
                   onChange={this.handleChange}
                   required
                 />
-                <label htmlFor="isRobot-input" className="custom-control-label">
+                <label htmlFor='isRobot-input' className='custom-control-label'>
                   {content.bot}
                 </label>
               </StyledCheckboxGroupContainer>
             </div>
-            <div className="form-group col-md-3 text-center text-md-right">
+            <div className='form-group col-md-3 text-center text-md-right'>
               <StyledContactFormButton
-                className="btn"
-                type="submit"
+                className='btn'
+                type='submit'
                 value={content.send}
               />
             </div>
           </div>
         </form>
-        <Modal ref="modal" content={content.modal} />
+        <Modal ref='modal_ok' content={content.modal.modal_ok} />
+        <Modal ref='modal_error' content={content.modal.modal_error} />
       </div>
     );
   }

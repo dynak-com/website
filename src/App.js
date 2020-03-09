@@ -21,26 +21,26 @@ class App extends Component {
     return (
       <StyledAppContainer>
         <GlobalStyles />
-        <Navbar content={this.content.nav} />
+        <Navbar content={this.content.nav} targetId='headerNavbarMenu' />
         <Switch>
           <Route
             exact
-            path="/"
+            path='/'
             component={() => <MainPage content={this.content.home} />}
           />
           <Route
             exact
-            path="/about"
+            path='/about'
             component={() => <AboutPage content={this.content.about} />}
           />
           <Route
             exact
-            path="/projects"
+            path='/projects'
             component={() => <ProjectsPage content={this.content.projects} />}
           />
           <Route
             exact
-            path="/contact"
+            path='/contact'
             component={() => <ContactPage content={this.content.contact} />}
           />
           <Route component={() => <ErrorPage content={this.content.error} />} />

@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const StyledAboutPageContainer = styled.section`
   color: #fff;
-  text-align: center;
-  div:first-child {
+  /* text-align: center; */
+  /* div:first-child {
     position: relative;
   }
   h2 {
@@ -52,11 +52,12 @@ export const StyledAboutPageContainer = styled.section`
     h2 {
       padding: 10vh 0 0 50vw;
     }
-  }
+  } */
 `;
 
 export const StyledWorkingManPicture = styled.img`
-  height: 60vh;
+  width: 100%;
+  /* height: 60vh;
   margin: 10px auto;
   @media (min-width: 576px) {
     position: absolute;
@@ -64,5 +65,5 @@ export const StyledWorkingManPicture = styled.img`
     left: 1%;
     height: 100vh;
     z-index: 1;
-  }
+  } */
 `;
