@@ -43,7 +43,6 @@ class ContactForm extends React.Component {
           isRobot: true
         });
       } else {
-        console.log(res);
         $(ReactDOM.findDOMNode(this.refs.modal_error)).modal();
       }
     });

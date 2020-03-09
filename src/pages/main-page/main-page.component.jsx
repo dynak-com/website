@@ -1,5 +1,6 @@
 import React from 'react';
-import Slider from '../../components/slider/slider.component';
+// import Slider from '../../components/slider/slider.component';
+import AnimatedSlider from '../../components/animated-slider/animated-slider.component';
 import { StyledMainPageContainer } from './main-page.styles';
 import CardList from '../../components/card-list/card-list.component';
 
@@ -10,8 +11,8 @@ const MainPage = props => {
   };
   return (
     <StyledMainPageContainer>
-      <Slider />
-      <h1 className="text-center text-light d-block my-5">{header}</h1>
+      <AnimatedSlider />
+      <h1 className='text-center text-light d-block my-5'>{header}</h1>
       <CardList data={cardsData} />
     </StyledMainPageContainer>
   );

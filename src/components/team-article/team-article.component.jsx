@@ -19,7 +19,7 @@ function onRenderTeamMembers(teamData) {
       <div className='col-12 mx-auto my-3 col-sm-6 col-lg-4' key={name}>
         <h3>{name}</h3>
         <p className='text-center'>{position}</p>
-        <img src={picture} alt={name} />
+        <img src={picture} alt={name} width='180' height='180' />
         <div className='display-4'>
           <a href={linkedInUrl} className='d-inline-block my-2 mx-2'>
             <StyledFontAwesomeIcon icon={faLinkedin} />
