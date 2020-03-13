@@ -14,12 +14,12 @@ import {
   faSass,
   faJs,
   faReact,
-  faNodeJs,
+  faNode,
   faGit,
+  faGitlab,
   faLinux,
-  faWordpress,
-  faChrome,
-  faFirefoxBrowser,
+  faWordpressSimple,
+  faMagento,
   faDocker
 } from '@fortawesome/free-brands-svg-icons';
 
@@ -29,12 +29,12 @@ const icons = [
   faSass,
   faJs,
   faReact,
-  faNodeJs,
+  faNode,
   faGit,
+  faGitlab,
   faLinux,
-  faWordpress,
-  faChrome,
-  faFirefoxBrowser,
+  faWordpressSimple,
+  faMagento,
   faDocker
 ];
 
@@ -61,7 +61,7 @@ const AboutPage = props => {
 
 function onRenderTechIcons() {
   return (
-    <div className='d-none d-md-flex display-4 mx-5 row pt-md-1 pt-xl-4'>
+    <div className='d-none d-md-flex display-4 mx-5 row pt-md-1 pt-lg-3 pt-xl-4'>
       {icons.map((icon, index) => (
         <span className='col-md-3 col-lg-4 col-xl-2' key={index}>
           <StyledFontAwesomeIcon icon={icon} />

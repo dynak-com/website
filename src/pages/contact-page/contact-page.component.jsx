@@ -8,7 +8,7 @@ const ContactPage = props => {
   return (
     <section>
       <div className='row p-4'>
-        <div className='col my-md-5 col-xl-6'>
+        <div className='col my-md-5 col-xl-6 mx-lg-auto'>
           <h2 className='text-center'>{header}</h2>
           <ContactForm content={form} />
         </div>

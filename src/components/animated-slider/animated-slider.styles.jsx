@@ -1,28 +1,24 @@
 import styled from 'styled-components';
+import Image from '../../assets/images/home/slider2X_750px.png';
 
 export const StyledAnimatedSlider = styled.div`
-  position: relative;
-  height: 65vh;
   overflow: hidden;
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    animation: animation 90s 2.5s linear infinite;
-  }
-  @keyframes animation {
-    0% {
-      left: 0;
+`;
+
+export const StyledImageContainer = styled.div`
+  height: 65vh;
+  width: calc(100 * 100vw);
+  background-image: url(${Image});
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  background-attachment: local;
+  animation: slide 3600s linear infinite;
+  @keyframes slide {
+    from {
+      transform: translateX(0);
     }
-    85% {
-      left: -100%;
-    }
-    90% {
-      left: -100%;
-    }
-    100% {
-      left: 0;
+    to {
+      transform: translateX(-100%);
     }
   }
 `;

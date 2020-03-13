@@ -6,6 +6,7 @@ import {
   StyledContactFormButton
 } from './contact-form.styles';
 import Modal from '../modal/modal.component';
+import ModalForPRivacyPolicy from '../modal-privacy-policy/modal-privacy-policy.component';
 
 class ContactForm extends React.Component {
   constructor(props) {
@@ -14,12 +15,28 @@ class ContactForm extends React.Component {
       subject: '',
       message: '',
       email: '',
-      isRobot: true
+      isRobot: true,
+      isInfoAgreed: false,
+      isContactAgreed: false,
+      isPrivacyPolicyAgreed: false
     };
   }
   handleChange = e => {
-    let { name, value } = e.target;
-    if (name === 'isRobot') value = !e.target.checked;
+    const { name } = e.target;
+    let value;
+    switch (name) {
+      case 'isRobot':
+        value = !e.target.checked;
+        break;
+      case 'isInfoAgreed':
+      case 'isContactAgreed':
+      case 'isPrivacyPolicyAgreed':
+        value = e.target.checked;
+        break;
+      default:
+        value = e.target.value;
+    }
+    console.log(name, value);
     this.setState({ [name]: value });
   };
   handleSubmit = e => {
@@ -40,19 +57,32 @@ class ContactForm extends React.Component {
           subject: '',
           message: '',
           email: '',
-          isRobot: true
+          isRobot: true,
+          isInfoAgreed: false,
+          isContactAgreed: false,
+          isPrivacyPolicyAgreed: false
         });
       } else {
         $(ReactDOM.findDOMNode(this.refs.modal_error)).modal();
       }
     });
   };
-
+  onPrivacyPolicyModalOpen = () => {
+    $(ReactDOM.findDOMNode(this.refs.modal_privacy_policy)).modal();
+  };
   render() {
     const { content } = this.props;
-    const { subject, message, email, isRobot } = this.state;
+    const {
+      subject,
+      message,
+      email,
+      isRobot,
+      isInfoAgreed,
+      isContactAgreed,
+      isPrivacyPolicyAgreed
+    } = this.state;
     return (
-      <div>
+      <div className='mx-auto'>
         <form onSubmit={this.handleSubmit}>
           <div className='form-row'>
             <div className='form-group col-md-6'>
@@ -104,10 +134,67 @@ class ContactForm extends React.Component {
                   {content.bot}
                 </label>
               </StyledCheckboxGroupContainer>
+              <StyledCheckboxGroupContainer className='custom-control custom-checkbox mr-sm-2'>
+                <input
+                  id='isInfoAgreed-input'
+                  className='custom-control-input'
+                  type='checkbox'
+                  name='isInfoAgreed'
+                  checked={isInfoAgreed}
+                  onChange={this.handleChange}
+                  required
+                />
+                <label
+                  htmlFor='isInfoAgreed-input'
+                  className='custom-control-label text-justify'
+                >
+                  {content.infoAgreement}
+                </label>
+              </StyledCheckboxGroupContainer>
+              <StyledCheckboxGroupContainer className='custom-control custom-checkbox mr-sm-2'>
+                <input
+                  id='isContactAgreed-input'
+                  className='custom-control-input'
+                  type='checkbox'
+                  name='isContactAgreed'
+                  checked={isContactAgreed}
+                  onChange={this.handleChange}
+                  required
+                />
+                <label
+                  htmlFor='isContactAgreed-input'
+                  className='custom-control-label text-justify'
+                >
+                  {content.contactAgreement}
+                </label>
+              </StyledCheckboxGroupContainer>
+              <StyledCheckboxGroupContainer className='custom-control custom-checkbox mr-sm-2'>
+                <input
+                  id='isPrivacyPolicyAgreed-input'
+                  className='custom-control-input'
+                  type='checkbox'
+                  name='isPrivacyPolicyAgreed'
+                  checked={isPrivacyPolicyAgreed}
+                  onChange={this.handleChange}
+                  required
+                />
+                <label
+                  htmlFor='isPrivacyPolicyAgreed-input'
+                  className='custom-control-label text-justify'
+                >
+                  {content.privacyPolicyAgreement}
+                </label>
+              </StyledCheckboxGroupContainer>
             </div>
-            <div className='form-group col-md-3 text-center text-md-right'>
+            <div className='form-group col-md-12 text-center text-md-right'>
               <StyledContactFormButton
-                className='btn'
+                className='btn d-inline-block mx-1'
+                type='button'
+                value='Polityka prywatności'
+                onClick={this.onPrivacyPolicyModalOpen}
+              />
+              <StyledContactFormButton
+                className='btn d-inline-block mx-1'
                 type='submit'
                 value={content.send}
               />
@@ -116,6 +203,10 @@ class ContactForm extends React.Component {
         </form>
         <Modal ref='modal_ok' content={content.modal.modal_ok} />
         <Modal ref='modal_error' content={content.modal.modal_error} />
+        <ModalForPRivacyPolicy
+          ref='modal_privacy_policy'
+          content={content.modal.modal_privacy_policy}
+        />
       </div>
     );
   }

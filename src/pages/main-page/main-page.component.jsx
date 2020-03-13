@@ -1,5 +1,4 @@
 import React from 'react';
-// import Slider from '../../components/slider/slider.component';
 import AnimatedSlider from '../../components/animated-slider/animated-slider.component';
 import { StyledMainPageContainer } from './main-page.styles';
 import CardList from '../../components/card-list/card-list.component';

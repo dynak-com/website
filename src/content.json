@@ -144,6 +144,9 @@
         "email": "Twój adres e-mail",
         "message": "Treść wiadomości",
         "bot": "Nie jestem robotem(wolimy się upewnić 😉 )",
+        "infoAgreement": "Wyrażam zgodę na otrzymywanie od administratora danych osobowych informacji handlowej i materiałów promocyjnych środkami komunikacji elektronicznej w rozumieniu ustawy o świadczeniu usług drogą elektroniczną.",
+        "contactAgreement": "Wyrażam zgodę na kontakt ze strony administratora danych osobowych, z użyciem telekomunikacyjnych urządzeń końcowych oraz automatycznych systemów wywołujących, zgodnie z art. 172 par. 1. Prawa telekomunikacyjnego.",
+        "privacyPolicyAgreement": "Zapoznałem/-łam się z polityką prywatności i akceptuję jej treść.",
         "send": "Wyślij",
         "modal": {
           "modal_ok": {
@@ -157,6 +160,12 @@
             "thanks": "Niestety :(",
             "sent": "Twoja wiadomość nie została wysłana. Nastąpił błąd po stronie serwera. Spróbuj ponownie później. Przepraszamy!",
             "close": "Zamknij"
+          },
+          "modal_privacy_policy": {
+            "error_message": null,
+            "thanks": "Polityka prywatności",
+            "sent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non nibh justo. Quisque aliquam dignissim magna, vitae consectetur ipsum vestibulum non. Ut vehicula tincidunt lorem nec consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed non tristique nisi. Nullam a malesuada metus. Suspendisse nec est porttitor, luctus nunc in, maximus erat. Sed faucibus felis ac malesuada vehicula. Suspendisse pharetra vulputate elit in scelerisque. Suspendisse vitae mi suscipit, ultricies nunc in, suscipit lorem. Pellentesque magna felis, convallis vitae ante egestas, placerat interdum est. Proin ligula neque, sollicitudin in dui laoreet, auctor egestas orci. Duis auctor condimentum mollis. Morbi varius consectetur neque, eget dapibus quam lacinia at. Suspendisse ac augue viverra, rutrum eros sit amet, facilisis velit.",
+            "close": "Rozumiem"
           }
         }
       }
