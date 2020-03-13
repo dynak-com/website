@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyledAnimatedSlider } from './animated-slider.styles';
-import Image from '../../assets/images/home/slider2X.png';
+import Image from '../../assets/images/home/banner long_25per.png';
 
 const AnimatedSlider = () => {
   return (

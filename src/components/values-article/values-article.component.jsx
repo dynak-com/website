@@ -1,4 +1,5 @@
 import React from 'react';
+import { StyledSpan } from './values-article.styles';
 
 const ValuesArticle = ({ values }) => {
   const { title, content } = values;
@@ -12,12 +13,12 @@ const ValuesArticle = ({ values }) => {
 
 function renderValuesParagraph(valuesData) {
   return valuesData.map((paragraph, index) => (
-    <span
+    <StyledSpan
       className='d-block my-2 text-justify'
       key={`values-paragraph-${index}`}
     >
       {paragraph}
-    </span>
+    </StyledSpan>
   ));
 }
 

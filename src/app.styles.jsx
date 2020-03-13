@@ -15,7 +15,14 @@ export const StyledAppContainer = styled.main`
   @import url('https://fonts.googleapis.com/css?family=Saira+Condensed&display=swap&subset=latin-ext');
   font-family: 'Saira Condensed', sans-serif;
   overflow-x: hidden;
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
   p {
+    font-size: 1.2rem;
     text-align: justify;
   }
 `;
