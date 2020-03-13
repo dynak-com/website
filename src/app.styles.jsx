@@ -16,7 +16,7 @@ export const StyledAppContainer = styled.main`
   font-family: 'Saira Condensed', sans-serif;
   overflow-x: hidden;
   h1 {
-    font-size: 2.6rem;
+    font-size: 3rem;
   }
   h2 {
     font-size: 2.2rem;

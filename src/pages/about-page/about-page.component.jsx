@@ -1,13 +1,13 @@
 import React from 'react';
 import {
   StyledAboutPageContainer,
-  StyledWorkingManPicture
+  StyledWorkingManPicture,
+  StyledFontAwesomeIcon
 } from './about-page.styles';
 import WorkerImage from '../../assets/images/about/worker.png';
 import TechnologiesArticle from '../../components/technologies-article/technologies-article.component';
 import TeamArticle from '../../components/team-article/team-article.component';
 import ValuesArticle from '../../components/values-article/values-article.component';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faHtml5,
   faCss3,
@@ -64,7 +64,7 @@ function onRenderTechIcons() {
     <div className='d-none d-md-flex display-4 mx-5 row pt-md-1 pt-xl-4'>
       {icons.map((icon, index) => (
         <span className='col-md-3 col-lg-4 col-xl-2' key={index}>
-          <FontAwesomeIcon icon={icon} />
+          <StyledFontAwesomeIcon icon={icon} />
         </span>
       ))}
     </div>
