@@ -7,23 +7,24 @@ import {
 
 const Modal = React.forwardRef((props, ref) => {
   const { content } = props;
+  const modalId = content.modal_id;
   const headerTextAlignment = content.error_message
     ? 'text-justify'
     : 'text-center';
   return (
     <StyledModalContainer
       className='modal fade'
-      id='formModal'
+      id={modalId}
       ref={ref}
       tabIndex='-1'
       role='dialog'
-      aria-labelledby='formModal'
+      aria-labelledby={modalId}
       aria-hidden='true'
     >
       <StyledModalDialog className='modal-dialog text-center' role='document'>
         <div className='modal-content'>
           <div className='modal-header'>
-            <h5 className='modal-title' id='formModalLabel'>
+            <h5 className='modal-title' id={`${modalId}Label`}>
               {content.thanks}
             </h5>
             <button

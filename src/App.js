@@ -8,6 +8,7 @@ import ProjectsPage from './pages/projects-page/projects-page.component';
 import ContactPage from './pages/contact-page/contact-page.component';
 import ErrorPage from './pages/error-page/error-page.component';
 import Footer from './components/footer/footer.component';
+import ModalsContainer from './components/modals-container/modals-container.component';
 import content from './content.json';
 
 const contentData = JSON.parse(JSON.stringify(content));
@@ -46,6 +47,7 @@ class App extends Component {
           <Route component={() => <ErrorPage content={this.content.error} />} />
         </Switch>
         <Footer />
+        <ModalsContainer modalsData={this.content.modal} />
       </StyledAppContainer>
     );
   }

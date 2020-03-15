@@ -5,8 +5,11 @@ import {
   StyledCheckboxGroupContainer,
   StyledContactFormButton
 } from './contact-form.styles';
-import Modal from '../modal/modal.component';
-import ModalForPRivacyPolicy from '../modal-privacy-policy/modal-privacy-policy.component';
+import {
+  correctModalRef,
+  invalidModalRef,
+  modalPrivacyPolicyRef
+} from '../modals-container/modals-container.component';
 
 class ContactForm extends React.Component {
   constructor(props) {
@@ -15,8 +18,6 @@ class ContactForm extends React.Component {
       subject: '',
       message: '',
       email: '',
-      isRobot: true,
-      isInfoAgreed: false,
       isContactAgreed: false,
       isPrivacyPolicyAgreed: false
     };
@@ -25,10 +26,6 @@ class ContactForm extends React.Component {
     const { name } = e.target;
     let value;
     switch (name) {
-      case 'isRobot':
-        value = !e.target.checked;
-        break;
-      case 'isInfoAgreed':
       case 'isContactAgreed':
       case 'isPrivacyPolicyAgreed':
         value = e.target.checked;
@@ -36,7 +33,6 @@ class ContactForm extends React.Component {
       default:
         value = e.target.value;
     }
-    console.log(name, value);
     this.setState({ [name]: value });
   };
   handleSubmit = e => {
@@ -52,23 +48,21 @@ class ContactForm extends React.Component {
       body: JSON.stringify(data)
     }).then(res => {
       if (res.status === 200) {
-        $(ReactDOM.findDOMNode(this.refs.modal_ok)).modal();
+        $(ReactDOM.findDOMNode(correctModalRef.current)).modal();
         this.setState({
           subject: '',
           message: '',
           email: '',
-          isRobot: true,
-          isInfoAgreed: false,
           isContactAgreed: false,
           isPrivacyPolicyAgreed: false
         });
       } else {
-        $(ReactDOM.findDOMNode(this.refs.modal_error)).modal();
+        $(ReactDOM.findDOMNode(invalidModalRef.current)).modal();
       }
     });
   };
   onPrivacyPolicyModalOpen = () => {
-    $(ReactDOM.findDOMNode(this.refs.modal_privacy_policy)).modal();
+    $(ReactDOM.findDOMNode(modalPrivacyPolicyRef.current)).modal();
   };
   render() {
     const { content } = this.props;
@@ -76,8 +70,6 @@ class ContactForm extends React.Component {
       subject,
       message,
       email,
-      isRobot,
-      isInfoAgreed,
       isContactAgreed,
       isPrivacyPolicyAgreed
     } = this.state;
@@ -120,37 +112,6 @@ class ContactForm extends React.Component {
           ></textarea>
           <div className='form-row my-3'>
             <div className='form-group col'>
-              <StyledCheckboxGroupContainer className='custom-control custom-checkbox mr-sm-2'>
-                <input
-                  id='isRobot-input'
-                  className='custom-control-input'
-                  type='checkbox'
-                  name='isRobot'
-                  checked={!isRobot}
-                  onChange={this.handleChange}
-                  required
-                />
-                <label htmlFor='isRobot-input' className='custom-control-label'>
-                  {content.bot}
-                </label>
-              </StyledCheckboxGroupContainer>
-              <StyledCheckboxGroupContainer className='custom-control custom-checkbox mr-sm-2'>
-                <input
-                  id='isInfoAgreed-input'
-                  className='custom-control-input'
-                  type='checkbox'
-                  name='isInfoAgreed'
-                  checked={isInfoAgreed}
-                  onChange={this.handleChange}
-                  required
-                />
-                <label
-                  htmlFor='isInfoAgreed-input'
-                  className='custom-control-label text-justify'
-                >
-                  {content.infoAgreement}
-                </label>
-              </StyledCheckboxGroupContainer>
               <StyledCheckboxGroupContainer className='custom-control custom-checkbox mr-sm-2'>
                 <input
                   id='isContactAgreed-input'
@@ -201,12 +162,6 @@ class ContactForm extends React.Component {
             </div>
           </div>
         </form>
-        <Modal ref='modal_ok' content={content.modal.modal_ok} />
-        <Modal ref='modal_error' content={content.modal.modal_error} />
-        <ModalForPRivacyPolicy
-          ref='modal_privacy_policy'
-          content={content.modal.modal_privacy_policy}
-        />
       </div>
     );
   }
