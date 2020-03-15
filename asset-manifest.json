@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.js": "/website/static/js/main.63b021ee.chunk.js",
-    "main.js.map": "/website/static/js/main.63b021ee.chunk.js.map",
-    "runtime-main.js": "/website/static/js/runtime-main.216c58f1.js",
-    "runtime-main.js.map": "/website/static/js/runtime-main.216c58f1.js.map",
-    "static/css/2.17e5ed98.chunk.css": "/website/static/css/2.17e5ed98.chunk.css",
-    "static/js/2.ee3bdb31.chunk.js": "/website/static/js/2.ee3bdb31.chunk.js",
-    "static/js/2.ee3bdb31.chunk.js.map": "/website/static/js/2.ee3bdb31.chunk.js.map",
-    "index.html": "/website/index.html",
-    "precache-manifest.352f5b9d56df52d62552f21609ced40a.js": "/website/precache-manifest.352f5b9d56df52d62552f21609ced40a.js",
-    "service-worker.js": "/website/service-worker.js",
-    "static/css/2.17e5ed98.chunk.css.map": "/website/static/css/2.17e5ed98.chunk.css.map",
-    "static/js/2.ee3bdb31.chunk.js.LICENSE": "/website/static/js/2.ee3bdb31.chunk.js.LICENSE",
-    "static/media/slider2X_750px.png": "/website/static/media/slider2X_750px.a83f83f8.png",
-    "static/media/tenby-five.otf": "/website/static/media/tenby-five.3264c871.otf",
-    "static/media/worker.png": "/website/static/media/worker.e5a1c095.png"
+    "main.js": "/static/js/main.8577287d.chunk.js",
+    "main.js.map": "/static/js/main.8577287d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7eb0b4b2.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7eb0b4b2.js.map",
+    "static/css/2.17e5ed98.chunk.css": "/static/css/2.17e5ed98.chunk.css",
+    "static/js/2.83cf4057.chunk.js": "/static/js/2.83cf4057.chunk.js",
+    "static/js/2.83cf4057.chunk.js.map": "/static/js/2.83cf4057.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.91c658d1ba2c9be188e4533a754ff8fd.js": "/precache-manifest.91c658d1ba2c9be188e4533a754ff8fd.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.17e5ed98.chunk.css.map": "/static/css/2.17e5ed98.chunk.css.map",
+    "static/js/2.83cf4057.chunk.js.LICENSE": "/static/js/2.83cf4057.chunk.js.LICENSE",
+    "static/media/slider2X_750px.png": "/static/media/slider2X_750px.a83f83f8.png",
+    "static/media/tenby-five.otf": "/static/media/tenby-five.3264c871.otf",
+    "static/media/worker.png": "/static/media/worker.e5a1c095.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.216c58f1.js",
+    "static/js/runtime-main.7eb0b4b2.js",
     "static/css/2.17e5ed98.chunk.css",
-    "static/js/2.ee3bdb31.chunk.js",
-    "static/js/main.63b021ee.chunk.js"
+    "static/js/2.83cf4057.chunk.js",
+    "static/js/main.8577287d.chunk.js"
   ]
 }
