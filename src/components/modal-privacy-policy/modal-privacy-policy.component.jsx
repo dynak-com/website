@@ -1,10 +1,6 @@
 import React from 'react';
 import { StyledModalContentWrapper } from './modal.privacy-policy.styles';
-import {
-  StyledModalContainer,
-  StyledModalDialog,
-  StyledModalButton
-} from '../modal/modal.styles';
+import { StyledModalContainer, StyledModalDialog } from '../modal/modal.styles';
 import RODOContent from '../rodo-and-privacy-policy/rodo.component';
 
 const ModalForPrivacyPolicy = React.forwardRef((props, ref) => {
@@ -39,13 +35,9 @@ const ModalForPrivacyPolicy = React.forwardRef((props, ref) => {
             <RODOContent />
           </StyledModalContentWrapper>
           <div className='text-right p-2'>
-            <StyledModalButton
-              type='button'
-              className='btn btn-sm'
-              data-dismiss='modal'
-            >
+            <button type='button' className='btn btn-sm' data-dismiss='modal'>
               {content.close}
-            </StyledModalButton>
+            </button>
           </div>
         </div>
       </StyledModalDialog>

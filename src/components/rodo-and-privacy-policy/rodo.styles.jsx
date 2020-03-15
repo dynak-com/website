@@ -6,4 +6,13 @@ export const StyledRodoContentContainer = styled.div`
   ol {
     font-size: 1.2rem;
   }
+  a {
+    font-weight: 700;
+    color: #3eafad;
+    &:hover,
+    &:active,
+    &:visited {
+      color: #329390;
+    }
+  }
 `;

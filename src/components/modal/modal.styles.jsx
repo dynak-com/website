@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledModalContainer = styled.div`
   background-color: rgba(0, 0, 0, 0);
@@ -17,18 +17,16 @@ export const StyledModalDialog = styled.div`
     span {
       color: #fff;
     }
-  }
-`;
-export const StyledModalButton = styled.button`
-  &.btn {
-    color: #fff;
-    background-color: #3eafad;
-    transition: 0.2s;
-    &:hover,
-    &:focus,
-    &:active {
-      color: #ddd;
-      background-color: #329390;
+    div:last-child > button {
+      color: #fff;
+      background-color: #3eafad;
+      transition: 0.2s;
+      &:hover,
+      &:focus,
+      &:active {
+        color: #ddd;
+        background-color: #329390;
+      }
     }
   }
 `;

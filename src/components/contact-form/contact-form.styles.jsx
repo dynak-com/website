@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledCheckboxGroupContainer = styled.div`
   & > input,
@@ -8,7 +8,8 @@ export const StyledCheckboxGroupContainer = styled.div`
 `;
 
 export const StyledContactFormButton = styled.input`
-  &.btn {
+  &[type='button'],
+  &[type='submit'] {
     color: #fff;
     background-color: #3eafad;
     transition: 0.2s;

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Navbar from './components/navbar/navbar.component';
 import { GlobalStyles, StyledAppContainer } from './app.styles';
 import { Switch, Route } from 'react-router';
@@ -9,48 +9,45 @@ import ContactPage from './pages/contact-page/contact-page.component';
 import ErrorPage from './pages/error-page/error-page.component';
 import Footer from './components/footer/footer.component';
 import ModalsContainer from './components/modals-container/modals-container.component';
+import useComponent from './hook';
 import content from './content.json';
 
 const contentData = JSON.parse(JSON.stringify(content));
 
-class App extends Component {
-  state = {
-    lang: 'pl'
-  };
-  content = contentData.find(item => item.lang === this.state.lang);
-  render() {
-    return (
-      <StyledAppContainer>
-        <GlobalStyles />
-        <Navbar content={this.content.nav} targetId='headerNavbarMenu' />
-        <Switch>
-          <Route
-            exact
-            path='/'
-            component={() => <MainPage content={this.content.home} />}
-          />
-          <Route
-            exact
-            path='/about'
-            component={() => <AboutPage content={this.content.about} />}
-          />
-          <Route
-            exact
-            path='/projects'
-            component={() => <ProjectsPage content={this.content.projects} />}
-          />
-          <Route
-            exact
-            path='/contact'
-            component={() => <ContactPage content={this.content.contact} />}
-          />
-          <Route component={() => <ErrorPage content={this.content.error} />} />
-        </Switch>
-        <Footer />
-        <ModalsContainer modalsData={this.content.modal} />
-      </StyledAppContainer>
-    );
-  }
-}
+const App = () => {
+  const { lang } = useComponent();
+  const content = contentData.find(item => item.lang === lang);
+  return (
+    <StyledAppContainer>
+      <GlobalStyles />
+      <Navbar content={content.nav} targetId='headerNavbarMenu' />
+      <Switch>
+        <Route
+          exact
+          path='/'
+          component={() => <MainPage content={content.home} />}
+        />
+        <Route
+          exact
+          path='/about'
+          component={() => <AboutPage content={content.about} />}
+        />
+        <Route
+          exact
+          path='/projects'
+          component={() => <ProjectsPage content={content.projects} />}
+        />
+        <Route
+          exact
+          path='/contact'
+          component={() => <ContactPage content={content.contact} />}
+        />
+        <Route component={() => <ErrorPage content={content.error} />} />
+      </Switch>
+      <Footer />
+      <ModalsContainer modalsData={content.modal} />
+    </StyledAppContainer>
+  );
+};
 
 export default App;

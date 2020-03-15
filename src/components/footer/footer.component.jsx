@@ -1,26 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import ReactDOM from 'react-dom';
-import $ from 'jquery';
+import React from 'react';
 import { StyledFooter } from './footer.styles';
-import { modalPrivacyPolicyRef } from '../modals-container/modals-container.component';
+import useComponent from './hook';
 
 const Footer = () => {
-  const [year, setYear] = useState(new Date().getFullYear());
-  useEffect(() => {
-    setYear(new Date().getFullYear());
-  }, []);
+  const { year, onPrivacyPolicyModalOpenDone } = useComponent();
   return (
     <StyledFooter className='my-2 text-light text-center'>
       <span>&copy;dynak.com {year}</span>
-      <span className='ml-2' onClick={onPrivacyPolicyModalOpen}>
+      <span className='ml-2' onClick={onPrivacyPolicyModalOpenDone}>
         RODO
       </span>
     </StyledFooter>
   );
 };
-
-function onPrivacyPolicyModalOpen() {
-  $(ReactDOM.findDOMNode(modalPrivacyPolicyRef.current)).modal();
-}
 
 export default Footer;

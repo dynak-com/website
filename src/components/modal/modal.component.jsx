@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  StyledModalContainer,
-  StyledModalDialog,
-  StyledModalButton
-} from './modal.styles';
+import { StyledModalContainer, StyledModalDialog } from './modal.styles';
 
 const Modal = React.forwardRef((props, ref) => {
   const { content } = props;
@@ -13,7 +9,7 @@ const Modal = React.forwardRef((props, ref) => {
     : 'text-center';
   return (
     <StyledModalContainer
-      className='modal fade'
+      className='modal show'
       id={modalId}
       ref={ref}
       tabIndex='-1'
@@ -40,13 +36,9 @@ const Modal = React.forwardRef((props, ref) => {
             <h3 className={headerTextAlignment}>{content.sent}</h3>
           </div>
           <div className='text-right p-2'>
-            <StyledModalButton
-              type='button'
-              className='btn btn-sm'
-              data-dismiss='modal'
-            >
+            <button type='button' className='btn btn-sm' data-dismiss='modal'>
               {content.close}
-            </StyledModalButton>
+            </button>
           </div>
         </div>
       </StyledModalDialog>
