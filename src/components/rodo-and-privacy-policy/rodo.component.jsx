@@ -82,8 +82,19 @@ const RodoContent = () => {
         </li>
         <li>
           tworzenie analizy polegającej na analizie danych zbieranych
-          automatycznie przy korzystaniu ze strony internetowej, w tym ... — na
-          podstawie art. 6 ust. 1 lit. f RODO;
+          automatycznie przy korzystaniu ze strony internetowej, w tym&nbsp;
+          <a href='https://www.linkedin.com' alt='LinkedIn'>
+            www.linkedin.com
+          </a>
+          ,{' '}
+          <a href='https://www.github.com' alt='GitHub'>
+            www.github.com
+          </a>
+          ,{' '}
+          <a href='https://www.gitlab.com' alt='GitLab'>
+            www.gitlab.com
+          </a>{' '}
+          — na podstawie art. 6 ust. 1 lit. f RODO;
         </li>
         <li>
           wykorzystywania cookies na Stronie i jej podstronach — na podstawie
@@ -129,7 +140,15 @@ const RodoContent = () => {
       </p>
       <p>
         W tych celach może zwrócić się do Administratora poprzez adres e-mail:
-        ...{' '}
+        &nbsp;
+        <a
+          href='mailto:admin@dynak.com?Subject=support'
+          alt='Support dynak.com'
+          target='_top'
+        >
+          admin@dynak.com
+        </a>
+        .{' '}
       </p>
       <p>
         Zgoda Użytkownika może być w każdym czasie odwołana, cofnięta, co
