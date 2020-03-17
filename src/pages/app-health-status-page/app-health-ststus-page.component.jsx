@@ -1,13 +1,12 @@
 import React from 'react';
-import { StyledMessage } from './app-health-status-page.styles';
 import useComponent from './hook.js';
 
 const AppHealthStatusPage = () => {
   const { loading, status } = useComponent();
   if (loading) {
-    return <StyledMessage>Checking...</StyledMessage>;
+    return <p>Checking...</p>;
   }
-  return <StyledMessage>{status}</StyledMessage>;
+  return <p>{status}</p>;
 };
 
 export default AppHealthStatusPage;
