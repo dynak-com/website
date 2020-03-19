@@ -6,14 +6,23 @@ export const StyledModalContainer = styled.div`
   &.modal.fade .modal-dialog {
     /* transform: translateY(-50%); */
   }
+  & > div {
+    display: table;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+  }
 `;
 
 export const StyledModalDialog = styled.div`
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+  display: table-cell;
+  vertical-align: middle;
+  pointer-events: none;
   & > div {
+    width: inherit;
+    max-width: inherit;
+    margin: 0 auto;
+    pointer-events: all;
     background-color: #32373a;
     span {
       color: #fff;
