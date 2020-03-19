@@ -11,7 +11,8 @@ export const StyledModalContainer = styled.div`
 export const StyledModalDialog = styled.div`
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
   & > div {
     background-color: #32373a;
     span {
