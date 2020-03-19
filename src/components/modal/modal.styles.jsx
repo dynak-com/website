@@ -1,11 +1,6 @@
 import styled from 'styled-components';
 
 export const StyledModalContainer = styled.div`
-  background-color: rgba(0, 0, 0, 0);
-  &.modal.show .modal-dialog,
-  &.modal.fade .modal-dialog {
-    /* transform: translateY(-50%); */
-  }
   & > div {
     display: table;
     height: 100%;
