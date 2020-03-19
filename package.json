@@ -1,5 +1,5 @@
 {
-  "homepage": "https://www.dynak.com",
+  "homepage": "https://dynak-com.github.io/website",
   "name": "www.dynak.com",
   "version": "0.1.0",
   "private": true,
@@ -32,6 +32,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "http://localhost:8080",
   "eslintConfig": {
     "extends": "react-app"
   },
