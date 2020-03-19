@@ -21,7 +21,7 @@ app.post('/new_message', (req, res) => {
   return res.status(200).send('Done');
 });
 
-app.get('/health', (req, res) => {
+app.get('/health_check', (req, res) => {
   return res.status(200).send('OK');
 });
 

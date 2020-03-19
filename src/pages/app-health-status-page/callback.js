@@ -1,4 +1,4 @@
-const url = '/health';
+const url = '/health_check';
 
 export default function onSendCheckStatusRequest(onSetState) {
   fetch(url, {

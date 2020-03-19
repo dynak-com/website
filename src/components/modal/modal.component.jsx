@@ -18,7 +18,7 @@ const Modal = React.forwardRef((props, ref) => {
       aria-hidden='true'
     >
       <StyledModalDialog
-        className='modal-dialog modal-dialog-centered text-center'
+        className='modal-dialog-centered modal-dialog text-center'
         role='document'
       >
         <div className='modal-content'>
