@@ -1,0 +1,19 @@
+before_script:
+  - echo "Starting the runner..."
+
+build_production:
+  stage: build
+  script:
+    - echo "Building for production..."
+    - bash ./clean_production.sh
+    - git checkout master && git pull && docker build -t production/dynak.com .
+  only:
+    - master
+
+deploy_production:
+  stage: deploy
+  script:
+    - echo "Deploying production..."
+    - docker run -v $PWD/messages/:/opt/dynak.com/messages -p 5000:5000 -p 8080:8080 -d production/dynak.com
+  only:
+    - master
