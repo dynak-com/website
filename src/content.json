@@ -1,0 +1,231 @@
+[
+  {
+    "lang": "pl",
+    "nav": [
+      {
+        "text": "home",
+        "address": "/"
+      },
+      {
+        "text": "o nas",
+        "address": "/about"
+      },
+      {
+        "text": "projekty",
+        "address": "/projects"
+      },
+      {
+        "text": "kontakt",
+        "address": "/contact"
+      }
+    ],
+    "home": {
+      "header": "Zabieramy ludziom pracę!",
+      "posts": [
+        {
+          "id": 1,
+          "text": "To właśnie my! Jesteśmy miłośnikami najnowszych rozwiązań full-stackowych. Tworzymy wygodne i czytelne interfejsy webowe oraz wydajny back-end. Aby nasza współpraca przebiegała sprawnie, rozwijamy projekty, korzystając z metodologii agile.",
+          "headerText": "Szukasz programistów z pasją?"
+        },
+        {
+          "id": 2,
+          "text": "Wiemy, że brak integracji systemów utrudnia realizację celów biznesowych. Dostarczamy usługi dopasowane do rzeczywistych potrzeb użytkownika. Zarządzanie inteligentnym biurem czy obiektami przemysłowymi to z nami łatwizna.",
+          "headerText": "Chcesz zintegrować działające już systemy?"
+        },
+        {
+          "id": 3,
+          "text": "Podczas wspólnych warsztatów dokonamy ewaluacji oraz podzielimy drogę do celu na poszczególne etapy. Prosto i transparentnie. Działamy głównie na terenie Wrocławia i okolic, ale świetnie radzimy sobie z pracą zdalną.",
+          "headerText": "Jak przebiega współpraca z nami?"
+        }
+      ]
+    },
+    "about": {
+      "header": "O nas",
+      "technologies": {
+        "title": "Technologie",
+        "content": "Wykorzystujemy zarówno najnowsze narzędzia z branży IT, jak i te, które miały już szansę  zostać solidnie sprawdzone na rynku. Są to przede wszystkim full-stack JavaScript oraz TypeScript, czyli Node.js jako back-end oraz React.js jako front-end."
+      },
+      "team": {
+        "title": "Zespół",
+        "teamData": [
+          {
+            "name": "Emilia Dynak",
+            "picture": "https://secure.gravatar.com/avatar/d34a1b21822840695b16113034ba740b?s=180&d=identicon",
+            "position": "CEO and co-owner",
+            "linkedInUrl": "https://www.linkedin.com/in/emilia-dynak-b0a3a9140/",
+            "githubUrl": "https://github.com/login"
+          },
+          {
+            "name": "Cezary Dynak",
+            "picture": "https://secure.gravatar.com/avatar/47fbd06257cedcf9594bd9144f948feb?s=180&d=identicon",
+            "position": "CTO and co-owner",
+            "linkedInUrl": "https://www.linkedin.com/in/cdynak/",
+            "githubUrl": "https://github.com/login"
+          },
+          {
+            "name": "Natalia Borzyszkowska",
+            "picture": "https://secure.gravatar.com/avatar/2cba91020f68596ad56766847694b292?s=180&d=identicon",
+            "position": "CFO",
+            "linkedInUrl": "https://www.linkedin.com/in/natalia-borzyszkowska-b7814218b/",
+            "githubUrl": "https://github.com/login"
+          },
+          {
+            "name": "Aleksandra Borodziuk",
+            "picture": "https://secure.gravatar.com/avatar/865d01afdfe703b4ef137693198b8500?s=180&d=identicon",
+            "position": "CMO",
+            "linkedInUrl": "https://www.linkedin.com/m/login/",
+            "githubUrl": "https://github.com/login"
+          },
+          {
+            "name": "Dominika Konefał",
+            "picture": "https://secure.gravatar.com/avatar/ec094fb729d8e3509391628d8ba00dd8?s=180&d=identicon",
+            "position": "Graphic Designer",
+            "linkedInUrl": "https://www.linkedin.com/m/login/",
+            "githubUrl": "https://github.com/login"
+          },
+          {
+            "name": "Mikołaj Tumalewicz",
+            "picture": "https://gitlab.com/uploads/-/system/user/avatar/2270247/avatar.png?width=180",
+            "position": "DevOps/SysOps Engineer",
+            "linkedInUrl": "https://www.linkedin.com/in/mtumalewicz/",
+            "githubUrl": "https://github.com/login"
+          },
+          {
+            "name": "Marcin Banik",
+            "picture": "https://gitlab.com/uploads/-/system/user/avatar/2342806/avatar.png?s=180",
+            "position": "Front-end Developer",
+            "linkedInUrl": "https://www.linkedin.com/in/marcin-banik-947954142/",
+            "githubUrl": "https://github.com/login",
+            "githubName": "m-banik"
+          },
+          {
+            "name": "Bartosz Marciniec",
+            "picture": "https://gitlab.com/uploads/-/system/user/avatar/4684288/avatar.png?s=180",
+            "position": "Back-end Developer",
+            "linkedInUrl": "https://www.linkedin.com/in/bartosz-marciniec-b0917517a/",
+            "githubUrl": "https://github.com/login"
+          }
+        ]
+      },
+      "values": {
+        "title": "Wartości",
+        "content": [
+          "Pamiętasz, gdy będąc dzieckiem, odkrywałeś rzeczy, których działanie jeszcze do niedawna wydawało Ci się magią? Tą samą ścieżką podążał kiedyś każdy programista, który zaczynał poznawać nowe technologie i kształtować dzięki nim otaczającą rzeczywistość. Realizowanie kolejnych zadań przekonało nas, że fascynujące problemy do rozwiązania będą zawsze. Kto wie, może jednym z nich niedługo będzie właśnie Twój projekt?",
+          "Firma dynak.com została założona przez rodzeństwo Emilię i Cezarego Dynaków 20 marca 2019 roku. Dlaczego akurat wtedy? Tak się składa, że właśnie tego dnia obchodzony jest Międzynarodowy Dzień Szczęścia. A naszym celem od początku  było to, aby klienci i pracownicy czerpali radość ze współpracy z nami. To właśnie radość nadaje rzeczom sens i pozwala na realizację naprawdę wartościowych projektów.",
+          "Turkus to motyw kolorystyczny na stronie, ale też symbol ważnych dla nas wartości. Nie opieramy naszej pracy na sztywnej hierarchii, lecz na odpowiedzialności i wzajemnym zaufaniu - co jest charakterystyczne dla tzw. “turkusowych organizacji”. Wszystkie procesy i dokumenty w firmie są jawne. Śmiało podchodzimy do niestandardowych rozwiązań, jeśli wiemy, że przyczynią się do poprawy czyjegoś  życia. Takie podejście współgra ze zwinnym zarządzaniem projektami."
+        ]
+      }
+    },
+    "projects": {
+      "header": "Nasze projekty:",
+      "posts": [
+        {
+          "id": 1,
+          "text": "Smart Home to już standard - pora na inteligentne biura i obiekty przemysłowe. Im większy obiekt, tym więcej niekoniecznie współgrających ze sobą systemów. Z tych potrzeb zrodziła się aplikacja dynak.io, która integruje systemy automatyki budynkowej. Najbardziej trywialne funkcjonalności mogą być wyceniane na niewyobrażalne kwoty. Czasem też po prostu ich nie ma. Tutaj natomiast może wystarczyć dopisanie jednego modułu.",
+          "headerText": "dynak.io"
+        },
+        {
+          "id": 2,
+          "text": "Warehouse jest aplikacją usprawniającą procesy powtarzane w magazynach setki razy dziennie - takie jak  przyjmowanie czy wydawanie towaru. Interfejs użytkownika jest zaprojektowany dla wygody i czytelności. Ponieważ działa jako strona, może być uruchamiany na praktycznie każdym urządzeniu z przeglądarką internetową. Dodatkowo współgra z zewnętrzną autoryzacją użytkowników, drukarką naklejek oraz pobiera i zapisuje dane do systemu ERP.",
+          "headerText": "warehouse-app"
+        },
+        {
+          "id": 3,
+          "text": "Nawet do stosunkowo łatwych projektów, takich jak stworzenie strony internetowej, podchodzimy z pełnym zaangażowaniem. Social media nie wystarczą. Dobrze zrobiona strona internetowa będzie wspierać Twój biznes. Zrealizujemy projekt zgodnie z Twoją wizją i pozwolimy Ci wyróżnić się na tle konkurencji.  Niezależnie od tego, czy potrzebujesz prostej strony internetowej czy czegoś naprawdę niestandardowego - możesz zrobić to z nami!",
+          "headerText": "strony internetowe"
+        }
+      ]
+    },
+    "contact": {
+      "header": "Masz pytania? Chcesz nawiązać współpracę? Napisz do nas!",
+      "socials": "Albo... odwiedź nasze profile:",
+      "form": {
+        "subject": "Temat wiadomości",
+        "email": "Twój adres e-mail",
+        "message": "Treść wiadomości",
+        "contactAgreement": "Wyrażam zgodę na kontakt ze strony administratora danych osobowych, z użyciem telekomunikacyjnych urządzeń końcowych oraz automatycznych systemów wywołujących, zgodnie z art. 172 par. 1. Prawa telekomunikacyjnego.",
+        "privacyPolicyAgreement": "Zapoznałem/-am się z polityką prywatności i akceptuję jej treść.",
+        "send": "Wyślij"
+      }
+    },
+    "modal": {
+      "modal_ok": {
+        "modal_id": "modal_ok",
+        "error_message": false,
+        "thanks": "Dziękujemy :)",
+        "sent": "Twoja wiadomość została wysłana.",
+        "close": "Zamknij"
+      },
+      "modal_error": {
+        "modal_id": "modal_error",
+        "error_message": true,
+        "thanks": "Niestety :(",
+        "sent": "Twoja wiadomość nie została wysłana. Nastąpił błąd po stronie serwera. Spróbuj ponownie później. Przepraszamy!",
+        "close": "Zamknij"
+      },
+      "modal_privacy_policy": {
+        "modal_id": "modal_privacy_policy",
+        "error_message": null,
+        "thanks": "Polityka prywatności",
+        "sent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non nibh justo. Quisque aliquam dignissim magna, vitae consectetur ipsum vestibulum non. Ut vehicula tincidunt lorem nec consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed non tristique nisi. Nullam a malesuada metus. Suspendisse nec est porttitor, luctus nunc in, maximus erat. Sed faucibus felis ac malesuada vehicula. Suspendisse pharetra vulputate elit in scelerisque. Suspendisse vitae mi suscipit, ultricies nunc in, suscipit lorem. Pellentesque magna felis, convallis vitae ante egestas, placerat interdum est. Proin ligula neque, sollicitudin in dui laoreet, auctor egestas orci. Duis auctor condimentum mollis. Morbi varius consectetur neque, eget dapibus quam lacinia at. Suspendisse ac augue viverra, rutrum eros sit amet, facilisis velit.",
+        "close": "Rozumiem"
+      }
+    },
+    "error": "Nie ma takiej strony! :("
+  },
+  {
+    "lang": "en",
+    "nav": ["home", "about", "projects", "contact"],
+    "home": {
+      "header": "Work with Us - faster!",
+      "posts": [
+        {
+          "id": 1,
+          "text": "text 1",
+          "headerText": "enheader1"
+        },
+        {
+          "id": 2,
+          "text": "text 2",
+          "headerText": "enheader2"
+        }
+      ]
+    },
+    "about": {
+      "header": "enLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmon tempor invidunt ut labore et",
+      "text": "enLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos"
+    },
+    "projects": {
+      "header": "Our projects:",
+      "posts": [
+        {
+          "id": 1,
+          "text": "tekst 1",
+          "headerText": "header1"
+        },
+        {
+          "id": 2,
+          "text": "tekst 2",
+          "headerText": "header2"
+        }
+      ]
+    },
+    "contact": {
+      "header": "Questions? Wanna work with Us? Send message! ;-)",
+      "socials": "Or... check our profiles:",
+      "form": {
+        "subject": "Subject",
+        "email": "Your email adress",
+        "message": "Message",
+        "bot": "I'm not a bot!(We need to be sure ;) )",
+        "send": "Send",
+        "modal": {
+          "thanks": "Thanks :)",
+          "sent": "Your message has been sent.",
+          "close": "Close"
+        }
+      }
+    },
+    "error": "Resource not found! :("
+  }
+]
