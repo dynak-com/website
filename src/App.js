@@ -7,54 +7,61 @@ import AboutPage from './pages/about-page/about-page.component';
 import ProjectsPage from './pages/projects-page/projects-page.component';
 import ContactPage from './pages/contact-page/contact-page.component';
 import ErrorPage from './pages/error-page/error-page.component';
-// import AppHealthStatusPage from './pages/app-health-status-page/app-health-ststus-page.component';
 import Footer from './components/footer/footer.component';
 import ModalsContainer from './components/modals-container/modals-container.component';
 import useComponent from './hook';
 import content from './content.json';
+import { StatusPage } from 'react-healthy';
 
 const contentData = JSON.parse(JSON.stringify(content));
-// <Switch>
-//   <Route exact path='/health' component={() => <AppHealthStatusPage />} />
-//   <Route patch='*'>
+
+const appApis = [
+  {
+    name: 'server.js',
+    endpoint: '/health'
+  }
+];
 
 const App = () => {
   const { lang } = useComponent();
   const content = contentData.find(item => item.lang === lang);
-  console.log('sss');
+  const onRenderStatusPage = () => <StatusPage apis={appApis} />;
   return (
-    <StyledAppContainer>
-      <GlobalStyles />
-      <Navbar content={content.nav} targetId='headerNavbarMenu' />
-      <Switch>
-        <Route
-          exact
-          path='/'
-          component={() => <MainPage content={content.home} />}
-        />
-        <Route
-          exact
-          path='/about'
-          component={() => <AboutPage content={content.about} />}
-        />
-        <Route
-          exact
-          path='/projects'
-          component={() => <ProjectsPage content={content.projects} />}
-        />
-        <Route
-          exact
-          path='/contact'
-          component={() => <ContactPage content={content.contact} />}
-        />
-        <Route component={() => <ErrorPage content={content.error} />} />
-      </Switch>
-      <Footer />
-      <ModalsContainer modalsData={content.modal} />
-    </StyledAppContainer>
+    <Switch>
+      <Route exact path='/health' component={onRenderStatusPage} />
+      <Route patch='*'>
+        <StyledAppContainer>
+          <GlobalStyles />
+          <Navbar content={content.nav} targetId='headerNavbarMenu' />
+          <Switch>
+            <Route
+              exact
+              path='/'
+              component={() => <MainPage content={content.home} />}
+            />
+            <Route
+              exact
+              path='/about'
+              component={() => <AboutPage content={content.about} />}
+            />
+            <Route
+              exact
+              path='/projects'
+              component={() => <ProjectsPage content={content.projects} />}
+            />
+            <Route
+              exact
+              path='/contact'
+              component={() => <ContactPage content={content.contact} />}
+            />
+            <Route component={() => <ErrorPage content={content.error} />} />
+          </Switch>
+          <Footer />
+          <ModalsContainer modalsData={content.modal} />
+        </StyledAppContainer>
+      </Route>
+    </Switch>
   );
 };
-//   </Route>
-// </Switch>
 
 export default App;
