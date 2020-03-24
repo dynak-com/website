@@ -11,17 +11,24 @@ import Footer from './components/footer/footer.component';
 import ModalsContainer from './components/modals-container/modals-container.component';
 import useComponent from './hook';
 import content from './content.json';
+import { StatusPage } from 'react-healthy';
 
 const contentData = JSON.parse(JSON.stringify(content));
+
+const appApis = [
+  {
+    name: 'server.js',
+    endpoint: '/health'
+  }
+];
 
 const App = () => {
   const { lang } = useComponent();
   const content = contentData.find(item => item.lang === lang);
-  const onRedirectToHealthChecker = () =>
-    (window.location.href = 'https://www.dynak.com:8080/health');
+  const onRenderStatusPage = () => <StatusPage apis={appApis} />;
   return (
     <Switch>
-      <Route exact path='/health' render={onRedirectToHealthChecker()} />
+      <Route exact path='/health' component={onRenderStatusPage} />
       <Route patch='*'>
         <StyledAppContainer>
           <GlobalStyles />
