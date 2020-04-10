@@ -104,6 +104,13 @@
             "position": "Back-end Developer",
             "linkedInUrl": "https://www.linkedin.com/in/bartosz-marciniec-b0917517a/",
             "githubUrl": "https://github.com/login"
+          },
+          {
+            "name": "Kristina Volk",
+            "picture": "https://assets.gitlab-static.net/uploads/-/system/user/avatar/5111565/avatar.png?s=180",
+            "position": "Web Developer",
+            "linkedInUrl": "https://www.linkedin.com/in/kristina-volk-a9829517b/",
+            "githubUrl": "https://github.com/CristinaVolk/"
           }
         ]
       },
