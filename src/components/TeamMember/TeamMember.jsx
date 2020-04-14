@@ -1,25 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { StyledFontAwesomeIcon } from '../icons-bar/icons-bar.styles';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import axios from 'axios';
+import { useEffectHook } from '../../hook'
 
 export const TeamMember = ( { member } ) =>
 {
 	const { name, position, linkedInUrl, githubUrl, username } = member;
-	const [ avatarURL, setAvatarUrl ] = useState( '' );
-
-
-
-	useEffect( function effectFunction ()
-	{
-		async function fetchGitlabAvatar ( username )
-		{
-			const response = await axios.get( `https://gitlab.com/api/v4/users?username=${ username}&s=180` );
-			const  json  = await response.data[0];
-			setAvatarUrl( json.avatar_url );
-		}
-		fetchGitlabAvatar( username );
-	}, [username]);
+	const avatarURL = useEffectHook( username );
 
 	return (
 		<div className='col-12 mx-auto my-3 col-sm-6 col-lg-4' key={ name }>
