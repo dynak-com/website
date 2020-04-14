@@ -3,7 +3,7 @@ import { StyledFontAwesomeIcon } from '../icons-bar/icons-bar.styles';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import axios from 'axios';
 
-const TeamMember = ( { member } ) =>
+export const TeamMember = ( { member } ) =>
 {
 	const { name, position, linkedInUrl, githubUrl, username } = member;
 	const [ avatarURL, setAvatarUrl ] = useState( '' );
@@ -37,5 +37,3 @@ const TeamMember = ( { member } ) =>
 		</div>
 	);
 };
-
-export default TeamMember;
