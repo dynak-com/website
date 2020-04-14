@@ -54,7 +54,7 @@
             "position": "CEO and co-owner",
             "linkedInUrl": "https://www.linkedin.com/in/emilia-dynak-b0a3a9140/",
             "githubUrl": "https://github.com/login",
-            "email":"emidyn@gmail.com"
+            "username":"cdynak"
           },
           {
             "name": "Cezary Dynak",
@@ -62,7 +62,7 @@
             "position": "CTO and co-owner",
             "linkedInUrl": "https://www.linkedin.com/in/cdynak/",
             "githubUrl": "https://github.com/login",
-            "email": "cdynak@dynak.com"
+            "username": "cdynak"
           },
           {
             "name": "Natalia Borzyszkowska",
@@ -70,7 +70,7 @@
             "position": "CFO",
             "linkedInUrl": "https://www.linkedin.com/in/natalia-borzyszkowska-b7814218b/",
             "githubUrl": "https://github.com/login",
-            "email":"nataliaborzyszkowska2018@gmail.com"
+            "username":"cdynak"
           },
           {
             "name": "Aleksandra Borodziuk",
@@ -78,7 +78,7 @@
             "position": "CMO",
             "linkedInUrl": "https://www.linkedin.com/m/login/",
             "githubUrl": "https://github.com/login",
-            "email":"kolorowo.i.bajkowo@gmail.com"
+            "username":"cdynak"
           },
           {
             "name": "Dominika Konefał",
@@ -86,7 +86,7 @@
             "position": "Graphic Designer",
             "linkedInUrl": "https://www.linkedin.com/m/login/",
             "githubUrl": "https://github.com/login",
-            "email":"szaramakia@gmail.com"
+            "username":"Deloi"
           },
           {
             "name": "Mikołaj Tumalewicz",
@@ -94,7 +94,7 @@
             "position": "DevOps/SysOps Engineer",
             "linkedInUrl": "https://www.linkedin.com/in/mtumalewicz/",
             "githubUrl": "https://github.com/login",
-            "email":"mikolaj.tumalewicz@gmail.com"
+            "username":"mtumalewicz"
           },
           {
             "name": "Marcin Banik",
@@ -103,7 +103,7 @@
             "linkedInUrl": "https://www.linkedin.com/in/marcin-banik-947954142/",
             "githubUrl": "https://github.com/login",
             "githubName": "m-banik",
-            "email":"mbanik@dynak.com"
+            "username":"mbanik"
           },
           {
             "name": "Bartosz Marciniec",
@@ -111,15 +111,15 @@
             "position": "Back-end Developer",
             "linkedInUrl": "https://www.linkedin.com/in/bartosz-marciniec-b0917517a/",
             "githubUrl": "https://github.com/login",
-            "email":"marciniec.bartosz@gmail.com"
+            "username":"hendas"
           },
           {
              "name": "Kristina Volk",
               "picture": "https://assets.gitlab-static.net/uploads/-/system/user/avatar/5111565/avatar.png?s=180",
               "position": "Web Developer",
               "linkedInUrl": "https://www.linkedin.com/in/kristina-volk-a9829517b/",
-              "githubUrl": "https://github.com/CristinaVolk/",
-              "email" : "kristinavolk4@tut.by"
+              "githubUrl": "https://github.com/login",
+              "username" : "CristinaVolk"
           }
         ]
       },
