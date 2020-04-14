@@ -14,12 +14,12 @@ const TeamMember = ( { member } ) =>
 	{
 		async function fetchGitlabAvatar ( username )
 		{
-			const response = await axios.get( `https://gitlab.com/api/v4/users?username=${ username}&size=180` );
+			const response = await axios.get( `https://gitlab.com/api/v4/users?username=${ username}&s=180` );
 			const  json  = await response.data[0];
 			setAvatarUrl( json.avatar_url );
 		}
 		fetchGitlabAvatar( username );
-	});
+	}, [username]);
 
 	return (
 		<div className='col-12 mx-auto my-3 col-sm-6 col-lg-4' key={ name }>
