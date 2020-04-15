@@ -1,0 +1,19 @@
+.site-footer {
+  text-align: center;
+  font-weight: 400;
+}
+.site-footer span {
+  font-size: 1.2rem;
+  font-family: Tenby-five;
+}
+
+.site-footer span:last-child {
+    cursor: pointer;
+    transition: 0.2s;
+    margin-left: 5px;
+  }
+
+.site-footer span:last-child:hover {
+    color: #ddd;
+  }
+

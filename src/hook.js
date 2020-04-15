@@ -5,7 +5,7 @@ const useComponent = () => {
   const [lang, onSetLang] = useState('pl');
   return {
     lang,
-    onSetLang
+    onSetLang,
   };
 };
 

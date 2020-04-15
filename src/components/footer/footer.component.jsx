@@ -1,16 +1,16 @@
 import React from 'react';
-import { StyledFooter } from './footer.styles';
 import useComponent from './hook';
+import './footer.styles.css'
 
 const Footer = () => {
   const { year, onPrivacyPolicyModalOpenDone } = useComponent();
   return (
-    <StyledFooter className='my-2 text-light text-center'>
+    <footer className='site-footer'>
       <span>&copy;dynak.com {year}</span>
-      <span className='ml-2' onClick={onPrivacyPolicyModalOpenDone}>
+      <span onClick={onPrivacyPolicyModalOpenDone}>
         RODO
       </span>
-    </StyledFooter>
+    </footer>
   );
 };
 
