@@ -5,7 +5,7 @@ import useComponent from './hook';
 
 export const TeamMember = ({ member }) => {
   const { name, position, linkedInUrl, githubUrl, username } = member;
-  const avatarURL = useComponent(username);
+  const { avatarURL } = useComponent(username);
 
   return (
     <div className='col-12 mx-auto my-3 col-sm-6 col-lg-4' key={name}>

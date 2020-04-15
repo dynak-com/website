@@ -12,11 +12,11 @@ const useComponent = (username) => {
 };
 
 async function fetchGitlabAvatar(username, setAvatarUrl) {
-  const response = await axios.get(
+  let result = await axios.get(
     `https://gitlab.com/api/v4/users?username=${username}&size=180`
   );
-  const json = await response.data[0];
-  setAvatarUrl(json.avatar_url);
+  let { avatar_url } = await result.data[0];
+  setAvatarUrl(avatar_url);
 }
 
 export default useComponent;
