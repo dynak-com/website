@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { StyledFontAwesomeIcon } from '../icons-bar/icons-bar.styles';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { useComponent } from './hook';
+import useComponent from './hook';
 
 export const TeamMember = ({ member }) => {
   const { name, position, linkedInUrl, githubUrl, username } = member;
-  const [ avatarURL, setAvatarUrl ] = useState( '' );
-
-  useComponent( username, setAvatarUrl);
+  const avatarURL = useComponent(username);
 
   return (
     <div className='col-12 mx-auto my-3 col-sm-6 col-lg-4' key={name}>
