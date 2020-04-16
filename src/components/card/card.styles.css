@@ -1,0 +1,19 @@
+.card {
+  cursor: pointer;
+  background-color: rgba(60, 65, 68);
+  opacity: 0.8;
+  transition: 0.8s;
+}
+
+.card :nth-child(even) {
+  color: #ffffff;
+  background-color: rgba(62, 175, 173);
+}
+
+.card :hover {
+  opacity: 1;
+}
+
+
+
+

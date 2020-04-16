@@ -1,0 +1,22 @@
+.animated-slider {
+  overflow: hidden;
+}
+
+.img-container {
+  height: 65vh;
+  width: calc(100 * 100vw);
+  background-image: url('../../assets/images/home/slider2X_750px.png');
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  background-attachment: local;
+  animation: slide 3600s linear infinite;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

@@ -1,16 +1,12 @@
 import styled from 'styled-components';
 
 export const StyledCardListContainer = styled.section`
-  & > div {
+  section > div {
     article {
       background-color: rgba(60, 65, 68);
       opacity: 0.8;
-      transition: 0.8s;
-      &:hover {
-        opacity: 1;
-      }
     }
-    &:nth-child(even) {
+    &: nth-child(even) {
       article {
         color: #ffffff;
         background-color: rgba(62, 175, 173);
