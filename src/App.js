@@ -24,37 +24,43 @@ const appApis = [
 
 const App = () => {
   const { lang } = useComponent();
-  const content = contentData.find((item) => item.lang === lang);
+  const content = contentData.find(item => item.lang === lang);
+  const onRenderStatusPage = () => <StatusPage apis={appApis} />;
   return (
-    <StyledAppContainer>
-      <GlobalStyles />
-      <Navbar content={content.nav} targetId='headerNavbarMenu' />
-      <Switch>
-        <Route
-          exact
-          path='/'
-          component={() => <MainPage content={content.home} />}
-        />
-        <Route
-          exact
-          path='/about'
-          component={() => <AboutPage content={content.about} />}
-        />
-        <Route
-          exact
-          path='/projects'
-          component={() => <ProjectsPage content={content.projects} />}
-        />
-        <Route
-          exact
-          path='/contact'
-          component={() => <ContactPage content={content.contact} />}
-        />
-        <Route component={() => <ErrorPage content={content.error} />} />
-      </Switch>
-      <Footer />
-      <ModalsContainer modalsData={content.modal} />
-    </StyledAppContainer>
+    <Switch>
+      <Route exact path='/health' component={onRenderStatusPage} />
+      <Route patch='*'>
+        <StyledAppContainer>
+          <GlobalStyles />
+          <Navbar content={content.nav} targetId='headerNavbarMenu' />
+          <Switch>
+            <Route
+              exact
+              path='/'
+              component={() => <MainPage content={content.home} />}
+            />
+            <Route
+              exact
+              path='/about'
+              component={() => <AboutPage content={content.about} />}
+            />
+            <Route
+              exact
+              path='/projects'
+              component={() => <ProjectsPage content={content.projects} />}
+            />
+            <Route
+              exact
+              path='/contact'
+              component={() => <ContactPage content={content.contact} />}
+            />
+            <Route component={() => <ErrorPage content={content.error} />} />
+          </Switch>
+          <Footer />
+          <ModalsContainer modalsData={content.modal} />
+        </StyledAppContainer>
+      </Route>
+    </Switch>
   );
 };
 

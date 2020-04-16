@@ -53,48 +53,42 @@
             "picture": "https://secure.gravatar.com/avatar/d34a1b21822840695b16113034ba740b?s=180&d=identicon",
             "position": "CEO and co-owner",
             "linkedInUrl": "https://www.linkedin.com/in/emilia-dynak-b0a3a9140/",
-            "githubUrl": "https://github.com/login",
-            "username":"edynak"
+            "githubUrl": "https://github.com/login"
           },
           {
             "name": "Cezary Dynak",
             "picture": "https://secure.gravatar.com/avatar/47fbd06257cedcf9594bd9144f948feb?s=180&d=identicon",
             "position": "CTO and co-owner",
             "linkedInUrl": "https://www.linkedin.com/in/cdynak/",
-            "githubUrl": "https://github.com/login",
-            "username": "cdynak"
+            "githubUrl": "https://github.com/login"
           },
           {
             "name": "Natalia Borzyszkowska",
             "picture": "https://secure.gravatar.com/avatar/2cba91020f68596ad56766847694b292?s=180&d=identicon",
             "position": "CFO",
             "linkedInUrl": "https://www.linkedin.com/in/natalia-borzyszkowska-b7814218b/",
-            "githubUrl": "https://github.com/login",
-            "username":"21_smakow_natki"
+            "githubUrl": "https://github.com/login"
           },
           {
             "name": "Aleksandra Borodziuk",
             "picture": "https://secure.gravatar.com/avatar/865d01afdfe703b4ef137693198b8500?s=180&d=identicon",
             "position": "CMO",
             "linkedInUrl": "https://www.linkedin.com/m/login/",
-            "githubUrl": "https://github.com/login",
-            "username":"Forestgirl25"
+            "githubUrl": "https://github.com/login"
           },
           {
             "name": "Dominika Konefał",
             "picture": "https://secure.gravatar.com/avatar/ec094fb729d8e3509391628d8ba00dd8?s=180&d=identicon",
             "position": "Graphic Designer",
             "linkedInUrl": "https://www.linkedin.com/m/login/",
-            "githubUrl": "https://github.com/login",
-            "username":"Deloi"
+            "githubUrl": "https://github.com/login"
           },
           {
             "name": "Mikołaj Tumalewicz",
             "picture": "https://gitlab.com/uploads/-/system/user/avatar/2270247/avatar.png?width=180",
             "position": "DevOps/SysOps Engineer",
             "linkedInUrl": "https://www.linkedin.com/in/mtumalewicz/",
-            "githubUrl": "https://github.com/login",
-            "username":"mtumalewicz"
+            "githubUrl": "https://github.com/login"
           },
           {
             "name": "Marcin Banik",
@@ -102,24 +96,14 @@
             "position": "Front-end Developer",
             "linkedInUrl": "https://www.linkedin.com/in/marcin-banik-947954142/",
             "githubUrl": "https://github.com/login",
-            "githubName": "m-banik",
-            "username":"mbanik"
+            "githubName": "m-banik"
           },
           {
             "name": "Bartosz Marciniec",
             "picture": "https://gitlab.com/uploads/-/system/user/avatar/4684288/avatar.png?s=180",
             "position": "Back-end Developer",
             "linkedInUrl": "https://www.linkedin.com/in/bartosz-marciniec-b0917517a/",
-            "githubUrl": "https://github.com/login",
-            "username":"hendas"
-          },
-          {
-             "name": "Cristina Volk",
-              "picture": "https://assets.gitlab-static.net/uploads/-/system/user/avatar/5111565/avatar.png?s=180",
-              "position": "Web Developer",
-              "linkedInUrl": "https://www.linkedin.com/in/kristina-volk-a9829517b/",
-              "githubUrl": "https://github.com/login",
-              "username" : "CristinaVolk"
+            "githubUrl": "https://github.com/login"
           }
         ]
       },
