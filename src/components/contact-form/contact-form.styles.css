@@ -1,0 +1,17 @@
+
+div#checkbox-group-container > input,
+div#checkbox-group-container > label {
+  cursor: pointer;
+  }
+
+#contact-form {
+  color: #fff;
+  background-color: #3eafad;
+  transition: 0.2s;
+}
+#contact-form:hover,
+#contact-form:focus,
+#contact-form:active {
+  color: #ddd;
+  background-color: #329390;
+}
