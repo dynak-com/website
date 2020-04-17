@@ -1,0 +1,39 @@
+div.modal-container {
+    display: table;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+.modal-dialog {
+  display: table-cell;
+  vertical-align: middle;
+  pointer-events: none;
+}
+
+.modal-dialog > div {
+  width: inherit;
+  max-width: inherit;
+  margin: 0 auto;
+  pointer-events: all;
+  background-color: #32373a;
+}
+
+span {
+  color: #fff;
+}
+
+div:last-child > button {
+  color: #fff;
+  background-color: #3eafad;
+  transition: 0.2s;
+}
+
+button:hover,
+button:focus,
+button:active {
+  color: #ddd;
+  background-color: #329390;
+}
+
+

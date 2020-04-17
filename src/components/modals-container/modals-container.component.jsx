@@ -12,14 +12,14 @@ export const modalPrivacyPolicyRef = React.createRef();
 
 const ModalsContainer = ({ modalsData }) => {
   const modals = (
-    <>
+    <div className='app-container'>
       <Modal ref={correctModalRef} content={modalsData.modal_ok} />
       <Modal ref={invalidModalRef} content={modalsData.modal_error} />
       <ModalForPrivacyPolicy
         ref={modalPrivacyPolicyRef}
         content={modalsData.modal_privacy_policy}
       />
-    </>
+    </div>
   );
   return ReactDOM.createPortal(modals, modalsNode);
 };

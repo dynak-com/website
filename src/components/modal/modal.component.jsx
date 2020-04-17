@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledModalContainer, StyledModalDialog } from './modal.styles';
+import './modal.styles.css';
 
 const Modal = React.forwardRef((props, ref) => {
   const { content } = props;
@@ -8,8 +8,8 @@ const Modal = React.forwardRef((props, ref) => {
     ? 'text-justify'
     : 'text-center';
   return (
-    <StyledModalContainer
-      className='modal show'
+    <div
+      className='modal show modal-container'
       id={modalId}
       ref={ref}
       tabIndex='-1'
@@ -17,7 +17,7 @@ const Modal = React.forwardRef((props, ref) => {
       aria-labelledby={modalId}
       aria-hidden='true'
     >
-      <StyledModalDialog className='modal-dialog text-center' role='document'>
+      <div className='modal-dialog text-center' role='document'>
         <div className='modal-content'>
           <div className='modal-header'>
             <h5 className='modal-title' id={`${modalId}Label`}>
@@ -41,8 +41,8 @@ const Modal = React.forwardRef((props, ref) => {
             </button>
           </div>
         </div>
-      </StyledModalDialog>
-    </StyledModalContainer>
+      </div>
+    </div>
   );
 });
 
