@@ -1,23 +1,28 @@
 
-#card-wrapper> .card {
+ section > div.row.my-4 > article.card {
   background-color: rgba(60, 65, 68);
   opacity: 0.8;
+  transition: 0.8s;
 }
 
-#card-wrapper> .card :nth-child(even) {
+article.card :hover {
+  opacity: 1;
+}
+
+ div.row.my-4 > article.card :nth-child(even) {
   color: #ffffff;
   background-color: rgba(62, 175, 173);
 }
 
 
 @media screen and (min-width: 1025px) {
-  .card > div + div:hover {
+  article.card > div + div:hover {
     transform: scale(1.02) skew(-5deg);
   }
 }
 
 
-#card-header {
+div#card-header {
   position: relative;
 }
 
@@ -30,7 +35,7 @@ h2 {
 }
 
 @media  (max-width: 767px) {
-  #card-header{
+  div#card-header{
     margin-bottom: 10vh;
     padding: 20vh 0;
   }
