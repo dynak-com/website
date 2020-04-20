@@ -1,9 +1,9 @@
-div.modal-container {
+/* div.modal-container {
     display: table;
     height: 100%;
     width: 100%;
     pointer-events: none;
-}
+}*/
 
 .modal-dialog {
   display: table-cell;

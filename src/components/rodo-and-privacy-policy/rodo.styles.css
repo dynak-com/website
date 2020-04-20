@@ -1,0 +1,19 @@
+.rodo-content-container {
+  text-align: left;
+}
+
+
+span, ol {
+  font-size: 1.2rem;
+}
+
+a {
+  font-weight: 700;
+  color: #3eafad;
+ }
+
+a:hover,
+a:active,
+a:visited {
+    color: rgb(50, 147, 144);
+}

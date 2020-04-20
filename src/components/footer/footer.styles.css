@@ -1,0 +1,16 @@
+#custom-styled-span {
+      cursor: pointer;
+      transition: 0.2s;
+}
+
+span {
+    font-size: 1.2rem;
+    font-family: Tenby-five;
+}
+
+footer:hover {
+        color: #ddd;
+
+}
+
+

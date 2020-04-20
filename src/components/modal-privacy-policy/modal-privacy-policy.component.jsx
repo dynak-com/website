@@ -1,7 +1,6 @@
 import React from 'react';
 import RODOContent from '../rodo-and-privacy-policy/rodo.component';
-import './modal.privacy-policy.styles.css';
-import '../modal/modal.styles.css';
+import './modal.privacy-policy.styles.css'
 
 
 const ModalForPrivacyPolicy = React.forwardRef((props, ref) => {
@@ -17,7 +16,7 @@ const ModalForPrivacyPolicy = React.forwardRef((props, ref) => {
       aria-labelledby={modalId}
       aria-hidden='true'
     >
-      <div className='modal-dialog text-center' role='document'>
+      <div id='modal-dialog' className='modal-dialog text-center' role='document'>
         <div className='modal-content'>
           <div className='modal-header'>
             <h5 className='modal-title w-100' id={`${modalId}Label`}>
@@ -32,7 +31,7 @@ const ModalForPrivacyPolicy = React.forwardRef((props, ref) => {
               <span aria-hidden='true'>&times;</span>
             </button>
           </div>
-          <div className='modal-body modal-privacy-container'>
+          <div id="privacy-container" className='modal-privacy-container modal-body '>
             <RODOContent />
           </div>
           <div className='text-right p-2'>

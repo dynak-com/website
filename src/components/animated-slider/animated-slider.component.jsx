@@ -1,14 +1,11 @@
 import React from 'react';
-import {
-  StyledAnimatedSlider,
-  StyledImageContainer
-} from './animated-slider.styles';
+import './animated-slider.styles.css';
 
 const AnimatedSlider = () => {
   return (
-    <StyledAnimatedSlider>
-      <StyledImageContainer />
-    </StyledAnimatedSlider>
+    <div className = 'animated-slider'>
+      <div className = 'image-container'></div>
+    </div>
   );
 };
 

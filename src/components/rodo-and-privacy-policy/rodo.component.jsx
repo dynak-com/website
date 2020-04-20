@@ -1,9 +1,9 @@
 import React from 'react';
-import { StyledRodoContentContainer } from './rodo.styles';
+import  './rodo.styles.css';
 
 const RodoContent = () => {
   return (
-    <StyledRodoContentContainer>
+    <div className='rodo-content-container'>
       <h6 className='text-center'>POLITYKA PRYWATNOŚCI I POLITYKA COOKIES</h6>
       <p>
         Korzystanie z bloga i strony internetowej{' '}
@@ -206,7 +206,7 @@ const RodoContent = () => {
         <b>NIE</b> pozwalają na odczytanie informacji w nich zawartych.
       </p>
       <span className='text-muted'>Utworzono dnia 2020-03-16</span>
-    </StyledRodoContentContainer>
+    </div>
   );
 };
 
