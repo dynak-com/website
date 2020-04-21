@@ -6,8 +6,8 @@ const Footer = () => {
   const { year, onPrivacyPolicyModalOpenDone } = useComponent();
   return (
     <footer className='my-2 text-light text-center'>
-      <span >&copy;dynak.com {year}</span>
-      <span id='custom-styled-span' className='ml-2' onClick={onPrivacyPolicyModalOpenDone}>
+      <span className='custom-styled-span'>&copy;dynak.com {year}</span>
+      <span id='rodo' className='custom-styled-span ml-2' onClick={onPrivacyPolicyModalOpenDone}>
         RODO
       </span>
     </footer>

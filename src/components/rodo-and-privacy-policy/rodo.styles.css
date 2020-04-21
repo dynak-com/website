@@ -7,13 +7,13 @@ span, ol {
   font-size: 1.2rem;
 }
 
-a {
+.rodo-link {
   font-weight: 700;
   color: #3eafad;
  }
 
-a:hover,
-a:active,
-a:visited {
+.rodo-link:hover,
+.rodo-link:active,
+.rodo-link:visited {
     color: rgb(50, 147, 144);
 }

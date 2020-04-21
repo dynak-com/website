@@ -1,0 +1,24 @@
+#styled-navbar {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+#styled-navbar h1 {
+  margin: 0;
+  font-size: 2.6rem;
+  font-weight: 900;
+  font-family: Tenby-five;
+}
+
+#dot {
+  color: #3eafad;
+}
+#styled-navbar span {
+    font-size: 1.7rem;
+    font-family: Tenby-five;
+  }
+
+#navbar-btn {
+  border: none;
+  outline: none;
+}
