@@ -1,0 +1,30 @@
+.navbar-brand > #dot {
+    color: #3eafad;
+  font-size: 3.0rem;
+}
+.navbar-brand > a {
+  transform: none;
+}
+
+#custom-navlink {
+  transition: 0.3s;
+}
+a:hover > span#custom-navlink {
+  background-color: #3eafad;
+  text-decoration: none;
+  transform: skew(-12deg);
+   text-decoration: none;
+}
+
+a:link.active > span#custom-navlink {
+  background-color: #3eafad;
+  text-decoration: none;
+  transform: skew(-12deg);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+  #custom-navlink:link.active > span {
+    transform: none;
+  }
+}

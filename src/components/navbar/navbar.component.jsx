@@ -1,17 +1,18 @@
 import React from 'react';
 import './navbar.styles.css';
-import NavLink from '../navlink/navlink.component';
-import StyledNavLink from '../navlink/navlink.styles';
+import CustomNavLink from '../navlink/navlink.component';
+import { NavLink as Container } from 'react-router-dom';
+import '../navlink/navlink.styles.css'
 
 const Navbar = props => {
   const { content, targetId } = props;
   return (
     <nav id='styled-navbar' className='navbar navbar-expand-lg navbar-dark'>
-      <StyledNavLink to='/'>
+      <Container to='/'>
         <h1 className='navbar-brand'>
           dynak<span id='dot'>.</span>com
         </h1>
-      </StyledNavLink>
+      </Container>
       <button id='navbar-btn'
         className='navbar-toggler'
         type='button'
@@ -36,8 +37,8 @@ function onRenderNavLinks(data, targetId) {
       {data.map(item => {
         const { text, address } = item;
         return (
-          <li className='nav-item' key={text}>
-            <NavLink text={text} address={address} target={targetId} />
+          <li id='item-navlink' className='nav-item' key={text}>
+            <CustomNavLink text={text} address={address} target={targetId} />
           </li>
         );
       })}
