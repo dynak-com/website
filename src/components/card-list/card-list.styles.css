@@ -1,0 +1,42 @@
+#card-wrapper > article {
+  background-color: rgba(60, 65, 68);
+  opacity: 0.8;
+  transition: 0.8s;
+}
+
+#card-wrapper > article:hover {
+  opacity: 1;
+}
+
+div:nth-child(even)> #card-wrapper > article {
+  color: #ffffff;
+  background-color: rgba(62, 175, 173);
+}
+
+#card-wrapper {
+  transition: 0.5s;
+}
+
+#card-wrapper :hover {
+  transform: scale(1.02);
+}
+
+#card-header {
+  position: relative;
+}
+
+#card-header > h2 {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+  @media (max-width: 767px) {
+    #card-header {
+      margin-bottom: 10vh;
+      padding: 20vh 0;
+    }
+  }

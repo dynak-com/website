@@ -1,12 +1,12 @@
 import React from "react";
-import { StyledSlider } from "./slider.styles";
+import "./slider.styles";
 import Slide1 from "../../assets/images/home/slide1.png";
 import Slide2 from "../../assets/images/home/slide2.png";
 import Slide3 from "../../assets/images/home/slide3.png";
 
 const Slider = () => {
   return (
-    <StyledSlider>
+    <div className ='styled-stider'>
       <div
         id="carouselCaptions"
         className="carousel slide"
@@ -33,7 +33,7 @@ const Slider = () => {
           </div>
         </div>
       </div>
-    </StyledSlider>
+    </div>
   );
 };
 

@@ -13,7 +13,7 @@ a:hover > span#custom-navlink {
   background-color: #3eafad;
   text-decoration: none;
   transform: skew(-12deg);
-   text-decoration: none;
+  text-decoration: none;
 }
 
 a:link.active > span#custom-navlink {

@@ -1,0 +1,22 @@
+.styled-stider {
+  width: 100%;
+  overflow: hidden;
+}
+
+ol > li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 3px solid #000;
+  transition: 0.2s;
+}
+
+ol > li.active {
+  background-color: #000;
+}
+
+ol > li:hover {
+  box-shadow: 0 0 0 1px #000;
+}
+
