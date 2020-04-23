@@ -1,0 +1,21 @@
+.font-icon {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .font-icon {
+      font-size: 2.5rem;
+    }
+  }
+
+.about-page-container {
+   color: #fff;
+}
+
+.work-man-img {
+  width: 100%;
+}
+
+.tech-icon {
+  font-size: 3.5rem;
+}

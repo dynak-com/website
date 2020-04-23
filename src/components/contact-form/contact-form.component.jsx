@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-  StyledCheckboxGroupContainer,
-  StyledContactFormButton
-} from './contact-form.styles';
+import './contact-form.styles.css';
 import useComponent from './hook';
 
 const ContactForm = ({ content }) => {
@@ -58,7 +55,7 @@ const ContactForm = ({ content }) => {
         ></textarea>
         <div className='form-row my-3'>
           <div className='form-group col'>
-            <StyledCheckboxGroupContainer className='custom-control custom-checkbox mr-sm-2'>
+            <div className='checkbox-container custom-control custom-checkbox mr-sm-2'>
               <input
                 id='isContactAgreed-input'
                 className='custom-control-input'
@@ -74,8 +71,8 @@ const ContactForm = ({ content }) => {
               >
                 {content.contactAgreement}
               </label>
-            </StyledCheckboxGroupContainer>
-            <StyledCheckboxGroupContainer className='custom-control custom-checkbox mr-sm-2'>
+            </div>
+            <div className='checkbox-container custom-control custom-checkbox mr-sm-2'>
               <input
                 id='isPrivacyPolicyAgreed-input'
                 className='custom-control-input'
@@ -91,17 +88,17 @@ const ContactForm = ({ content }) => {
               >
                 {content.privacyPolicyAgreement}
               </label>
-            </StyledCheckboxGroupContainer>
+            </div>
           </div>
           <div className='form-group col-md-12 text-center text-md-right'>
-            <StyledContactFormButton
-              className='btn d-inline-block mx-1'
+            <input
+              className='contact-form-btn btn d-inline-block mx-1'
               type='button'
               value='Polityka prywatności'
               onClick={onPrivacyPolicyModalOpenDone}
             />
-            <StyledContactFormButton
-              className='btn d-inline-block mx-1'
+            <input
+              className='contact-form-btn contact-form-btn btn d-inline-block mx-1'
               type='submit'
               value={content.send}
             />

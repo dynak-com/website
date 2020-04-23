@@ -1,0 +1,18 @@
+.font-icon {
+  font-size: 2rem;
+}
+
+.font-icon:hover > path {
+      color: #ddd;
+}
+
+path {
+    color: #fff;
+    transition: 0.2s;
+}
+
+@media screen and (min-width: 1024px) {
+    .font-icon {
+      font-size: 2.5rem;
+  }
+}

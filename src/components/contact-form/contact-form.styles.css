@@ -1,0 +1,20 @@
+div.checkbox-container > input {
+  cursor: pointer;
+}
+
+div.checkbox-container > label {
+  cursor: pointer;
+}
+
+input.contact-form-btn {
+  color: #fff;
+  background-color: #3eafad;
+  transition: 0.2s;
+}
+
+input.contact-form-btn:hover,
+input.contact-form-btn:focus,
+input.contact-form-btn:active {
+      color: #ddd;
+      background-color: #329390;
+}
