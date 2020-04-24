@@ -1,4 +1,8 @@
-import styled from 'styled-components';
+.projects-page-container {
+  position: relative;
+  z-index: 2;
+}
+/*import styled from 'styled-components';
 
 export const StyledProjectsPageContainer = styled.section`
   position: relative;
@@ -18,4 +22,4 @@ export const StyledProjectsPageImageContainer = styled.div`
   @media (min-width: 992px) {
     height: 90%;
   }
-`;
+`;*/

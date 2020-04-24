@@ -5,7 +5,7 @@ import './card-list.styles.css';
 const CardList = props => {
   const { posts } = props.data;
   return (
-    <div id='list-container' className='px-4'>
+    <div className='px-4'>
       {onRenderCards(posts)}
     </div>
   );
@@ -21,7 +21,7 @@ function onRenderCards(posts) {
             index % 2 !== 0 ? 'order-md-1' : 'order-md-2'
           }`}
         >
-          <h2>{headerText}</h2>
+          <h2 className='card-header-text'>{headerText}</h2>
         </div>
         <div id='card-wrapper'
           className={`col-12 col-md-7 ${

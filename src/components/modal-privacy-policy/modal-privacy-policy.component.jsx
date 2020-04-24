@@ -31,7 +31,7 @@ const ModalForPrivacyPolicy = React.forwardRef((props, ref) => {
               <span aria-hidden='true'>&times;</span>
             </button>
           </div>
-          <div id="privacy-container" className='modal-privacy-container modal-body '>
+          <div id="privacy-container" className='modal-body'>
             <RODOContent />
           </div>
           <div className='text-right p-2'>

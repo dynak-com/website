@@ -1,8 +1,8 @@
-div.checkbox-container > input {
+.checkbox-container > input {
   cursor: pointer;
 }
 
-div.checkbox-container > label {
+.checkbox-container > label {
   cursor: pointer;
 }
 

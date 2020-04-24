@@ -1,6 +1,6 @@
 #rodo {
-      cursor: pointer;
-      transition: 0.2s;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .custom-styled-span {
@@ -9,7 +9,7 @@
 }
 
 footer:hover {
-        color: #ddd;
+    color: #ddd;
 }
 
 

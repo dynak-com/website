@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Modal from '../modal/modal.component';
 import ModalForPrivacyPolicy from '../modal-privacy-policy/modal-privacy-policy.component';
+import '../../app.styles.css'
 
 const modalsNode = document.getElementById('modals');
 
@@ -12,7 +13,7 @@ export const modalPrivacyPolicyRef = React.createRef();
 
 const ModalsContainer = ({ modalsData }) => {
   const modals = (
-    <div className='app-container'>
+    <div className='main-container'>
       <Modal ref={correctModalRef} content={modalsData.modal_ok} />
       <Modal ref={invalidModalRef} content={modalsData.modal_error} />
       <ModalForPrivacyPolicy

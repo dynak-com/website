@@ -19,7 +19,6 @@
 }
 
 .main-container {
-  min-height: 100vh;
   color: #fff;
   background-color: #32373a;
   font-family: 'Saira Condensed', sans-serif;
@@ -37,4 +36,8 @@
 .main-container p {
   font-size: 1.2rem;
   text-align: justify;
+}
+
+#main-content {
+  min-height: 100vh;
 }

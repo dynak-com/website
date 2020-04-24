@@ -4,7 +4,7 @@ import './card.styles.css';
 const Card = ({ textContent }) => {
   return (
     <article className='styled-card'>
-      <p className='p-2'>{textContent}</p>
+      <p className='card-text p-2'>{textContent}</p>
     </article>
   );
 };

@@ -1,14 +1,11 @@
-article.styled-card {
+.styled-card {
   background-color: rgba(60, 65, 68);
   opacity: 0.8;
   transition: 0.8s;
-}
-
-article.styled-card {
   cursor: pointer;
 }
 
-article.styled-card > p {
+.styled-card > .card-text {
   background-color: transparent;
 }
 
