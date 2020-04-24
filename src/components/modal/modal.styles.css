@@ -29,4 +29,8 @@ button:active {
   background-color: #329390;
 }
 
+#styled-modal-dialog {
+  display: flex;
+}
+
 

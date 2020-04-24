@@ -9,7 +9,7 @@ const Navbar = props => {
   return (
     <nav id='styled-navbar' className='navbar navbar-expand-lg navbar-dark'>
       <Container to='/'>
-        <h1 className='navbar-brand'>
+        <h1 id='website-title' className='navbar-brand'>
           dynak<span id='dot'>.</span>com
         </h1>
       </Container>

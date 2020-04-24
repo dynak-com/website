@@ -14,9 +14,7 @@ const IconsBar = () => {
         href='https://pl.linkedin.com/company/dynak-com?trk=public_profile_topcard_current_company'
         className='col-4'
       >
-        <StyledFontAwesomeIcon icon={ faLinkedin }>
-          <svg className='font-icon'></svg>
-        </StyledFontAwesomeIcon>
+        <StyledFontAwesomeIcon className='font-icon' icon={ faLinkedin } />
       </a>
       <a href='https://github.com/dynak-com' className='col-4'>
         <StyledFontAwesomeIcon className='font-icon' icon={faGithub} />

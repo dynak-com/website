@@ -3,7 +3,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Modal from '../modal/modal.component';
 import ModalForPrivacyPolicy from '../modal-privacy-policy/modal-privacy-policy.component';
-import '../../app.styles.css'
 
 const modalsNode = document.getElementById('modals');
 
