@@ -1,5 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon as StyledFontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLinkedin,
   faGithub,
@@ -14,13 +14,13 @@ const IconsBar = () => {
         href='https://pl.linkedin.com/company/dynak-com?trk=public_profile_topcard_current_company'
         className='col-4'
       >
-        <StyledFontAwesomeIcon className='font-icon' icon={ faLinkedin } />
+        <FontAwesomeIcon className='font-icon' icon={ faLinkedin } />
       </a>
       <a href='https://github.com/dynak-com' className='col-4'>
-        <StyledFontAwesomeIcon className='font-icon' icon={faGithub} />
+        <FontAwesomeIcon className='font-icon' icon={faGithub} />
       </a>
       <a href='https://gitlab.com/dynak.com' className='col-4'>
-        <StyledFontAwesomeIcon className='font-icon' icon={faGitlab} />
+        <FontAwesomeIcon className='font-icon' icon={faGitlab} />
       </a>
     </div>
   );

@@ -36,7 +36,7 @@ const Modal = React.forwardRef((props, ref) => {
             <h3 className={headerTextAlignment}>{content.sent}</h3>
           </div>
           <div className='text-right p-2'>
-            <button type='button' className='btn btn-sm' data-dismiss='modal'>
+            <button id='rodo-comp-btn' type='button' className='btn btn-sm' data-dismiss='modal'>
               {content.close}
             </button>
           </div>
