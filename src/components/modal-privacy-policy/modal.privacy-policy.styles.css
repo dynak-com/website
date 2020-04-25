@@ -12,3 +12,17 @@
 }
 
 
+#rodo-comp-btn {
+  color: #fff;
+  background-color: #3eafad;
+  transition: 0.2s;
+}
+
+#rodo-comp-btn:hover,
+#rodo-comp-btn:focus,
+#rodo-comp-btn:active {
+  color: #ddd;
+  background-color: #329390;
+}
+
+

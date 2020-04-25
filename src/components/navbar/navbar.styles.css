@@ -23,3 +23,12 @@
 #item-navlink > a {
   text-decoration: none;
 }
+
+.navbar-brand > #dot {
+  color: #3eafad;
+  font-size: 3rem;
+}
+
+.main-container #website-title {
+  font-size: 3rem;
+}

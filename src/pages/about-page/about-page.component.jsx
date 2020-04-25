@@ -1,5 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon as StyledFontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import WorkerImage from '../../assets/images/about/worker.png';
 import TechnologiesArticle from '../../components/technologies-article/technologies-article.component';
 import TeamArticle from '../../components/team-article/team-article.component';
@@ -61,7 +61,7 @@ function onRenderTechIcons() {
     <div className='d-none d-md-flex display-4 mx-5 row pt-md-1 pt-lg-3 pt-xl-4'>
       {icons.map((icon, index) => (
         <span className='tech-icon col-md-3 col-lg-4 col-xl-2' key={index}>
-          <StyledFontAwesomeIcon className='font-icon' icon={icon} />
+          <FontAwesomeIcon className='font-icon' icon={icon} />
         </span>
       ))}
     </div>
