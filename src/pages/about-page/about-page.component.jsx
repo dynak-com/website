@@ -44,12 +44,12 @@ const AboutPage = (props) => {
           <img
             src={WorkerImage}
             alt='Working man :)'
-            className={styles.workingManImage}
+            className={styles.aboutPageImage}
           />
         </div>
         <div className='col-12 col-sm-9 col-md-8 col-xl-10 pt-md-1 pt-xl-4'>
           <TechnologiesArticle technologies={technologies} />
-          {onRenderTechIcons()}
+          {renderTechIcons()}
         </div>
       </div>
       <div>
@@ -60,12 +60,15 @@ const AboutPage = (props) => {
   );
 };
 
-function onRenderTechIcons() {
+function renderTechIcons() {
   return (
     <div className='d-none d-md-flex display-4 mx-5 row pt-md-1 pt-lg-3 pt-xl-4'>
       {icons.map((icon, index) => (
         <span className='col-md-3 col-lg-4 col-xl-2' key={index}>
-          <FontAwesomeIcon icon={icon} className={styles.fontAwesome} />
+          <FontAwesomeIcon
+            icon={icon}
+            className={styles.aboutPageFontAwesome}
+          />
         </span>
       ))}
     </div>

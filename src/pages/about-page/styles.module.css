@@ -2,16 +2,16 @@
   color: #fff;
 }
 
-.workingManImage {
+.aboutPageImage {
   width: 100%;
 }
 
-.fontAwesome {
+.aboutPageFontAwesome {
   font-size: 2rem;
 }
 
 @media screen and (min-width: 1024px) {
-  .fontAwesome {
+  .aboutPageFontAwesome {
     font-size: 2.5rem;
   }
 }

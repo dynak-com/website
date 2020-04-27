@@ -1,0 +1,19 @@
+.rodoContent {
+  text-align: left;
+}
+
+.rodoContent span,
+.rodoContent ol {
+  font-size: 1.2rem;
+}
+
+.rodoContent a {
+  font-weight: 700;
+  color: #3eafad;
+}
+
+.rodoContent a:hover,
+.rodoContent a:active,
+.rodoContent a:visited {
+  color: #329390;
+}

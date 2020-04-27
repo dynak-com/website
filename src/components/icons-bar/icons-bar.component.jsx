@@ -14,13 +14,22 @@ const IconsBar = () => {
         href='https://pl.linkedin.com/company/dynak-com?trk=public_profile_topcard_current_company'
         className='col-4'
       >
-        <FontAwesomeIcon icon={faLinkedin} className={styles.fontAwesome} />
+        <FontAwesomeIcon
+          icon={faLinkedin}
+          className={styles.iconsBarfontAwesome}
+        />
       </a>
       <a href='https://github.com/dynak-com' className='col-4'>
-        <FontAwesomeIcon icon={faGithub} className={styles.fontAwesome} />
+        <FontAwesomeIcon
+          icon={faGithub}
+          className={styles.iconsBarfontAwesome}
+        />
       </a>
       <a href='https://gitlab.com/dynak.com' className='col-4'>
-        <FontAwesomeIcon icon={faGitlab} className={styles.fontAwesome} />
+        <FontAwesomeIcon
+          icon={faGitlab}
+          className={styles.iconsBarfontAwesome}
+        />
       </a>
     </div>
   );

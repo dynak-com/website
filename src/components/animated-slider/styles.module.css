@@ -2,7 +2,7 @@
   overflow: hidden;
 }
 
-.sliderImage {
+.animatedSliderImage {
   height: 65vh;
   width: calc(100 * 100vw);
   background-image: url('../../assets/images/home/slider2X_750px.png');

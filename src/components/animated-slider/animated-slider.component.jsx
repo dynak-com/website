@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 const AnimatedSlider = () => {
   return (
     <div className={styles.animatedSlider}>
-      <div className={styles.sliderImage} />
+      <div className={styles.animatedSliderImage} />
     </div>
   );
 };

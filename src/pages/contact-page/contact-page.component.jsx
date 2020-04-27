@@ -3,7 +3,7 @@ import WorkerPicture from '../../assets/images/contact/worker.png';
 import ContactForm from '../../components/contact-form/contact-form.component';
 import IconsBar from '../../components/icons-bar/icons-bar.component';
 
-const ContactPage = props => {
+const ContactPage = (props) => {
   const { header, socials, form } = props.content;
   return (
     <section>

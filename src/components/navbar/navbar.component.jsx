@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.module.css';
 import NavLink from '../navlink/navlink.component';
-import StyledNavLink from '../navlink/navlink.styles';
+import { NavLink as LogoContainer } from 'react-router-dom';
 
 const Navbar = (props) => {
   const { content, targetId } = props;
@@ -9,11 +9,11 @@ const Navbar = (props) => {
     <nav
       className={`navbar navbar-expand-lg navbar-dark ${styles.navbarLinks}`}
     >
-      <StyledNavLink to='/'>
+      <LogoContainer to='/'>
         <h1 className={`navbar-brand ${styles.logo}`}>
-          dynak<span>.</span>com
+          dynak<span className={styles.logoDot}>.</span>com
         </h1>
-      </StyledNavLink>
+      </LogoContainer>
       <button
         className={`navbar-toggler ${styles.navbarButton}`}
         type='button'

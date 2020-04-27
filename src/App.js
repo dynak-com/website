@@ -18,7 +18,7 @@ const App = () => {
   const { lang } = useComponent();
   const content = contentData.find((item) => item.lang === lang);
   return (
-    <div className={'app-container'}>
+    <div className={'appContainer'}>
       <Navbar content={content.nav} targetId='headerNavbarMenu' />
       <Switch>
         <Route

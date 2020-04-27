@@ -1,15 +1,15 @@
-.iconsBarfontAwesome {
+.teamMemberFontAwesome {
   font-size: 2rem;
   color: #fff;
   transition: 0.2s;
 }
 
-.iconsBarfontAwesome:hover {
+.teamMemberFontAwesome:hover {
   color: #ddd;
 }
 
 @media screen and (min-width: 1024px) {
-  .iconsBarfontAwesome {
+  .teamMemberFontAwesome {
     font-size: 2.5rem;
   }
 }

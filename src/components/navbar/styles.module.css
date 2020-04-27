@@ -10,7 +10,8 @@
   font-family: Tenby-five;
 }
 
-.logo span {
+.logo .logoDot {
+  font-size: 2.4rem;
   color: #3eafad;
 }
 
