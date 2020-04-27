@@ -6,18 +6,11 @@
 #custom-navlink {
   transition: 0.3s;
 }
-a:hover > span#custom-navlink {
-  background-color: #3eafad;
-  text-decoration: none;
-  transform: skew(-12deg);
-  text-decoration: none;
-}
 
 a:link.active > span#custom-navlink {
   background-color: #3eafad;
   text-decoration: none;
   transform: skew(-12deg);
-  text-decoration: none;
 }
 
 @media screen and (max-width: 992px) {
@@ -25,3 +18,4 @@ a:link.active > span#custom-navlink {
     transform: none;
   }
 }
+

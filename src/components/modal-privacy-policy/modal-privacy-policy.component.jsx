@@ -28,7 +28,7 @@ const ModalForPrivacyPolicy = React.forwardRef((props, ref) => {
               data-dismiss='modal'
               aria-label='Close'
             >
-              <span aria-hidden='true'>&times;</span>
+              <span className='close-sign' aria-hidden='true'>&times;</span>
             </button>
           </div>
           <div id="privacy-container" className='modal-body'>

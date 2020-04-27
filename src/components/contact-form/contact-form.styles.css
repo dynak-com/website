@@ -2,10 +2,6 @@
   cursor: pointer;
 }
 
-.checkbox-container > label {
-  cursor: pointer;
-}
-
 input.contact-form-btn {
   color: #fff;
   background-color: #3eafad;

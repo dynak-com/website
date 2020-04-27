@@ -1,24 +1,26 @@
 #card-wrapper > .styled-card {
   background-color: rgba(60, 65, 68);
   opacity: 0.8;
-  transition: 0.8s;
+  transition: all 0.8s ease 0s;
 }
 
-#card-wrapper > .styled-card:hover {
-  opacity: 1;
+#card-wrapper  {
+  transition: 0.5s;
+}
+
+#card-wrapper:hover {
+  transform: scale(1.02) skew(-5deg);
+}
+
+@media screen and (min-width: 1025px) {
+  #card-wrapper:hover {
+    transform: scale(1.02) skew(-5deg);
+  }
 }
 
 div:nth-child(even)> #card-wrapper > .styled-card {
   color: #ffffff;
   background-color: rgba(62, 175, 173);
-}
-
-#card-wrapper {
-  transition: 0.5s;
-}
-
-#card-wrapper :hover {
-  transform: scale(1.02);
 }
 
 #card-header {

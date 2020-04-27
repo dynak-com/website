@@ -3,13 +3,14 @@
     transition: 0.2s;
 }
 
+#rodo:hover {
+    color: #ddd;
+}
+
 .custom-styled-span {
     font-size: 1.2rem;
     font-family: Tenby-five;
 }
 
-footer:hover {
-    color: #ddd;
-}
 
 
