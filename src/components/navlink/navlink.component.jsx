@@ -14,7 +14,7 @@ const NavLink = ({ text, address, target }) => {
     >
       <span
         ref={navLinkRef}
-        className={`nav-link d-inline-block d-lg-block px-1 my-1 my-lg-0 mx-lg-3 ${styles.textWrapper}`}
+        className={`nav-link d-inline-block d-lg-block px-1 my-1 my-lg-0 mx-lg-3`}
         data-target={`#${target}`}
       >
         {text}
