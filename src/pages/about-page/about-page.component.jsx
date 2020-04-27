@@ -1,13 +1,10 @@
 import React from 'react';
-import {
-  StyledAboutPageContainer,
-  StyledWorkingManPicture,
-  StyledFontAwesomeIcon
-} from './about-page.styles';
+import styles from './styles.module.css';
 import WorkerImage from '../../assets/images/about/worker.png';
 import TechnologiesArticle from '../../components/technologies-article/technologies-article.component';
 import TeamArticle from '../../components/team-article/team-article.component';
 import ValuesArticle from '../../components/values-article/values-article.component';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faHtml5,
   faCss3,
@@ -20,7 +17,7 @@ import {
   faLinux,
   faWordpressSimple,
   faMagento,
-  faDocker
+  faDocker,
 } from '@fortawesome/free-brands-svg-icons';
 
 const icons = [
@@ -35,16 +32,20 @@ const icons = [
   faLinux,
   faWordpressSimple,
   faMagento,
-  faDocker
+  faDocker,
 ];
 
-const AboutPage = props => {
+const AboutPage = (props) => {
   const { technologies, team, values } = props.content;
   return (
-    <StyledAboutPageContainer className='p-4'>
+    <section className={`p-4 ${styles.aboutPage}`}>
       <div className='row'>
         <div className='d-none d-sm-block col-sm-3 col-md-4 col-xl-2'>
-          <StyledWorkingManPicture src={WorkerImage} alt='Working man :)' />
+          <img
+            src={WorkerImage}
+            alt='Working man :)'
+            className={styles.workingManImage}
+          />
         </div>
         <div className='col-12 col-sm-9 col-md-8 col-xl-10 pt-md-1 pt-xl-4'>
           <TechnologiesArticle technologies={technologies} />
@@ -55,7 +56,7 @@ const AboutPage = props => {
         <ValuesArticle values={values} />
         <TeamArticle team={team} />
       </div>
-    </StyledAboutPageContainer>
+    </section>
   );
 };
 
@@ -64,7 +65,7 @@ function onRenderTechIcons() {
     <div className='d-none d-md-flex display-4 mx-5 row pt-md-1 pt-lg-3 pt-xl-4'>
       {icons.map((icon, index) => (
         <span className='col-md-3 col-lg-4 col-xl-2' key={index}>
-          <StyledFontAwesomeIcon icon={icon} />
+          <FontAwesomeIcon icon={icon} className={styles.fontAwesome} />
         </span>
       ))}
     </div>

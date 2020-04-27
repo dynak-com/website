@@ -1,0 +1,25 @@
+.navbarLinks {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.logo {
+  margin: 0;
+  font-size: 2.6rem;
+  font-weight: 900;
+  font-family: Tenby-five;
+}
+
+.logo span {
+  color: #3eafad;
+}
+
+.navbarLinks span {
+  font-size: 1.7rem;
+  font-family: Tenby-five;
+}
+
+.navbarLinks .navbarButton {
+  border: none;
+  outline: none;
+}

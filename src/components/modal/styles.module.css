@@ -1,0 +1,37 @@
+.modalDialog {
+  display: table;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  pointer-events: none;
+}
+
+.modalDialog .modalContent {
+  width: inherit;
+  max-width: inherit;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #32373a;
+  pointer-events: all;
+}
+
+.modalDialog .exit {
+  color: #fff;
+}
+
+.modalDialog .exit:hover {
+  color: #ddd;
+}
+
+.modalDialog .modalFooterButton {
+  color: #fff;
+  background-color: #3eafad;
+  transition: 0.2s;
+}
+
+.modalDialog .modalFooterButton:hover,
+.modalDialog .modalFooterButton:focus,
+.modalDialog .modalFooterButton:active {
+  color: #ddd;
+  background-color: #329390;
+}

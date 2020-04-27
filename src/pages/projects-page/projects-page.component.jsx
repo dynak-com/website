@@ -1,17 +1,17 @@
 import React from 'react';
-import { StyledProjectsPageContainer } from './projects-page.styles';
+import styles from './styles.module.css';
 import CardList from '../../components/card-list/card-list.component';
 
-const ProjectsPage = props => {
+const ProjectsPage = (props) => {
   const { header, posts } = props.content;
   const cardsData = {
-    posts
+    posts,
   };
   return (
-    <StyledProjectsPageContainer>
+    <section className={styles.projectsPage}>
       <h1 className='text-center'>{header}</h1>
       <CardList data={cardsData} />
-    </StyledProjectsPageContainer>
+    </section>
   );
 };
 

@@ -1,0 +1,25 @@
+.navlink h1 > span {
+  font-size: 2.4rem;
+}
+
+.navlink span {
+  transition: 0.3s;
+}
+
+.navlink:focus,
+.navlink:hover,
+.navlink:visited,
+.navlink:link {
+  text-decoration: none;
+}
+
+.navlink:link.active > span {
+  background-color: #3eafad;
+  transform: skew(-12deg);
+}
+
+@media screen and (max-width: 992px) {
+  .navlink:link.active > span {
+    transform: none;
+  }
+}

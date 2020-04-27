@@ -1,0 +1,15 @@
+.fontAwesome {
+  font-size: 2rem;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.fontAwesome:hover {
+  color: #ddd;
+}
+
+@media screen and (min-width: 1024px) {
+  .fontAwesome {
+    font-size: 2.5rem;
+  }
+}

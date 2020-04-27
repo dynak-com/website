@@ -1,16 +1,19 @@
 import React from 'react';
-import { StyledFooter } from './footer.styles';
+import styles from './styles.module.css';
 import useComponent from './hook';
 
 const Footer = () => {
   const { year, onPrivacyPolicyModalOpenDone } = useComponent();
   return (
-    <StyledFooter className='my-2 text-light text-center'>
+    <footer className={`my-2 text-light text-center ${styles.siteFooter}`}>
       <span>&copy;dynak.com {year}</span>
-      <span className='ml-2' onClick={onPrivacyPolicyModalOpenDone}>
+      <span
+        className={`ml-2 ${styles.rodoLink}`}
+        onClick={onPrivacyPolicyModalOpenDone}
+      >
         RODO
       </span>
-    </StyledFooter>
+    </footer>
   );
 };
 

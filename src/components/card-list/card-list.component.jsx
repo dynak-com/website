@@ -1,39 +1,32 @@
 import React from 'react';
 import Card from '../card/card.component';
-import {
-  StyledCardListContainer,
-  StyledCardHeader,
-  StyledCardWrapper
-} from './card-list.styles';
+import styles from './styles.module.css';
 
-const CardList = props => {
+const CardList = (props) => {
   const { posts } = props.data;
-  return (
-    <StyledCardListContainer className='px-4'>
-      {onRenderCards(posts)}
-    </StyledCardListContainer>
-  );
+  return <section className='px-4'>{renderCards(posts)}</section>;
 };
 
-function onRenderCards(posts) {
+function renderCards(posts) {
   const cards = posts.map((data, index) => {
     const { id, text, headerText } = data;
+    const isEven = index % 2 !== 0;
     return (
       <div key={id} className='row my-4'>
-        <StyledCardHeader
-          className={`col-12 col-md ${
-            index % 2 !== 0 ? 'order-md-1' : 'order-md-2'
+        <div
+          className={`col-12 col-md ${isEven ? 'order-md-1' : 'order-md-2'} ${
+            styles.cardHeader
           }`}
         >
           <h2>{headerText}</h2>
-        </StyledCardHeader>
-        <StyledCardWrapper
-          className={`col-12 col-md-7 ${
-            index % 2 !== 0 ? 'order-md-2' : 'order-md-1'
+        </div>
+        <div
+          className={`col-12 col-md-7 ${isEven ? 'order-md-2' : 'order-md-1'} ${
+            styles.cardWrapper
           }`}
         >
-          <Card textContent={text} />
-        </StyledCardWrapper>
+          <Card textContent={text} className={isEven && styles.cardEven} />
+        </div>
       </div>
     );
   });

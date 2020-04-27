@@ -1,0 +1,17 @@
+.aboutPage {
+  color: #fff;
+}
+
+.workingManImage {
+  width: 100%;
+}
+
+.fontAwesome {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .fontAwesome {
+    font-size: 2.5rem;
+  }
+}

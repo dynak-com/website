@@ -1,19 +1,21 @@
 import React from 'react';
-import { StyledNavbar, StyledNavBarButton } from './navbar.styles';
+import styles from './styles.module.css';
 import NavLink from '../navlink/navlink.component';
 import StyledNavLink from '../navlink/navlink.styles';
 
-const Navbar = props => {
+const Navbar = (props) => {
   const { content, targetId } = props;
   return (
-    <StyledNavbar className='navbar navbar-expand-lg navbar-dark'>
+    <nav
+      className={`navbar navbar-expand-lg navbar-dark ${styles.navbarLinks}`}
+    >
       <StyledNavLink to='/'>
-        <h1 className='navbar-brand'>
+        <h1 className={`navbar-brand ${styles.logo}`}>
           dynak<span>.</span>com
         </h1>
       </StyledNavLink>
-      <StyledNavBarButton
-        className='navbar-toggler'
+      <button
+        className={`navbar-toggler ${styles.navbarButton}`}
         type='button'
         data-toggle='collapse'
         data-target={`#${targetId}`}
@@ -22,18 +24,18 @@ const Navbar = props => {
         aria-label='Toggle navigation'
       >
         <span className='navbar-toggler-icon'></span>
-      </StyledNavBarButton>
+      </button>
       <div className='collapse navbar-collapse' id={targetId}>
         {onRenderNavLinks(content, targetId)}
       </div>
-    </StyledNavbar>
+    </nav>
   );
 };
 
 function onRenderNavLinks(data, targetId) {
   return (
     <ul className='navbar-nav ml-auto'>
-      {data.map(item => {
+      {data.map((item) => {
         const { text, address } = item;
         return (
           <li className='nav-item' key={text}>

@@ -1,13 +1,12 @@
 import React from 'react';
-import { StyledModalContentWrapper } from './modal.privacy-policy.styles';
-import { StyledModalContainer, StyledModalDialog } from '../modal/modal.styles';
+import styles from './styles.module.css';
 import RODOContent from '../rodo-and-privacy-policy/rodo.component';
 
 const ModalForPrivacyPolicy = React.forwardRef((props, ref) => {
   const { content } = props;
   const modalId = content.modal_id;
   return (
-    <StyledModalContainer
+    <div
       className='modal fade'
       id={modalId}
       ref={ref}
@@ -16,32 +15,39 @@ const ModalForPrivacyPolicy = React.forwardRef((props, ref) => {
       aria-labelledby={modalId}
       aria-hidden='true'
     >
-      <StyledModalDialog className='modal-dialog text-center' role='document'>
-        <div className='modal-content'>
+      <div
+        className={`modal-dialog text-center ${styles.modalDialog}`}
+        role='document'
+      >
+        <div className={`modal-content ${styles.modalContent}`}>
           <div className='modal-header'>
             <h5 className='modal-title w-100' id={`${modalId}Label`}>
               {content.thanks}
             </h5>
             <button
               type='button'
-              className='close'
+              className={`close ${styles.exit}`}
               data-dismiss='modal'
               aria-label='Close'
             >
               <span aria-hidden='true'>&times;</span>
             </button>
           </div>
-          <StyledModalContentWrapper className='modal-body'>
+          <div className={`modal-body ${styles.rodoContentWrapper}`}>
             <RODOContent />
-          </StyledModalContentWrapper>
+          </div>
           <div className='text-right p-2'>
-            <button type='button' className='btn btn-sm' data-dismiss='modal'>
+            <button
+              type='button'
+              className={`btn btn-sm ${styles.modalFooterButton}`}
+              data-dismiss='modal'
+            >
               {content.close}
             </button>
           </div>
         </div>
-      </StyledModalDialog>
-    </StyledModalContainer>
+      </div>
+    </div>
   );
 });
 
