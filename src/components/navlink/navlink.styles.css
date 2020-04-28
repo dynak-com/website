@@ -13,9 +13,15 @@ a:link.active > span#custom-navlink {
   transform: skew(-12deg);
 }
 
+a:link.active > span#custom-navlink:hover {
+  color: #fff;
+}
+
 @media screen and (max-width: 992px) {
-  #custom-navlink:link.active > span {
+  a:link.active > span#custom-navlink {
     transform: none;
   }
 }
+
+
 

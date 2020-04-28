@@ -7,9 +7,10 @@
   transform: scale(1.02) skew(-5deg);
 }
 
-@media screen and (min-width: 1025px) {
+
+@media screen {
   #card-wrapper:hover {
-    transform: scale(1.02) skew(-5deg);
+    transform: scale(1.02);
   }
 }
 
