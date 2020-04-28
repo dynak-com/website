@@ -1,16 +1,17 @@
-.styled-card {
-  background-color: rgba(60, 65, 68);
-  opacity: 0.8;
-  transition: all 0.8s ease 0s;
-  cursor: pointer;
-}
-
 .styled-card > .card-text {
   background-color: transparent;
 }
 
-.styled-card:hover {
+#card-wrapper > .styled-card {
+   background-color: rgba(60, 65, 68);
+  opacity: 0.8;
+  transition: all 0.8s;
+  cursor: pointer;
+}
+
+#card-wrapper > .styled-card:hover {
   opacity: 1;
 }
+
 
 

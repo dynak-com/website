@@ -4,10 +4,11 @@
   width: 100%;
   vertical-align: middle;
   pointer-events: none;
+  height: fit-content;
 }
 
 .modal-dialog > div {
-    width: inherit;
+  width: inherit;
   max-width: inherit;
   margin: 0 auto;
   color: #fff;
@@ -31,3 +32,4 @@
   color: #ddd;
   background-color: #329390;
 }
+

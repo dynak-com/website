@@ -1,8 +1,3 @@
-#card-wrapper > .styled-card {
-  background-color: rgba(60, 65, 68);
-  opacity: 0.8;
-  transition: all 0.8s ease 0s;
-}
 
 #card-wrapper  {
   transition: 0.5s;

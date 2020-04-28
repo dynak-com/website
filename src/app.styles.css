@@ -25,6 +25,9 @@
   overflow-x: hidden;
 }
 
+.main-container h1 {
+  font-size: 3rem;
+}
 
 
 .main-container h2 {
