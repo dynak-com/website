@@ -18,12 +18,6 @@
   border-radius: 10px;
 }
 
-.main-container {
-  color: #fff;
-  background-color: #32373a;
-  font-family: 'Saira Condensed', sans-serif;
-  overflow-x: hidden;
-}
 
 .main-container h1 {
   font-size: 3rem;
@@ -41,4 +35,8 @@
 
 #main-content {
   min-height: 100vh;
+  color: #fff;
+  background-color: #32373a;
+  font-family: 'Saira Condensed', sans-serif;
+  overflow-x: hidden;
 }

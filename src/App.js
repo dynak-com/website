@@ -18,7 +18,7 @@ const App = () => {
   const { lang } = useComponent();
   const content = contentData.find((item) => item.lang === lang);
   return (
-    <main id='main-content' className='main-container'>
+    <div id='main-content' className='main-container'>
       <Navbar content={content.nav} targetId='headerNavbarMenu' />
       <Switch>
         <Route
@@ -45,7 +45,7 @@ const App = () => {
       </Switch>
       <Footer />
       <ModalsContainer modalsData={content.modal} />
-    </main>
+    </div>
   );
 };
 
