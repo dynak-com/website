@@ -18,7 +18,7 @@ import {
   faMagento,
   faDocker
 } from '@fortawesome/free-brands-svg-icons';
-import './about-page.styles.css';
+import styles from './styles.module.css';
 
 const icons = [
   faHtml5,
@@ -38,10 +38,10 @@ const icons = [
 const AboutPage = props => {
   const { technologies, team, values } = props.content;
   return (
-    <section className='about-page-container p-4'>
+    <section className={ `p-4 ${ styles.aboutPageContainer }` }>
       <div className='row'>
         <div className='d-none d-sm-block col-sm-3 col-md-4 col-xl-2'>
-          <img className='work-man-img' src={WorkerImage} alt='Working man :)' />
+          <img className={ styles.workManImg } src={WorkerImage} alt='Working man :)' />
         </div>
         <div className='col-12 col-sm-9 col-md-8 col-xl-10 pt-md-1 pt-xl-4'>
           <TechnologiesArticle technologies={technologies} />
@@ -61,7 +61,7 @@ function onRenderTechIcons() {
     <div className='d-none d-md-flex display-4 mx-5 row pt-md-1 pt-lg-3 pt-xl-4'>
       {icons.map((icon, index) => (
         <span className='tech-icon col-md-3 col-lg-4 col-xl-2' key={index}>
-          <FontAwesomeIcon className='font-icon' icon={icon} />
+          <FontAwesomeIcon className={ styles.fontIcon } icon={icon} />
         </span>
       ))}
     </div>

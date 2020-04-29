@@ -1,21 +1,21 @@
-.font-icon {
+.fontIcon {
   font-size: 2rem;
 }
 
 @media screen and (min-width: 1024px) {
-    .font-icon {
+    .fontIcon {
       font-size: 2.5rem;
     }
   }
 
-.about-page-container {
+.aboutPageContainer {
    color: #fff;
 }
 
-.work-man-img {
+.workManImg {
   width: 100%;
 }
 
-.tech-icon {
+.techIcon {
   font-size: 3.5rem;
 }

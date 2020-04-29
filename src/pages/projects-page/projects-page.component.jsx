@@ -1,5 +1,5 @@
 import React from 'react';
-import './projects-page.styles.css';
+import styles from './styles.module.css';
 import CardList from '../../components/card-list/card-list.component';
 
 const ProjectsPage = props => {
@@ -8,7 +8,7 @@ const ProjectsPage = props => {
     posts
   };
   return (
-    <section className='projects-page-container'>
+    <section className={ styles.projectsPageContainer }>
       <h1 className='text-center'>{header}</h1>
       <CardList data={cardsData} />
     </section>

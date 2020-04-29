@@ -10,7 +10,7 @@ import Footer from './components/footer/footer.component';
 import ModalsContainer from './components/modals-container/modals-container.component';
 import useComponent from './hook';
 import content from './content.json';
-import './app.styles.css';
+import './styles.css';
 
 const contentData = JSON.parse(JSON.stringify(content));
 
@@ -18,7 +18,7 @@ const App = () => {
   const { lang } = useComponent();
   const content = contentData.find((item) => item.lang === lang);
   return (
-    <div id='main-content' className='main-container'>
+    <div className={ 'main-container' }>
       <Navbar content={content.nav} targetId='headerNavbarMenu' />
       <Switch>
         <Route
