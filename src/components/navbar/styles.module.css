@@ -1,34 +1,28 @@
-#styled-navbar {
+.styledNavbar {
   background-color: transparent;
   overflow: hidden;
 }
 
-#styled-navbar h1 {
+.websiteTitle  {
   margin: 0;
   font-size: 2.6rem;
   font-weight: 900;
   font-family: Tenby-five;
 }
 
-#styled-navbar span {
+.styledNavbar span {
     font-size: 1.7rem;
     font-family: Tenby-five;
-  }
+}
 
-#navbar-btn {
+.styledNavbar .navbarButton {
   border: none;
   outline: none;
 }
 
-#item-navlink > a {
-  text-decoration: none;
-}
-
-.navbar-brand > #dot {
+.websiteTitle .dot {
   color: #3eafad;
   font-size: 2.4rem;
 }
 
-.main-container #website-title {
-  font-size: 3rem;
-}
+

@@ -1,4 +1,4 @@
-import './modals-container.styles.css'
+import styles from './styles.module.css'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Modal from '../modal/modal.component';
@@ -12,7 +12,7 @@ export const modalPrivacyPolicyRef = React.createRef();
 
 const ModalsContainer = ({ modalsData }) => {
   const modals = (
-    <div className='model-container'>
+    <div className={ styles.modelContainer }>
       <Modal ref={correctModalRef} content={modalsData.modal_ok} />
       <Modal ref={invalidModalRef} content={modalsData.modal_error} />
       <ModalForPrivacyPolicy

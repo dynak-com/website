@@ -1,10 +1,10 @@
 import React from 'react';
-import './animated-slider.styles.css';
+import styles from './styles.module.css';
 
 const AnimatedSlider = () => {
   return (
-    <div className = 'animated-slider'>
-      <div className = 'image-container'></div>
+    <div className={ styles.animatedSlider }>
+      <div className={ styles.imageContainer }></div>
     </div>
   );
 };

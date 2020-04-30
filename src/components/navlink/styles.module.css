@@ -1,0 +1,33 @@
+.customNavlink:focus,
+.customNavlink:hover,
+.customNavlink:visited,
+.customNavlink:link {
+  text-decoration: none;
+}
+
+.customNavlink span {
+  transition: 0.3s;
+}
+
+.customNavlink h1 > span {
+  font-size: 2.4rem;
+}
+
+.customNavlink:link.activated span {
+  background-color: #3eafad;
+  text-decoration: none;
+  transform: skew(-12deg);
+}
+
+.customNavlink:link.activated span:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+ .customNavlink:link.activated span {
+    transform: none;
+  }
+}
+
+
+

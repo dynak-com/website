@@ -1,20 +1,19 @@
 import React from 'react';
-import './navbar.styles.css';
+import styles from './styles.module.css';
 import CustomNavLink from '../navlink/navlink.component';
 import { NavLink as Container } from 'react-router-dom';
-import '../navlink/navlink.styles.css'
 
 const Navbar = props => {
   const { content, targetId } = props;
   return (
-    <nav id='styled-navbar' className='navbar navbar-expand-lg navbar-dark'>
+    <nav className={ `navbar navbar-expand-lg navbar-dark ${ styles.styledNavbar }` }>
       <Container to='/'>
-        <h1 id='website-title' className='navbar-brand'>
-          dynak<span id='dot'>.</span>com
+        <h1 className={ `${ styles.websiteTitle } navbar-brand` }>
+          dynak<span className={ styles.dot } >.</span>com
         </h1>
       </Container>
-      <button id='navbar-btn'
-        className='navbar-toggler'
+      <button
+        className={ `${ styles.navbarButton } navbar-toggler` }
         type='button'
         data-toggle='collapse'
         data-target={`#${targetId}`}
