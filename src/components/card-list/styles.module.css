@@ -1,20 +1,20 @@
-div:nth-child(even)> #card-wrapper > .styled-card {
+.cardEven {
   color: #ffffff;
   background-color: rgba(62, 175, 173);
 }
 
-#card-header {
+.cardHeader {
   position: relative;
 }
 
 @media (max-width: 767px) {
-  #card-header {
+  .cardHeader {
     margin-bottom: 10vh;
     padding: 20vh 0;
   }
 }
 
-#card-header > .card-header-text {
+.cardHeader h2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -22,17 +22,17 @@ div:nth-child(even)> #card-wrapper > .styled-card {
   text-align: center;
 }
 
-#card-wrapper  {
+.cardWrapper {
   transition: 0.5s;
 }
 
-#card-wrapper:hover {
-    transform: scale(1.02) skew(-5deg);
+.cardWrapper:hover {
+  transform: scale(1.02);
 }
 
-@media screen and (max-width: 1025px) {
-  #card-wrapper:hover {
-    transform: scale(1.02);
+@media screen and (min-width: 1025px) {
+  .cardWrapper:hover {
+    transform: scale(1.02) skew(-5deg);
   }
 }
 

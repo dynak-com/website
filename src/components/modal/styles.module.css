@@ -1,4 +1,4 @@
-.modal-dialog {
+.styledModalDialog {
   display: table;
   height: 100%;
   width: 100%;
@@ -7,7 +7,7 @@
   height: fit-content;
 }
 
-.modal-dialog > div {
+.styledModalDialog .styledModalContent {
   width: inherit;
   max-width: inherit;
   margin: 0 auto;
@@ -16,20 +16,25 @@
   pointer-events: all;
 }
 
-#styled-modal-dialog {
-  display: flex;
-}
-
-#rodo-comp-btn {
+.styledModalDialog .rodoCompButton {
   color: #fff;
   background-color: #3eafad;
   transition: 0.2s;
 }
 
-#rodo-comp-btn:hover,
-#rodo-comp-btn:focus,
-#rodo-comp-btn:active {
+.styledModalDialog .rodoCompButton:hover,
+.styledModalDialog .rodoCompButton:focus,
+.styledModalDialog .rodoCompButton:active {
   color: #ddd;
   background-color: #329390;
+}
+
+.styledModalDialog .closeSign {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.styledModalDialog .closeSign:hover {
+  color: #ddd;
 }
 

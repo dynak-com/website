@@ -1,13 +1,13 @@
 import React from 'react';
-import './footer.styles.css';
+import styles from './styles.module.css';
 import useComponent from './hook';
 
 const Footer = () => {
   const { year, onPrivacyPolicyModalOpenDone } = useComponent();
   return (
-    <footer className='my-2 text-light text-center'>
-      <span className='custom-styled-span'>&copy;dynak.com {year}</span>
-      <span id='rodo' className='custom-styled-span ml-2' onClick={onPrivacyPolicyModalOpenDone}>
+    <footer className={`${ styles.rodoComponent } my-2 text-light text-center`}>
+      <span>&copy;dynak.com {year}</span>
+      <span className={`${styles.rodo} custom-styled-span ml-2`} onClick={onPrivacyPolicyModalOpenDone}>
         RODO
       </span>
     </footer>

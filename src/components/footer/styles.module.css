@@ -1,13 +1,13 @@
-#rodo {
+.rodo {
     cursor: pointer;
     transition: 0.2s;
 }
 
-#rodo:hover {
+.rodo:hover {
     color: #ddd;
 }
 
-.custom-styled-span {
+.rodoComponent {
     font-size: 1.2rem;
     font-family: Tenby-five;
 }

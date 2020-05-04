@@ -1,18 +1,19 @@
 import React from "react";
-import "./slider.styles";
+import styles from "./styles.module.css";
 import Slide1 from "../../assets/images/home/slide1.png";
 import Slide2 from "../../assets/images/home/slide2.png";
 import Slide3 from "../../assets/images/home/slide3.png";
 
-const Slider = () => {
+const Slider = () =>
+{
   return (
-    <div className ='styled-stider'>
+    <div className={ `${ styles.styledSlider}`}>
       <div
         id="carouselCaptions"
         className="carousel slide"
         data-ride="carousel"
       >
-        <ol className="carousel-indicators bg-transparent">
+        <ol className={`${styles.carouselComponent} carousel-indicators bg-transparent`}>
           <li
             data-target="#carouselCaptions"
             data-slide-to="0"

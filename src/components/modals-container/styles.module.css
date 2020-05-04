@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Saira+Condensed&display=swap&subset=latin-ext');
 
-.modelContainer {
+.modelsContainer {
   color: #fff;
   background-color: #32373a;
   font-family: 'Saira Condensed', sans-serif;
   overflow-x: hidden;
 }
 
-.modelContainer h1 {
+.modelsContainer h1 {
   font-size: 3rem;
 }
 
-.modelContainer h2 {
+.modelsContainer h2 {
   font-size: 2.2rem;
 }
 
-.modelContainer p {
+.modelsContainer p {
   font-size: 1.2rem;
   text-align: justify;
 }

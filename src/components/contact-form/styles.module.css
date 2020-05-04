@@ -1,0 +1,16 @@
+.checkboxContainer > input {
+  cursor: pointer;
+}
+
+input.contactFormBtn {
+  color: #fff;
+  background-color: #3eafad;
+  transition: 0.2s;
+}
+
+input.contactFormBtn:hover,
+input.contactFormBtn:focus,
+input.contactFormBtn:active {
+      color: #ddd;
+      background-color: #329390;
+}

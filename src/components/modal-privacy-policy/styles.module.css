@@ -1,0 +1,47 @@
+.styledModalDialog {
+  display: table;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  pointer-events: none;
+  height: fit-content;
+}
+
+.styledModalDialog .styledModalContent {
+  width: inherit;
+  max-width: inherit;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #32373a;
+  pointer-events: all;
+}
+
+.styledModalDialog .rodoCompButton {
+  color: #fff;
+  background-color: #3eafad;
+  transition: 0.2s;
+}
+
+.styledModalDialog .rodoCompButton:hover,
+.styledModalDialog .rodoCompButton:focus,
+.styledModalDialog .rodoCompButton:active {
+  color: #ddd;
+  background-color: #329390;
+}
+
+.privacyContainer {
+  max-height: 50vh;
+  overflow-x: auto;
+  padding-right: 10px;
+}
+
+.styledModalDialog .closeSign {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.styledModalDialog .closeSign:hover {
+  color: #ddd;
+}
+
+

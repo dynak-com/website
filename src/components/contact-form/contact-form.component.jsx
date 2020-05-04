@@ -1,5 +1,5 @@
 import React from 'react';
-import './contact-form.styles.css';
+import styles from './styles.module.css';
 import useComponent from './hook';
 
 const ContactForm = ({ content }) => {
@@ -55,7 +55,7 @@ const ContactForm = ({ content }) => {
         ></textarea>
         <div className='form-row my-3'>
           <div className='form-group col'>
-            <div className='checkbox-container custom-control custom-checkbox mr-sm-2'>
+            <div className={ `${ styles.checkboxContainer }custom-control custom-checkbox mr-sm-2` }>
               <input
                 id='isContactAgreed-input'
                 className='custom-control-input'
@@ -72,7 +72,7 @@ const ContactForm = ({ content }) => {
                 {content.contactAgreement}
               </label>
             </div>
-            <div className='checkbox-container custom-control custom-checkbox mr-sm-2'>
+            <div className={`${styles.checkboxContainer }custom-control custom-checkbox mr-sm-2`}>
               <input
                 id='isPrivacyPolicyAgreed-input'
                 className='custom-control-input'
@@ -92,13 +92,13 @@ const ContactForm = ({ content }) => {
           </div>
           <div className='form-group col-md-12 text-center text-md-right'>
             <input
-              className='contact-form-btn btn d-inline-block mx-1'
+              className={ `${ styles.contactFormBtn } contact-form-btn btn d-inline-block mx-1` }
               type='button'
               value='Polityka prywatności'
               onClick={onPrivacyPolicyModalOpenDone}
             />
             <input
-              className='contact-form-btn contact-form-btn btn d-inline-block mx-1'
+              className={ `${ styles.contactFormBtn} contact-form-btn btn d-inline-block mx-1` }
               type='submit'
               value={content.send}
             />

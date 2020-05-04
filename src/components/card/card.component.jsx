@@ -1,12 +1,14 @@
 import React from 'react';
-import './card.styles.css';
+import styles from './styles.module.css';
 
-const Card = ({ textContent }) => {
+const Card = ( { textContent, className } ) =>
+{
   return (
-    <article className='styled-card'>
-      <p className='card-text p-2'>{textContent}</p>
+    <article className={ `${ styles.styledCard } ${ className }` }>
+      <p className={ `p-2 ${ styles.cardText }` }>{ textContent }</p>
     </article>
   );
 };
 
 export default Card;
+

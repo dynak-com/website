@@ -1,5 +1,5 @@
 import React from 'react';
-import './modal.styles.css';
+import styles from './styles.module.css';
 
 const Modal = React.forwardRef((props, ref) => {
   const { content } = props;
@@ -9,7 +9,7 @@ const Modal = React.forwardRef((props, ref) => {
     : 'text-center';
   return (
     <div
-      className='modal show modal-container'
+      className= 'modal show'
       id={modalId}
       ref={ref}
       tabIndex='-1'
@@ -17,8 +17,8 @@ const Modal = React.forwardRef((props, ref) => {
       aria-labelledby={modalId}
       aria-hidden='true'
     >
-      <div id='styled-modal-dialog' className='modal-dialog text-center' role='document'>
-        <div className='modal-content'>
+      <div className={ `modal-dialog text-center ${ styles.styledModalDialog }` } role='document'>
+        <div className={ `modal-content ${ styles.styledModalContent }` }>
           <div className='modal-header'>
             <h5 className='modal-title' id={`${modalId}Label`}>
               {content.thanks}
@@ -29,14 +29,14 @@ const Modal = React.forwardRef((props, ref) => {
               data-dismiss='modal'
               aria-label='Close'
             >
-              <span className='close-sign' aria-hidden='true'>&times;</span>
+              <span className={ `close ${ styles.closeSign }` } aria-hidden='true'>&times;</span>
             </button>
           </div>
           <div className='modal-body'>
             <h3 className={headerTextAlignment}>{content.sent}</h3>
           </div>
           <div className='text-right p-2'>
-            <button id='rodo-comp-btn' type='button' className='btn btn-sm' data-dismiss='modal'>
+            <button type='button' className={ `btn btn-sm ${ styles.rodoCompButton }` } data-dismiss='modal'>
               {content.close}
             </button>
           </div>

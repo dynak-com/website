@@ -1,9 +1,9 @@
-.styled-stider {
+.styledSlider {
   width: 100%;
   overflow: hidden;
 }
 
-ol > li {
+.carouselComponent > li {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -12,11 +12,11 @@ ol > li {
   transition: 0.2s;
 }
 
-ol > li.active {
+.carouselComponent > li.active {
   background-color: #000;
 }
 
-ol > li:hover {
+.carouselComponent > li:hover {
   box-shadow: 0 0 0 1px #000;
 }
 

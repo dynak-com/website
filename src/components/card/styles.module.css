@@ -1,0 +1,14 @@
+.styledCard {
+  background-color: rgba(60, 65, 68);
+  opacity: 0.8;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.styledCard:hover {
+  opacity: 1;
+}
+
+.cardText {
+  background-color: transparent;
+}

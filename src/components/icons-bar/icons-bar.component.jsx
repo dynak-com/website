@@ -5,7 +5,7 @@ import {
   faGithub,
   faGitlab
 } from '@fortawesome/free-brands-svg-icons';
-import './icons-bar.styles.css'
+import styles from './styles.module.css'
 
 const IconsBar = () => {
   return (
@@ -14,13 +14,13 @@ const IconsBar = () => {
         href='https://pl.linkedin.com/company/dynak-com?trk=public_profile_topcard_current_company'
         className='col-4'
       >
-        <FontAwesomeIcon className='font-icon' icon={ faLinkedin } />
+        <FontAwesomeIcon className={`${styles.fontIcon}`} icon={ faLinkedin } />
       </a>
       <a href='https://github.com/dynak-com' className='col-4'>
-        <FontAwesomeIcon className='font-icon' icon={faGithub} />
+        <FontAwesomeIcon className={ `${ styles.fontIcon }` } icon={faGithub} />
       </a>
       <a href='https://gitlab.com/dynak.com' className='col-4'>
-        <FontAwesomeIcon className='font-icon' icon={faGitlab} />
+        <FontAwesomeIcon className={ `${ styles.fontIcon }` } icon={faGitlab} />
       </a>
     </div>
   );

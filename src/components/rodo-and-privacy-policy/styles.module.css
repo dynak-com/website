@@ -1,19 +1,19 @@
-.rodo-content-container {
+.rodoContentContainer {
   text-align: left;
 }
 
-span, ol {
+.rodoContentContainer span, ol {
   font-size: 1.2rem;
 }
 
-.rodo-link {
+.rodoLink {
   font-weight: 700;
   color: #3eafad;
  }
 
-.rodo-link:hover,
-.rodo-link:active,
-.rodo-link:visited {
+.rodoLink:hover,
+.rodoLink:active,
+.rodoLink:visited {
     color: rgb(50, 147, 144);
 }
 
