@@ -1,16 +1,16 @@
-.checkboxContainer > input {
+.label {
   cursor: pointer;
 }
 
-input.contactFormBtn {
+.buttonsPanel input {
   color: #fff;
   background-color: #3eafad;
   transition: 0.2s;
 }
 
-input.contactFormBtn:hover,
-input.contactFormBtn:focus,
-input.contactFormBtn:active {
-      color: #ddd;
-      background-color: #329390;
+.buttonsPanel input:hover,
+.buttonsPanel input:focus,
+.buttonsPanel input:active {
+  color: #ddd;
+  background-color: #329390;
 }
