@@ -14,13 +14,14 @@
 }
 
 .customNavlink:link.activated span {
+  color: #fff;
   background-color: #3eafad;
-  text-decoration: none;
   transform: skew(-12deg);
+
 }
 
 .customNavlink:link.activated span:hover {
-  color: #fff;
+   color: #fff;
 }
 
 @media screen and (max-width: 992px) {

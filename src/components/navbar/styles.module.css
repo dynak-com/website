@@ -1,4 +1,4 @@
-.styledNavbar {
+.customNavbar {
   background-color: transparent;
   overflow: hidden;
 }
@@ -10,12 +10,12 @@
   font-family: Tenby-five;
 }
 
-.styledNavbar span {
+.customNavbar span {
     font-size: 1.7rem;
     font-family: Tenby-five;
 }
 
-.styledNavbar .navbarButton {
+.customNavbar .navbarButton {
   border: none;
   outline: none;
 }

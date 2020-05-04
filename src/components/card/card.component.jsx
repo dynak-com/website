@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 const Card = ( { textContent, className } ) =>
 {
   return (
-    <article className={ `${ styles.styledCard } ${ className }` }>
+    <article className={ `${ styles.singleCard } ${ className }` }>
       <p className={ `p-2 ${ styles.cardText }` }>{ textContent }</p>
     </article>
   );

@@ -17,8 +17,8 @@ const Modal = React.forwardRef((props, ref) => {
       aria-labelledby={modalId}
       aria-hidden='true'
     >
-      <div className={ `modal-dialog text-center ${ styles.styledModalDialog }` } role='document'>
-        <div className={ `modal-content ${ styles.styledModalContent }` }>
+      <div className={ `modal-dialog text-center ${ styles.modalDialog }` } role='document'>
+        <div className={ `modal-content ${ styles.modalContent }` }>
           <div className='modal-header'>
             <h5 className='modal-title' id={`${modalId}Label`}>
               {content.thanks}

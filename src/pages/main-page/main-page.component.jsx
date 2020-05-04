@@ -11,7 +11,7 @@ const MainPage = props => {
   return (
     <section className={styles.mainPageContainer}>
       <AnimatedSlider />
-      <h1 className={ `${styles.mainPageTitle} text-center text-light d-block my-5` }>{header}</h1>
+      <h1 className='text-center text-light d-block my-5'>{header}</h1>
       <CardList data={cardsData} />
     </section>
   );

@@ -6,7 +6,7 @@ import { NavLink as Container } from 'react-router-dom';
 const Navbar = props => {
   const { content, targetId } = props;
   return (
-    <nav className={ `navbar navbar-expand-lg navbar-dark ${ styles.styledNavbar }` }>
+    <nav className={ `navbar navbar-expand-lg navbar-dark ${ styles.customNavbar }` }>
       <Container to='/'>
         <h1 className={ `${ styles.websiteTitle } navbar-brand` }>
           dynak<span className={ styles.dot } >.</span>com
