@@ -16,6 +16,20 @@
   pointer-events: all;
 }
 
+.modalDialog .closeSign {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.modalDialog .closeSign:hover {
+  color: #ddd;
+}
+
+.privacyContainer {
+  max-height: 50vh;
+  overflow-x: auto;
+  padding-right: 10px;
+}
 .modalDialog .rodoCompButton {
   color: #fff;
   background-color: #3eafad;
@@ -29,19 +43,5 @@
   background-color: #329390;
 }
 
-.privacyContainer {
-  max-height: 50vh;
-  overflow-x: auto;
-  padding-right: 10px;
-}
-
-.modalDialog .closeSign {
-  font-size: 1.5rem;
-  color: #fff;
-}
-
-.modalDialog .closeSign:hover {
-  color: #ddd;
-}
 
 

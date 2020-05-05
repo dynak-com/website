@@ -1,17 +1,17 @@
-.fontIcon {
-  font-size: 2rem;
-}
-
-@media screen and (min-width: 1024px) {
-    .fontIcon {
-      font-size: 2.5rem;
-    }
-  }
-
 .aboutPageContainer {
    color: #fff;
 }
 
 .workManImg {
   width: 100%;
+}
+
+.fontIcon {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .fontIcon {
+    font-size: 2.5rem;
+  }
 }

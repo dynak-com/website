@@ -1,17 +1,5 @@
-.cardEven {
-  color: #ffffff;
-  background-color: rgba(62, 175, 173);
-}
-
 .cardHeader {
   position: relative;
-}
-
-@media (max-width: 767px) {
-  .cardHeader {
-    margin-bottom: 10vh;
-    padding: 20vh 0;
-  }
 }
 
 .cardHeader h2 {
@@ -22,12 +10,24 @@
   text-align: center;
 }
 
+.cardEven {
+  color: #ffffff;
+  background-color: rgba(62, 175, 173);
+}
+
 .cardWrapper {
   transition: 0.5s;
 }
 
 .cardWrapper:hover {
   transform: scale(1.02);
+}
+
+@media (max-width: 767px) {
+  .cardHeader {
+    margin-bottom: 10vh;
+    padding: 20vh 0;
+  }
 }
 
 @media screen and (min-width: 1025px) {

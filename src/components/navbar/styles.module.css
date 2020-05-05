@@ -7,11 +7,9 @@
   margin-right: 0;
 }
 
-.websiteTitle  {
-  margin: 0;
-  font-size: 2.6rem;
-  font-weight: 900;
-  font-family: Tenby-five;
+.customNavbar .navbarButton {
+  border: none;
+  outline: none;
 }
 
 .customNavbar span {
@@ -19,9 +17,11 @@
     font-family: Tenby-five;
 }
 
-.customNavbar .navbarButton {
-  border: none;
-  outline: none;
+.websiteTitle  {
+  margin: 0;
+  font-size: 2.6rem;
+  font-weight: 900;
+  font-family: Tenby-five;
 }
 
 .websiteTitle .dot {

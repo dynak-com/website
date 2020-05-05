@@ -1,3 +1,8 @@
+.rodoContainer {
+    font-size: 1.2rem;
+    font-family: Tenby-five;
+}
+
 .rodo {
     cursor: pointer;
     transition: 0.2s;
@@ -7,10 +12,6 @@
     color: #ddd;
 }
 
-.rodoContainer {
-    font-size: 1.2rem;
-    font-family: Tenby-five;
-}
 
 
 
