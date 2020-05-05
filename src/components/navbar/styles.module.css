@@ -3,7 +3,11 @@
   overflow: hidden;
 }
 
-h1.websiteTitle  {
+.customNavbar h1 {
+  margin-right: 0;
+}
+
+.websiteTitle  {
   margin: 0;
   font-size: 2.6rem;
   font-weight: 900;
