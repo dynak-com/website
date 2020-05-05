@@ -10,12 +10,13 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "abort-controller": "^3.0.0",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.4.1",
     "date-format": "^3.0.0",
     "express": "^4.17.1",
     "gh-pages": "^2.2.0",
-    "jquery": "^3.4.1",
+    "jquery": "3.5.1",
     "popper.js": "^1.16.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -46,7 +47,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "axios": "^0.19.2"
-  }
+  "devDependencies": {}
 }

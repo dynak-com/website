@@ -1,22 +1,29 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
+import AbortController from 'abort-controller';
 
 const useComponent = (username) => {
   const [avatarURL, setAvatarUrl] = useState('');
   useEffect(() => {
-    fetchGitlabAvatar(username, setAvatarUrl);
+    const controller = new AbortController();
+    fetchGitlabAvatar(username, setAvatarUrl, controller.signal);
+    return () => controller.abort();
   }, [username, setAvatarUrl]);
   return {
     avatarURL,
   };
 };
 
-async function fetchGitlabAvatar(username, setAvatarUrl) {
-  let result = await axios.get(
-    `https://gitlab.com/api/v4/users?username=${username}&size=180`
-  );
-  let { avatar_url } = await result.data[0];
-  setAvatarUrl(avatar_url);
+async function fetchGitlabAvatar(username, setAvatarUrl, signal) {
+  try {
+    const url = `https://gitlab.com/api/v4/users?username=${username}&size=180`;
+    let result = await fetch(url, { method: 'get', signal }).then((response) =>
+      response.json()
+    );
+    const { avatar_url } = await result[0];
+    setAvatarUrl(avatar_url);
+  } catch (error) {
+    console.log(error.message);
+  }
 }
 
 export default useComponent;
