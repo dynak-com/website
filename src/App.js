@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from './components/navbar/navbar.component';
-import { GlobalStyles, StyledAppContainer } from './app.styles';
 import { Switch, Route } from 'react-router';
 import MainPage from './pages/main-page/main-page.component';
 import AboutPage from './pages/about-page/about-page.component';
@@ -11,6 +10,7 @@ import Footer from './components/footer/footer.component';
 import ModalsContainer from './components/modals-container/modals-container.component';
 import useComponent from './hook';
 import content from './content.json';
+import './styles.css';
 
 const contentData = JSON.parse(JSON.stringify(content));
 
@@ -18,8 +18,7 @@ const App = () => {
   const { lang } = useComponent();
   const content = contentData.find((item) => item.lang === lang);
   return (
-    <StyledAppContainer>
-      <GlobalStyles />
+    <div className={ 'main-container' }>
       <Navbar content={content.nav} targetId='headerNavbarMenu' />
       <Switch>
         <Route
@@ -46,7 +45,7 @@ const App = () => {
       </Switch>
       <Footer />
       <ModalsContainer modalsData={content.modal} />
-    </StyledAppContainer>
+    </div>
   );
 };
 

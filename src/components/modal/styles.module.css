@@ -1,0 +1,39 @@
+.modalDialog {
+  display: table;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  pointer-events: none;
+  height: fit-content;
+}
+
+.modalDialog .modalContent {
+  width: inherit;
+  max-width: inherit;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #32373a;
+  pointer-events: all;
+}
+
+.modalDialog .rodoCompButton {
+  color: #fff;
+  background-color: #3eafad;
+  transition: 0.2s;
+}
+
+.modalDialog .rodoCompButton:hover,
+.modalDialog .rodoCompButton:focus,
+.modalDialog .rodoCompButton:active {
+  color: #ddd;
+  background-color: #329390;
+}
+
+.modalDialog .closeSign {
+  color: #fff;
+}
+
+.modalDialog .closeSign:hover {
+  color: #ddd;
+}
+

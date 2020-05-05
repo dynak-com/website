@@ -1,36 +1,34 @@
 import React from 'react';
-import {
-  StyledCheckboxGroupContainer,
-  StyledContactFormButton
-} from './contact-form.styles';
+import styles from './styles.module.css';
 import useComponent from './hook';
 
-const ContactForm = ({ content }) => {
+const ContactForm = ( { content } ) =>
+{
   const {
     state,
     onChangeInputDone,
     onSubmitFormDone,
-    onPrivacyPolicyModalOpenDone
+    onPrivacyPolicyModalOpenDone,
   } = useComponent();
   const {
     subject,
     message,
     email,
     isContactAgreed,
-    isPrivacyPolicyAgreed
+    isPrivacyPolicyAgreed,
   } = state;
   return (
     <div className='mx-auto'>
-      <form onSubmit={onSubmitFormDone}>
+      <form onSubmit={ onSubmitFormDone }>
         <div className='form-row'>
           <div className='form-group col-md-6'>
             <input
               className='form-control text-center'
               type='text'
               name='subject'
-              value={subject}
-              onChange={onChangeInputDone}
-              placeholder={content.subject}
+              value={ subject }
+              onChange={ onChangeInputDone }
+              placeholder={ content.subject }
               required
             />
           </div>
@@ -39,9 +37,9 @@ const ContactForm = ({ content }) => {
               className='form-control text-center'
               type='email'
               name='email'
-              value={email}
-              onChange={onChangeInputDone}
-              placeholder={content.email}
+              value={ email }
+              onChange={ onChangeInputDone }
+              placeholder={ content.email }
               required
             />
           </div>
@@ -51,59 +49,61 @@ const ContactForm = ({ content }) => {
           name='message'
           cols='30'
           rows='10'
-          value={message}
-          onChange={onChangeInputDone}
-          placeholder={content.message}
+          value={ message }
+          onChange={ onChangeInputDone }
+          placeholder={ content.message }
           required
         ></textarea>
         <div className='form-row my-3'>
           <div className='form-group col'>
-            <StyledCheckboxGroupContainer className='custom-control custom-checkbox mr-sm-2'>
+            <div className='custom-control custom-checkbox mr-sm-2'>
               <input
                 id='isContactAgreed-input'
                 className='custom-control-input'
                 type='checkbox'
                 name='isContactAgreed'
-                checked={isContactAgreed}
-                onChange={onChangeInputDone}
+                checked={ isContactAgreed }
+                onChange={ onChangeInputDone }
                 required
               />
               <label
                 htmlFor='isContactAgreed-input'
-                className='custom-control-label text-justify'
+                className={ `custom-control-label text-justify ${ styles.label }` }
               >
-                {content.contactAgreement}
+                { content.contactAgreement }
               </label>
-            </StyledCheckboxGroupContainer>
-            <StyledCheckboxGroupContainer className='custom-control custom-checkbox mr-sm-2'>
+            </div>
+            <div className='custom-control custom-checkbox mr-sm-2'>
               <input
                 id='isPrivacyPolicyAgreed-input'
                 className='custom-control-input'
                 type='checkbox'
                 name='isPrivacyPolicyAgreed'
-                checked={isPrivacyPolicyAgreed}
-                onChange={onChangeInputDone}
+                checked={ isPrivacyPolicyAgreed }
+                onChange={ onChangeInputDone }
                 required
               />
               <label
                 htmlFor='isPrivacyPolicyAgreed-input'
-                className='custom-control-label text-justify'
+                className={ `custom-control-label text-justify ${ styles.label }` }
               >
-                {content.privacyPolicyAgreement}
+                { content.privacyPolicyAgreement }
               </label>
-            </StyledCheckboxGroupContainer>
+            </div>
           </div>
-          <div className='form-group col-md-12 text-center text-md-right'>
-            <StyledContactFormButton
+          <div
+            className={ `form-group col-md-12 text-center text-md-right ${ styles.buttonsPanel }` }
+          >
+            <input
               className='btn d-inline-block mx-1'
               type='button'
               value='Polityka prywatności'
-              onClick={onPrivacyPolicyModalOpenDone}
+              onClick={ onPrivacyPolicyModalOpenDone }
             />
-            <StyledContactFormButton
+            <input
               className='btn d-inline-block mx-1'
               type='submit'
-              value={content.send}
+              value={ content.send }
             />
           </div>
         </div>
@@ -113,3 +113,4 @@ const ContactForm = ({ content }) => {
 };
 
 export default ContactForm;
+

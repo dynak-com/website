@@ -1,0 +1,15 @@
+.fontIcon {
+  font-size: 2rem;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.fontIcon:hover {
+      color: #ddd;
+}
+
+@media screen and (min-width: 1024px) {
+    .fontIcon {
+      font-size: 2.5rem;
+  }
+}
