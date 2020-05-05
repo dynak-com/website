@@ -1,10 +1,11 @@
 import React from 'react';
-import { StyledFontAwesomeIcon } from './icons-bar.styles';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLinkedin,
   faGithub,
   faGitlab
 } from '@fortawesome/free-brands-svg-icons';
+import styles from './styles.module.css'
 
 const IconsBar = () => {
   return (
@@ -13,13 +14,13 @@ const IconsBar = () => {
         href='https://pl.linkedin.com/company/dynak-com?trk=public_profile_topcard_current_company'
         className='col-4'
       >
-        <StyledFontAwesomeIcon icon={faLinkedin} />
+        <FontAwesomeIcon className={`${styles.fontIcon}`} icon={ faLinkedin } />
       </a>
       <a href='https://github.com/dynak-com' className='col-4'>
-        <StyledFontAwesomeIcon icon={faGithub} />
+        <FontAwesomeIcon className={ `${ styles.fontIcon }` } icon={faGithub} />
       </a>
       <a href='https://gitlab.com/dynak.com' className='col-4'>
-        <StyledFontAwesomeIcon icon={faGitlab} />
+        <FontAwesomeIcon className={ `${ styles.fontIcon }` } icon={faGitlab} />
       </a>
     </div>
   );

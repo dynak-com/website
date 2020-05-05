@@ -1,0 +1,16 @@
+.label {
+  cursor: pointer;
+}
+
+.buttonsPanel input {
+  color: #fff;
+  background-color: #3eafad;
+  transition: 0.2s;
+}
+
+.buttonsPanel input:hover,
+.buttonsPanel input:focus,
+.buttonsPanel input:active {
+  color: #ddd;
+  background-color: #329390;
+}
