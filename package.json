@@ -48,7 +48,6 @@
     ]
   },
   "devDependencies": {
-    "abort-controller": "^3.0.0",
     "axios": "^0.19.2"
   }
 }

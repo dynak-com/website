@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
-import AbortController from 'abort-controller'
-
-const abortController = new AbortController();
+import axios from 'axios';
 
 const useComponent = ( username ) =>
 {
@@ -9,30 +7,21 @@ const useComponent = ( username ) =>
   useEffect( () =>
   {
     fetchGitlabAvatar( username, setAvatarUrl );
-    return () =>
-    {
-      abortController.abort();
-    };
   }, [ username, setAvatarUrl ] );
   return {
     avatarURL,
   };
 };
 
-function fetchGitlabAvatar ( username, setAvatarUrl )
+async function fetchGitlabAvatar ( username, setAvatarUrl )
 {
-  const url = `https://gitlab.com/api/v4/users?username=${ username }&size=180`;
-  try
-  {
-    fetch( url, { method: 'get', signal: abortController.signal } )
-      .then( response => response.json() )
-      .then( data => setAvatarUrl( data[ 0 ].avatar_url ) );
-  } catch ( error )
-  {
-    if ( !abortController.signal.aborted )
-      console.error(error);
-  }
-};
+  let result = await axios.get(
+    `https://gitlab.com/api/v4/users?username=${ username }&size=180`
+  );
+  let { avatar_url } = await result.data[ 0 ];
+  setAvatarUrl( avatar_url );
+}
 
 export default useComponent;
+
 
