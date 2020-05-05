@@ -1,19 +1,19 @@
 import React from 'react';
-import { StyledNavbar, StyledNavBarButton } from './navbar.styles';
-import NavLink from '../navlink/navlink.component';
-import StyledNavLink from '../navlink/navlink.styles';
+import styles from './styles.module.css';
+import CustomNavLink from '../navlink/navlink.component';
+import { NavLink as Container } from 'react-router-dom';
 
 const Navbar = props => {
   const { content, targetId } = props;
   return (
-    <StyledNavbar className='navbar navbar-expand-lg navbar-dark'>
-      <StyledNavLink to='/'>
-        <h1 className='navbar-brand'>
-          dynak<span>.</span>com
+    <nav className={ `navbar navbar-expand-lg navbar-dark ${ styles.customNavbar }` }>
+      <Container to='/'>
+        <h1 className={ `${ styles.websiteTitle } navbar-brand` }>
+          dynak<span className={ styles.dot } >.</span>com
         </h1>
-      </StyledNavLink>
-      <StyledNavBarButton
-        className='navbar-toggler'
+      </Container>
+      <button
+        className={ `${ styles.navbarButton } navbar-toggler` }
         type='button'
         data-toggle='collapse'
         data-target={`#${targetId}`}
@@ -22,11 +22,11 @@ const Navbar = props => {
         aria-label='Toggle navigation'
       >
         <span className='navbar-toggler-icon'></span>
-      </StyledNavBarButton>
+      </button>
       <div className='collapse navbar-collapse' id={targetId}>
         {onRenderNavLinks(content, targetId)}
       </div>
-    </StyledNavbar>
+    </nav>
   );
 };
 
@@ -36,8 +36,8 @@ function onRenderNavLinks(data, targetId) {
       {data.map(item => {
         const { text, address } = item;
         return (
-          <li className='nav-item' key={text}>
-            <NavLink text={text} address={address} target={targetId} />
+          <li id='item-navlink' className='nav-item' key={text}>
+            <CustomNavLink text={text} address={address} target={targetId} />
           </li>
         );
       })}

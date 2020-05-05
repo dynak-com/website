@@ -1,13 +1,13 @@
 import React from 'react';
-import { StyledRodoContentContainer } from './rodo.styles';
+import  styles from './styles.module.css';
 
 const RodoContent = () => {
   return (
-    <StyledRodoContentContainer>
+    <div className={ styles.rodoContentContainer }>
       <h6 className='text-center'>POLITYKA PRYWATNOŚCI I POLITYKA COOKIES</h6>
       <p>
         Korzystanie z bloga i strony internetowej{' '}
-        <a href='https://www.dynak.com' alt='dynak.com'>
+        <a className={ styles.rodoLink } href='https://www.dynak.com' alt='dynak.com'>
           www.dynak.com
         </a>{' '}
         oznacza akceptację poniższych warunków Polityki Prywatności i Polityki
@@ -19,7 +19,7 @@ const RodoContent = () => {
         przetwarzania i ochrony danych osobowych przekazanych przez Użytkowników
         oraz plików Cookies, a także innych technologii pojawiających się na
         stronie internetowej{' '}
-        <a href='https://www.dynak.com' alt='dynak.com'>
+        <a className={ styles.rodoLink } href='https://www.dynak.com' alt='dynak.com'>
           www.dynak.com
         </a>
         .
@@ -52,7 +52,7 @@ const RodoContent = () => {
       <p>
         Dane osobowe przekazywane przez Użytkownika w ramach funkcjonowania
         Strony internetowej dynak.com, profilu na{' '}
-        <a
+        <a className={ styles.rodoLink }
           href='https://pl.linkedin.com/company/dynak-com?trk=public_profile_topcard_current_company'
           alt='dynak.com na LinkedIn'
         >
@@ -83,15 +83,15 @@ const RodoContent = () => {
         <li>
           tworzenie analizy polegającej na analizie danych zbieranych
           automatycznie przy korzystaniu ze strony internetowej, w tym&nbsp;
-          <a href='https://www.linkedin.com' alt='LinkedIn'>
+          <a className={ styles.rodoLink } href='https://www.linkedin.com' alt='LinkedIn'>
             www.linkedin.com
           </a>
           ,{' '}
-          <a href='https://www.github.com' alt='GitHub'>
+          <a className={ styles.rodoLink } href='https://www.github.com' alt='GitHub'>
             www.github.com
           </a>
           ,{' '}
-          <a href='https://www.gitlab.com' alt='GitLab'>
+          <a className={ styles.rodoLink } href='https://www.gitlab.com' alt='GitLab'>
             www.gitlab.com
           </a>{' '}
           — na podstawie art. 6 ust. 1 lit. f RODO;
@@ -141,7 +141,7 @@ const RodoContent = () => {
       <p>
         W tych celach może zwrócić się do Administratora poprzez adres e-mail:
         &nbsp;
-        <a
+        <a className={ styles.rodoLink }
           href='mailto:admin@dynak.com?Subject=support'
           alt='Support dynak.com'
           target='_top'
@@ -206,7 +206,7 @@ const RodoContent = () => {
         <b>NIE</b> pozwalają na odczytanie informacji w nich zawartych.
       </p>
       <span className='text-muted'>Utworzono dnia 2020-03-16</span>
-    </StyledRodoContentContainer>
+    </div>
   );
 };
 
