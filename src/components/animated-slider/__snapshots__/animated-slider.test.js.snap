@@ -1,9 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AnimatedSlider component AnimatedSlider has 1 nested child 1`] = `ShallowWrapper {}`;
-
-exports[`AnimatedSlider component animatedSlider div has 1 child 1`] = `ShallowWrapper {}`;
-
 exports[`AnimatedSlider component renders correctly according to Snapshot 1`] = `
 <div
   className="animatedSlider"

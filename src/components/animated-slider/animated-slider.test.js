@@ -7,7 +7,7 @@ describe('AnimatedSlider component', () => {
     const component = shallow(<AnimatedSlider />);
     const wrapper = mount(<AnimatedSlider />);
     const animatedSlider = component.find('div');
-    console.log(wrapper.debug());
+    //console.log(wrapper.debug());
 
     it('renders correctly according to Snapshot', () => {
         const tree = renderer.create(<AnimatedSlider />).toJSON();
