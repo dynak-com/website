@@ -19,7 +19,3 @@ exports[`Footer component renders correctly 1`] = `
   </span>
 </footer>
 `;
-
-exports[`Footer component renders correctly according to Snapshot 1`] = `ReactWrapper {}`;
-
-exports[`Footer component should call props.onChange when button is clicked 1`] = `ReactWrapper {}`;

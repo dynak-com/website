@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardList component renders correctly according to Snapshot 1`] = `
+<article
+  className="singleCard false"
+>
+  <p
+    className="p-2 cardText"
+  >
+    To właśnie my! Jesteśmy miłośnikami najnowszych rozwiązań full-stackowych. Tworzymy wygodne i czytelne interfejsy webowe oraz wydajny back-end. Aby nasza współpraca przebiegała sprawnie, rozwijamy projekty, korzystając z metodologii agile.
+  </p>
+</article>
+`;
+
+exports[`CardList component renders correctly according to Snapshot 2`] = `
+<article
+  className="singleCard cardEven"
+>
+  <p
+    className="p-2 cardText"
+  >
+    Wiemy, że brak integracji systemów utrudnia realizację celów biznesowych. Dostarczamy usługi dopasowane do rzeczywistych potrzeb użytkownika. Zarządzanie inteligentnym biurem czy obiektami przemysłowymi to z nami łatwizna.
+  </p>
+</article>
+`;
+
+exports[`CardList component renders correctly according to Snapshot 3`] = `
+<article
+  className="singleCard false"
+>
+  <p
+    className="p-2 cardText"
+  >
+    Podczas wspólnych warsztatów dokonamy ewaluacji oraz podzielimy drogę do celu na poszczególne etapy. Prosto i transparentnie. Działamy głównie na terenie Wrocławia i okolic, ale świetnie radzimy sobie z pracą zdalną.
+  </p>
+</article>
+`;

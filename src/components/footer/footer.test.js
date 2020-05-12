@@ -6,7 +6,7 @@ import Footer from './footer.component';
 describe('Footer component', () => {
     const component = shallow(<Footer />);
     const wrapper = mount(<Footer />);
-    console.log(wrapper.debug());
+    //console.log(wrapper.debug());
 
     it('should render 2 spans', () => {
         const footer = component.find('footer');

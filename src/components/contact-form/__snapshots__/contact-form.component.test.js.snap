@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactForm  component renders correctly according to Snapshot 1`] = `
+<div
+  className="mx-auto"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="form-row"
+    >
+      <div
+        className="form-group col-md-6"
+      >
+        <input
+          className="form-control text-center"
+          name="subject"
+          onChange={[Function]}
+          placeholder="Temat wiadomości"
+          required={true}
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="form-group col-md-6"
+      >
+        <input
+          className="form-control text-center"
+          name="email"
+          onChange={[Function]}
+          placeholder="Twój adres e-mail"
+          required={true}
+          type="email"
+          value=""
+        />
+      </div>
+    </div>
+    <textarea
+      className="form-control"
+      cols="30"
+      name="message"
+      onChange={[Function]}
+      placeholder="Treść wiadomości"
+      required={true}
+      rows="10"
+      value=""
+    />
+    <div
+      className="form-row my-3"
+    >
+      <div
+        className="form-group col"
+      >
+        <div
+          className="custom-control custom-checkbox mr-sm-2"
+        >
+          <input
+            checked={false}
+            className="custom-control-input"
+            id="isContactAgreed-input"
+            name="isContactAgreed"
+            onChange={[Function]}
+            required={true}
+            type="checkbox"
+          />
+          <label
+            className="custom-control-label text-justify label"
+            htmlFor="isContactAgreed-input"
+          >
+            Wyrażam zgodę na kontakt ze strony administratora danych osobowych, z użyciem telekomunikacyjnych urządzeń końcowych oraz automatycznych systemów wywołujących, zgodnie z art. 172 par. 1. Prawa telekomunikacyjnego.
+          </label>
+        </div>
+        <div
+          className="custom-control custom-checkbox mr-sm-2"
+        >
+          <input
+            checked={false}
+            className="custom-control-input"
+            id="isPrivacyPolicyAgreed-input"
+            name="isPrivacyPolicyAgreed"
+            onChange={[Function]}
+            required={true}
+            type="checkbox"
+          />
+          <label
+            className="custom-control-label text-justify label"
+            htmlFor="isPrivacyPolicyAgreed-input"
+          >
+            Zapoznałem/-am się z polityką prywatności i akceptuję jej treść.
+          </label>
+        </div>
+      </div>
+      <div
+        className="form-group col-md-12 text-center text-md-right buttonsPanel"
+      >
+        <input
+          className="btn d-inline-block mx-1"
+          onClick={[Function]}
+          type="button"
+          value="Polityka prywatności"
+        />
+        <input
+          className="btn d-inline-block mx-1"
+          type="submit"
+          value="Wyślij"
+        />
+      </div>
+    </div>
+  </form>
+</div>
+`;
