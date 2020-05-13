@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CardList component renders correctly according to Snapshot 1`] = `
+exports[`Card component renders correctly according to Snapshot 1`] = `
 <article
   className="singleCard false"
 >
@@ -12,7 +12,7 @@ exports[`CardList component renders correctly according to Snapshot 1`] = `
 </article>
 `;
 
-exports[`CardList component renders correctly according to Snapshot 2`] = `
+exports[`Card component renders correctly according to Snapshot 2`] = `
 <article
   className="singleCard cardEven"
 >
@@ -24,7 +24,7 @@ exports[`CardList component renders correctly according to Snapshot 2`] = `
 </article>
 `;
 
-exports[`CardList component renders correctly according to Snapshot 3`] = `
+exports[`Card component renders correctly according to Snapshot 3`] = `
 <article
   className="singleCard false"
 >

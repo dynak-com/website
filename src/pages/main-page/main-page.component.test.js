@@ -1,12 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import ValuesArticle from './values-article.component';
+import MainPage from './main-page.component';
 import content from '../../content.json';
 
-describe('ValuesArticle component', () => {
+describe('MainPage component', () => {
     it('renders correctly according to Snapshot', () => {
         const [data] = content;
-        const tree = renderer.create(<ValuesArticle values={data.about.values} />).toJSON();
+        const tree = renderer.create(<MainPage content={data.home} />).toJSON();
         expect(tree).toMatchSnapshot();
     });
 });

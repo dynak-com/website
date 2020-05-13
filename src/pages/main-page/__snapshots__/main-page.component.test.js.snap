@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainPage component renders correctly according to Snapshot 1`] = `
+<section
+  className="mainPageContainer"
+>
+  <div
+    className="animatedSlider"
+  >
+    <div
+      className="imageContainer"
+    />
+  </div>
+  <h1
+    className="text-center text-light d-block my-5"
+  >
+    Zabieramy ludziom pracę!
+  </h1>
+  <div
+    className="px-4"
+  >
+    <div
+      className="row my-4"
+    >
+      <div
+        className="col-12 col-md order-md-2 cardHeader"
+      >
+        <h2>
+          Szukasz programistów z pasją?
+        </h2>
+      </div>
+      <div
+        className="col-12 col-md-7 order-md-1 cardWrapper"
+      >
+        <article
+          className="singleCard false"
+        >
+          <p
+            className="p-2 cardText"
+          >
+            To właśnie my! Jesteśmy miłośnikami najnowszych rozwiązań full-stackowych. Tworzymy wygodne i czytelne interfejsy webowe oraz wydajny back-end. Aby nasza współpraca przebiegała sprawnie, rozwijamy projekty, korzystając z metodologii agile.
+          </p>
+        </article>
+      </div>
+    </div>
+    <div
+      className="row my-4"
+    >
+      <div
+        className="col-12 col-md order-md-1 cardHeader"
+      >
+        <h2>
+          Chcesz zintegrować działające już systemy?
+        </h2>
+      </div>
+      <div
+        className="col-12 col-md-7 order-md-2 cardWrapper"
+      >
+        <article
+          className="singleCard cardEven"
+        >
+          <p
+            className="p-2 cardText"
+          >
+            Wiemy, że brak integracji systemów utrudnia realizację celów biznesowych. Dostarczamy usługi dopasowane do rzeczywistych potrzeb użytkownika. Zarządzanie inteligentnym biurem czy obiektami przemysłowymi to z nami łatwizna.
+          </p>
+        </article>
+      </div>
+    </div>
+    <div
+      className="row my-4"
+    >
+      <div
+        className="col-12 col-md order-md-2 cardHeader"
+      >
+        <h2>
+          Jak przebiega współpraca z nami?
+        </h2>
+      </div>
+      <div
+        className="col-12 col-md-7 order-md-1 cardWrapper"
+      >
+        <article
+          className="singleCard false"
+        >
+          <p
+            className="p-2 cardText"
+          >
+            Podczas wspólnych warsztatów dokonamy ewaluacji oraz podzielimy drogę do celu na poszczególne etapy. Prosto i transparentnie. Działamy głównie na terenie Wrocławia i okolic, ale świetnie radzimy sobie z pracą zdalną.
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+`;
