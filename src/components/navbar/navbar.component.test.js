@@ -5,7 +5,7 @@ import { onRenderNavLinks } from './navbar.component';
 const contentData = JSON.parse(JSON.stringify(content));
 const lang = 'pl';
 
-describe('ContactForm  component', () => {
+describe('Navbar  component', () => {
     const content = contentData.find((item) => item.lang === lang);
     const targetId = 'headerNavbarMenu';
 

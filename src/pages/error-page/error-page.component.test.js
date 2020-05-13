@@ -1,12 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import ValuesArticle from './values-article.component';
+import ErrorPage from './error-page.component';
 import content from '../../content.json';
 
-describe('ValuesArticle component', () => {
+describe('ErrorPage component', () => {
     it('renders correctly according to Snapshot', () => {
         const [data] = content;
-        const tree = renderer.create(<ValuesArticle values={data.about.values} />).toJSON();
+        const tree = renderer.create(<ErrorPage content={data.error} />).toJSON();
         expect(tree).toMatchSnapshot();
     });
 });

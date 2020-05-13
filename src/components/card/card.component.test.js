@@ -4,7 +4,7 @@ import Card from './card.component';
 import content from '../../content.json';
 import styles from '../card-list/styles.module.css';
 
-describe('CardList component', () => {
+describe('Card component', () => {
     it('renders correctly according to Snapshot', () => {
         const [contentData] = content;
         const { posts } = contentData.home;
