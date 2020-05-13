@@ -1,17 +1,22 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
 import Navbar from './navbar.component';
 import content from '../../content.json';
-import useComponent from '../../hook';
+import { onRenderNavLinks } from './navbar.component';
 
 const contentData = JSON.parse(JSON.stringify(content));
+const lang = 'pl';
 
 describe('ContactForm  component', () => {
-    it('renders correctly according to Snapshot', () => {
-        const { lang } = useComponent();
-        const content = contentData.find((item) => item.lang === lang);
+    const content = contentData.find((item) => item.lang === lang);
+    const targetId = 'headerNavbarMenu';
 
-        const tree = renderer.create(<Navbar content={content.nav} targetId="headerNavbarMenu" />).toJSON();
-        expect(tree).toMatchSnapshot();
+    test('should run onRenderCards function', () => {
+        const myMockFn = jest.fn(onRenderNavLinks(content.nav, targetId));
+        expect(myMockFn).toMatchSnapshot();
+    });
+
+    it('renders correctly according to Snapshot', () => {
+        const prop = { content: content.nav, targetId };
+        const myMockFn = jest.fn(Navbar(prop));
+        expect(myMockFn).toMatchSnapshot();
     });
 });
