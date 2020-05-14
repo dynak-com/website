@@ -1,9 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ContactForm  component renders correctly according to Snapshot 1`] = `[MockFunction]`;
-
-exports[`ContactForm  component should run onRenderCards function 1`] = `[MockFunction]`;
-
 exports[`Navbar  component renders correctly according to Snapshot 1`] = `[MockFunction]`;
 
 exports[`Navbar  component should run onRenderCards function 1`] = `[MockFunction]`;
