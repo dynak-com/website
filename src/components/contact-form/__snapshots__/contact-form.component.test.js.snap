@@ -15,6 +15,7 @@ exports[`ContactForm  component renders correctly according to Snapshot 1`] = `
       >
         <input
           className="form-control text-center"
+          id="first-input"
           name="subject"
           onChange={[Function]}
           placeholder="Temat wiadomości"
@@ -103,6 +104,7 @@ exports[`ContactForm  component renders correctly according to Snapshot 1`] = `
         />
         <input
           className="btn d-inline-block mx-1"
+          id="buttonSubmit"
           type="submit"
           value="Wyślij"
         />
@@ -111,3 +113,9 @@ exports[`ContactForm  component renders correctly according to Snapshot 1`] = `
   </form>
 </div>
 `;
+
+exports[`ContactForm  should set init value 1`] = `[Function]`;
+
+exports[`ContactForm  should set init value 2`] = `[Function]`;
+
+exports[`ContactForm  should set init value 3`] = `[Function]`;

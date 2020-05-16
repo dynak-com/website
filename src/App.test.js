@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import App from './App';
 import useComponent from './hook';
 
@@ -18,6 +18,7 @@ describe('App component', () => {
         const wrapper = shallow(<HookWrapper hook={() => useComponent()} />);
 
         const hook = wrapper.props().hook;
+
         console.log(hook);
         const { lang, onSetLang } = hook;
         expect(lang).toEqual('pl');
