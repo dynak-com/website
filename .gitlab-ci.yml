@@ -12,6 +12,17 @@ build_production:
   only:
     - master
 
+build_develop:
+  stage: build
+  script:
+    - echo "Building for develop..."
+    - bash ./clean_develop.sh
+    - git checkout develop &&
+      git pull &&
+      docker build -t develop/dynak.com-$(git rev-parse --short HEAD) .
+  only:
+    - develop
+
 deploy_production:
   stage: deploy
   script:
@@ -22,3 +33,14 @@ deploy_production:
       -d production/dynak.com-$(git rev-parse --short HEAD)
   only:
     - master
+
+deploy_develop:
+  stage: deploy
+  script:
+    - echo "Deploying develop..."
+    - docker run -v /var/messages-test/:/opt/dynak.com/messages
+      -p 55000:5000
+      -p 58080:8080
+      -d develop/dynak.com-$(git rev-parse --short HEAD)
+  only:
+    - develop
