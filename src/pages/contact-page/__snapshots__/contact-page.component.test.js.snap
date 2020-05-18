@@ -27,7 +27,6 @@ exports[`ContactPage component renders correctly according to Snapshot 1`] = `
             >
               <input
                 className="form-control text-center"
-                id="first-input"
                 name="subject"
                 onChange={[Function]}
                 placeholder="Temat wiadomości"

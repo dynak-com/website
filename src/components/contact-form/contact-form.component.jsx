@@ -11,7 +11,6 @@ const ContactForm = ({ content }) => {
                 <div className="form-row">
                     <div className="form-group col-md-6">
                         <input
-                            id="first-input"
                             className="form-control text-center"
                             type="text"
                             name="subject"
