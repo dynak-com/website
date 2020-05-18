@@ -6,7 +6,9 @@ build_production:
   script:
     - echo "Building for production..."
     - bash ./clean_production.sh
-    - git checkout master && git pull && docker build -t production/dynak.com .
+    - git checkout master &&
+      git pull &&
+      docker build -t production/dynak.com-$(git rev-parse --short HEAD) .
   only:
     - master
 
@@ -14,6 +16,9 @@ deploy_production:
   stage: deploy
   script:
     - echo "Deploying production..."
-    - docker run -v /var/messages/:/opt/dynak.com/messages -p 5000:5000 -p 8080:8080 -d production/dynak.com
+    - docker run -v /var/messages/:/opt/dynak.com/messages
+      -p 5000:5000
+      -p 8080:8080
+      -d production/dynak.com-$(git rev-parse --short HEAD)
   only:
     - master
