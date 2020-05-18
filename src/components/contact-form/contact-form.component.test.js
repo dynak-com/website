@@ -60,18 +60,22 @@ describe('ContactForm ', () => {
 
         it('calls onChangeInputDone', () => {
             const mockedEvent = { target: {} };
-            wrapper.find('#first-input').simulate('change', mockedEvent);
-            expect(setState).toHaveBeenCalled();
+            let i = 0;
+            while (i < 6) {
+                wrapper.find('input').at(i).simulate('change', mockedEvent);
+                i++;
+            }
+            expect(setState).toHaveBeenCalledTimes(4);
         });
     });
 });
 
-test('createUser calls fetch with the right args and returns the user id', async () => {
+it('sendData from contact form calls fetch', async () => {
     const mockSuccessResponse = {};
     const mockJsonPromise = Promise.resolve(mockSuccessResponse);
+    const onError = jest.fn();
 
     const mockFetchPromise = Promise.resolve({
-        // 3
         json: () => mockJsonPromise,
     });
     jest.spyOn(global, 'fetch').mockImplementation(() => mockFetchPromise);
@@ -79,5 +83,6 @@ test('createUser calls fetch with the right args and returns the user id', async
     let wrapper = shallow(<ContactForm content={form} />);
     wrapper.find('form').simulate('submit', { preventDefault() {} });
 
-    expect(global.fetch).toHaveBeenCalledTimes(1);
+    await expect(global.fetch).toHaveBeenCalledTimes(1);
+    expect(onError).not.toHaveBeenCalled();
 });
