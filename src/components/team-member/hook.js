@@ -15,7 +15,7 @@ export const useComponent = (username) => {
     };
 };
 
-export default async function fetchGitlabAvatar(username, setAvatarUrl, controllerSignal) {
+export async function fetchGitlabAvatar(username, setAvatarUrl, controllerSignal) {
     try {
         const url = `https://gitlab.com/api/v4/users?username=${username}&size=180`;
         let result = await fetch(url, { method: 'get', signal: controllerSignal }).then((response) => response.json());
