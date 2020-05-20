@@ -2,13 +2,11 @@ import React from 'react';
 import { useComponent } from './hook';
 import { shallow } from 'enzyme';
 import content from '../../content.json';
-import fetchGitlabAvatar from './hook';
+import { fetchGitlabAvatar } from './hook';
 
 jest.mock('./hook', () => ({
     fetchGitlabAvatar: jest.fn(),
 }));
-
-const [contentData] = content;
 
 async function HookWrapper(props) {
     try {
@@ -21,6 +19,7 @@ async function HookWrapper(props) {
 }
 
 describe('TeamMember hook', () => {
+    const [contentData] = content;
     const { teamData } = contentData.about.team;
     it('should set users avatar urls', () => {
         teamData.map((member) => {
