@@ -19,7 +19,7 @@ describe('App component', () => {
 
         const hook = wrapper.props().hook;
 
-        console.log(hook);
+        //console.log(hook);
         const { lang, onSetLang } = hook;
         expect(lang).toEqual('pl');
     });
