@@ -16,10 +16,7 @@ describe('App component', () => {
 
     it('should set init value', () => {
         const wrapper = shallow(<HookWrapper hook={() => useComponent()} />);
-
         const hook = wrapper.props().hook;
-
-        //console.log(hook);
         const { lang, onSetLang } = hook;
         expect(lang).toEqual('pl');
     });

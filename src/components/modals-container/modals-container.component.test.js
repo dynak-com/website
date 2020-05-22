@@ -13,6 +13,6 @@ describe('ModalsContainer component', () => {
 
     it('renders correctly according to Snapshot', () => {
         shallow(<ModalsContainer modalsData={modal} />);
-        expect(ModalsContainer).toHaveBeenCalled();
+        expect(ModalsContainer).toHaveBeenCalledTimes(1);
     });
 });

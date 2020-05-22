@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import Modal from '../modal/modal.component';
 import ModalForPrivacyPolicy from '../modal-privacy-policy/modal-privacy-policy.component';
 
-const modalsNode = document.getElementById('modals');
+export const modalsNode = document.getElementById('modals');
 
 export const correctModalRef = React.createRef();
 export const invalidModalRef = React.createRef();
@@ -18,7 +18,7 @@ export const ModalsContainer = ({ modalsData }) => {
             <ModalForPrivacyPolicy ref={modalPrivacyPolicyRef} content={modalsData.modal_privacy_policy} />
         </div>
     );
-    return ReactDOM.createPortal(modals, modalsNode);
+    return <div>{ReactDOM.createPortal(modals, modalsNode)}</div>;
 };
 
 export default ModalsContainer;
