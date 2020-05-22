@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomNavLink component renders correctly according to Snapshot 1`] = `
+"<NavLink exact={true} to=\\"/\\" className=\\"customNavlink\\" activeClassName=\\"activated\\">
+  <span className=\\"nav-link d-inline-block d-lg-block px-1 my-1 my-lg-0 mx-lg-3\\" data-target=\\"#headerNavbarMenu\\">
+    home
+  </span>
+</NavLink>"
+`;
+
+exports[`CustomNavLink component renders correctly according to Snapshot 2`] = `
+"<NavLink exact={true} to=\\"/about\\" className=\\"customNavlink\\" activeClassName=\\"activated\\">
+  <span className=\\"nav-link d-inline-block d-lg-block px-1 my-1 my-lg-0 mx-lg-3\\" data-target=\\"#headerNavbarMenu\\">
+    o nas
+  </span>
+</NavLink>"
+`;
+
+exports[`CustomNavLink component renders correctly according to Snapshot 3`] = `
+"<NavLink exact={true} to=\\"/projects\\" className=\\"customNavlink\\" activeClassName=\\"activated\\">
+  <span className=\\"nav-link d-inline-block d-lg-block px-1 my-1 my-lg-0 mx-lg-3\\" data-target=\\"#headerNavbarMenu\\">
+    projekty
+  </span>
+</NavLink>"
+`;
+
+exports[`CustomNavLink component renders correctly according to Snapshot 4`] = `
+"<NavLink exact={true} to=\\"/contact\\" className=\\"customNavlink\\" activeClassName=\\"activated\\">
+  <span className=\\"nav-link d-inline-block d-lg-block px-1 my-1 my-lg-0 mx-lg-3\\" data-target=\\"#headerNavbarMenu\\">
+    kontakt
+  </span>
+</NavLink>"
+`;
