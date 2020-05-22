@@ -1,23 +1,18 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import App from './App';
-import useComponent from './hook';
-
-function HookWrapper(props) {
-    const hook = props.hook ? props.hook() : undefined;
-    return <HookWrapper hook={hook} />;
-}
+import { Switch, Route } from 'react-router';
+import Navbar from './components/navbar/navbar.component';
 
 describe('App component', () => {
-    it('renders correctly', () => {
+    it('renders correctly and contains the correct items', () => {
         const wrapper = shallow(<App />);
-        expect(wrapper.exists()).toBeTruthy();
-    });
 
-    it('should set init value', () => {
-        const wrapper = shallow(<HookWrapper hook={() => useComponent()} />);
-        const hook = wrapper.props().hook;
-        const { lang, onSetLang } = hook;
-        expect(lang).toEqual('pl');
+        expect(wrapper.find('div').length).toBe(1);
+        expect(wrapper.find(Navbar).length).toBe(1);
+        expect(wrapper.find(Switch).length).toBe(1);
+        expect(wrapper.find(Route).length).toBe(5);
+
+        expect(wrapper.debug()).toMatchSnapshot();
     });
 });

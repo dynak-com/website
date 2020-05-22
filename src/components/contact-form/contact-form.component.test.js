@@ -23,7 +23,6 @@ describe('ContactForm  component', () => {
 describe('ContactForm ', () => {
     it('should render', () => {
         const wrapper = shallow(<HookWrapper />);
-
         expect(wrapper.exists()).toBeTruthy();
     });
 
@@ -70,7 +69,7 @@ describe('ContactForm ', () => {
     });
 });
 
-it('sendData from contact form calls fetch', async () => {
+it('sends data from the contact form', async () => {
     const mockSuccessResponse = {};
     const mockJsonPromise = Promise.resolve(mockSuccessResponse);
     const onError = jest.fn();
@@ -80,9 +79,12 @@ it('sendData from contact form calls fetch', async () => {
     });
     jest.spyOn(global, 'fetch').mockImplementation(() => mockFetchPromise);
 
-    let wrapper = shallow(<ContactForm content={form} />);
-    wrapper.find('form').simulate('submit', { preventDefault() {} });
+    try {
+        const wrapper = shallow(<ContactForm content={form} />);
+        wrapper.find('form').simulate('submit', { preventDefault() {} });
 
-    await expect(global.fetch).toHaveBeenCalledTimes(1);
-    expect(onError).not.toHaveBeenCalled();
+        await expect(global.fetch).toHaveBeenCalledTimes(1);
+    } catch (err) {
+        expect(onError).not.toHaveBeenCalled();
+    }
 });
