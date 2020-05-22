@@ -12,6 +12,7 @@ describe('CustomNavLink component', () => {
             const { text, address } = item;
             const target = 'headerNavbarMenu';
             const wrapper = shallow(<CustomNavLink text={text} address={address} target={target} />);
+            expect(wrapper.debug()).toMatchSnapshot();
             return expect(wrapper.exists()).toBeTruthy();
         });
     });
