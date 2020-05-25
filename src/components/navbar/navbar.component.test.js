@@ -9,7 +9,7 @@ describe('Navbar  component', () => {
     const content = contentData.find((item) => item.lang === lang);
     const targetId = 'headerNavbarMenu';
 
-    test('should run onRenderCards function', () => {
+    it('should run onRenderCards function', () => {
         const myMockFn = jest.fn(onRenderNavLinks(content.nav, targetId));
         expect(myMockFn).toMatchSnapshot();
     });

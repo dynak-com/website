@@ -5,8 +5,8 @@ import content from '../../content.json';
 
 describe('ContactPage component', () => {
     it('renders correctly according to Snapshot', () => {
-        const [data] = content;
-        const tree = renderer.create(<ContactPage content={data.contact} />).toJSON();
+        const [contentData] = content;
+        const tree = renderer.create(<ContactPage content={contentData.contact} />).toJSON();
         expect(tree).toMatchSnapshot();
     });
 });
