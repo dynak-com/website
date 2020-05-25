@@ -1,11 +1,26 @@
+stages:
+  - build
+  - deploy
+  - test_coverage
+
 before_script:
   - echo "Starting the runner..."
 
-coverage_test:
-  stage: test
+coverage_test_production:
+  stage: test_coverage
   script:
-    - npm run test -- --coverage --watchAll=false
+    - docker exec dynak.com-$(git rev-parse --short HEAD) npm run test -- --coverage --watchAll=false
   coverage: /All\sfiles.*?\s+(\d+.\d+)/
+  only:
+    - master
+
+coverage_test_develop:
+  stage: test_coverage
+  script:
+    - docker exec dynak.com-$(git rev-parse --short HEAD) npm run test -- --coverage --watchAll=false
+  coverage: /All\sfiles.*?\s+(\d+.\d+)/
+  only:
+    - develop
 
 build_production:
   stage: build
@@ -34,6 +49,7 @@ deploy_production:
   script:
     - echo "Deploying production..."
     - docker run -v /var/messages/:/opt/dynak.com/messages
+      --name dynak.com-$(git rev-parse --short HEAD)
       -p 5000:5000
       -p 8080:8080
       -d production/dynak.com-$(git rev-parse --short HEAD)
@@ -45,6 +61,7 @@ deploy_develop:
   script:
     - echo "Deploying develop..."
     - docker run -v /var/messages-test/:/opt/dynak.com/messages
+      --name dynak.com-$(git rev-parse --short HEAD)
       -p 55000:5000
       -p 58080:8080
       -d develop/dynak.com-$(git rev-parse --short HEAD)
