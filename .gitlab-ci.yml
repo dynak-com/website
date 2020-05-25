@@ -1,6 +1,12 @@
 before_script:
   - echo "Starting the runner..."
 
+coverage_test:
+  stage: test
+  script:
+    - npm run test -- --coverage --watchAll=false
+  coverage: /All\sfiles.*?\s+(\d+.\d+)/
+
 build_production:
   stage: build
   script:
