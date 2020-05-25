@@ -5,8 +5,8 @@ import content from '../../content.json';
 
 describe('ValuesArticle component', () => {
     it('renders correctly according to Snapshot', () => {
-        const [data] = content;
-        const tree = renderer.create(<ValuesArticle values={data.about.values} />).toJSON();
+        const [contentData] = content;
+        const tree = renderer.create(<ValuesArticle values={contentData.about.values} />).toJSON();
         expect(tree).toMatchSnapshot();
     });
 });

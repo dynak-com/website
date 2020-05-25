@@ -5,14 +5,13 @@ import content from '../../content.json';
 import { onRenderCards } from './card-list.component';
 
 describe('CardList component', () => {
-    test('should run onRenderCards function', () => {
-        const [data] = content;
-        const myMockFn = jest.fn(onRenderCards(data.home.posts));
+    const [contentData] = content;
+    it('should run onRenderCards function', () => {
+        const myMockFn = jest.fn(onRenderCards(contentData.home.posts));
         expect(myMockFn).toMatchSnapshot();
     });
 
     it('renders correctly according to Snapshot', () => {
-        const [contentData] = content;
         const { posts } = contentData.home;
         const cardsData = {
             posts,

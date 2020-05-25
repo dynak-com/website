@@ -41,7 +41,7 @@ describe('Footer hook', () => {
         const hook = wrapper.props().hook;
         const currentYear = new Date().getFullYear();
 
-        const { year, onPrivacyPolicyModalOpenDone } = hook;
+        const { year } = hook;
         expect(year).toEqual(currentYear);
 
         const property = component.find('span').at(1).prop('onClick');

@@ -11,7 +11,7 @@ describe('', () => {
     it('should set init language value', () => {
         const wrapper = shallow(<HookWrapper hook={() => useComponent()} />);
         const hook = wrapper.props().hook;
-        const { lang, onSetLang } = hook;
+        const { lang } = hook;
         expect(lang).toEqual('pl');
     });
 });
