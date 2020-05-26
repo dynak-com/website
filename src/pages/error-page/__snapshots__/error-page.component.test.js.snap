@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`ErrorPage component renders correctly according to Snapshot 1`] = `
-<h1
-  className="text-center text-light"
->
-  Nie ma takiej strony! :(
-</h1>
-`;
