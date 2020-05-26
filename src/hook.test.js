@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import useComponent from './hook';
 
 function HookWrapper(props) {
-    const hook = props.hook ? props.hook() : undefined;
+    const hook = props.hook ? props.hook() : null;
     return <HookWrapper hook={hook} />;
 }
 

@@ -25,7 +25,7 @@ describe('Footer component', () => {
 });
 
 function HookWrapper(props) {
-    const hook = props.hook ? props.hook() : undefined;
+    const hook = props.hook ? props.hook() : null;
     return <HookWrapper hook={hook} />;
 }
 

@@ -9,7 +9,7 @@ const [contentData] = content;
 const { form } = contentData.contact;
 
 function HookWrapper(props) {
-    const hook = props.hook ? props.hook() : undefined;
+    const hook = props.hook ? props.hook() : null;
     return <div hook={hook} />;
 }
 
