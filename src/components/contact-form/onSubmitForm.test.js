@@ -31,7 +31,7 @@ describe('ContactForm hook', () => {
         });
     });
 
-    it('"returns null when exception"', (done) => {
+    it('"calls onInvalidModalOpen when exception"', (done) => {
         const mockFailureResponse = [{ message: 'Fields are empty' }];
         const mockJsonPromise = Promise.reject(mockFailureResponse);
         const mockFetchPromise = Promise.reject({
