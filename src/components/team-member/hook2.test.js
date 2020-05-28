@@ -27,4 +27,28 @@ describe('FetchGitlabAvatar function ', () => {
             done(); // 8
         });
     });
+
+    it('"returns null when exception"', (done) => {
+        // 1
+        const mockFailureResponse = [{ avatar_url: 'not fetched' }];
+        const mockJsonPromise = Promise.reject(mockFailureResponse); // 2
+        const mockFetchPromise = Promise.reject({
+            // 3
+            json: () => mockJsonPromise,
+        });
+        jest.spyOn(global, 'fetch').mockImplementationOnce(() => mockFetchPromise); // 4
+
+        teamData.map((member) => {
+            const setAvatarUrl = jest.fn();
+            const abortController = new AbortController();
+            fetchGitlabAvatar(member.username, setAvatarUrl, abortController.signal);
+        });
+        expect(global.fetch).toHaveBeenCalledTimes(9);
+
+        process.nextTick(() => {
+            // 6
+            global.fetch.mockClear(); // 7
+            done(); // 8
+        });
+    });
 });

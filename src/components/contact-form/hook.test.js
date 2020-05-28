@@ -11,16 +11,12 @@ jest.mock('./callbacks', () => ({
 }));
 
 async function HookWrapper(props) {
-    try {
-        await props.hook();
-        await expect(onChangeInput).toHaveBeenCalled();
-        await expect(onSubmitForm).toHaveBeenCalled();
-        await expect(onCorrectModalOpen).toHaveBeenCalled();
-        await expect(onCorrectModalOpen).toHaveBeenCalled();
-        return;
-    } catch (err) {
-        await expect(err).toBeDefined();
-    }
+    await props.hook();
+    await expect(onChangeInput).toHaveBeenCalled();
+    await expect(onSubmitForm).toHaveBeenCalled();
+    await expect(onCorrectModalOpen).toHaveBeenCalled();
+    await expect(onCorrectModalOpen).toHaveBeenCalled();
+    return;
 }
 
 describe('ContactForm hook', () => {
