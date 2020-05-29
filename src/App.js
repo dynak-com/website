@@ -12,41 +12,27 @@ import useComponent from './hook';
 import content from './content.json';
 import './styles.css';
 
+import './internationalization/i18n';
+
 const contentData = JSON.parse(JSON.stringify(content));
 
 const App = () => {
-  const { lang } = useComponent();
-  const content = contentData.find((item) => item.lang === lang);
-  return (
-    <div className={'main-container'}>
-      <Navbar content={content.nav} targetId='headerNavbarMenu' />
-      <Switch>
-        <Route
-          exact
-          path='/'
-          component={() => <MainPage content={content.home} />}
-        />
-        <Route
-          exact
-          path='/about'
-          component={() => <AboutPage content={content.about} />}
-        />
-        <Route
-          exact
-          path='/projects'
-          component={() => <ProjectsPage content={content.projects} />}
-        />
-        <Route
-          exact
-          path='/contact'
-          component={() => <ContactPage content={content.contact} />}
-        />
-        <Route component={() => <ErrorPage content={content.error} />} />
-      </Switch>
-      <Footer />
-      <ModalsContainer modalsData={content.modal} />
-    </div>
-  );
+    const { lang } = useComponent();
+    const content = contentData.find((item) => item.lang === lang);
+    return (
+        <div className={'main-container'}>
+            <Navbar content={content.nav} targetId="headerNavbarMenu" />
+            <Switch>
+                <Route exact path="/" component={() => <MainPage content={content.home} />} />
+                <Route exact path="/about" component={() => <AboutPage content={content.about} />} />
+                <Route exact path="/projects" component={() => <ProjectsPage content={content.projects} />} />
+                <Route exact path="/contact" component={() => <ContactPage content={content.contact} />} />
+                <Route component={() => <ErrorPage content={content.error} />} />
+            </Switch>
+            <Footer />
+            <ModalsContainer modalsData={content.modal} />
+        </div>
+    );
 };
 
 export default App;

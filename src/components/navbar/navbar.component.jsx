@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './styles.module.css';
 import CustomNavLink from '../navlink/navlink.component';
 import { NavLink as Container } from 'react-router-dom';
+import { LanguageSelector } from '../LanguageSelector';
 
 const Navbar = (props) => {
     const { content, targetId } = props;
@@ -12,6 +13,7 @@ const Navbar = (props) => {
                     dynak<span className={styles.dot}>.</span>com
                 </h1>
             </Container>
+            <LanguageSelector />
             <button
                 className={`${styles.navbarButton} navbar-toggler`}
                 type="button"
