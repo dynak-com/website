@@ -3,8 +3,68 @@
 		"pl": "Polski",
 		"en": "Angielski"
 	},
-	"about": "o nas",
-	"home": "home",
-	"projects": "projekty",
-	"contact": "kontakt"
+	"nav": {
+		"about": "o nas",
+		"home": "home",
+		"projects": "projekty",
+		"contact": "kontakt"
+	},
+	"home": {
+		"header": "Zabieramy ludziom pracę!",
+		"posts": {
+			"paragraph1": "To właśnie my! Jesteśmy miłośnikami najnowszych rozwiązań full-stackowych. Tworzymy wygodne i czytelne interfejsy webowe oraz wydajny back-end. Aby nasza współpraca przebiegała sprawnie, rozwijamy projekty, korzystając z metodologii agile.",
+			"headerText1": "Szukasz programistów z pasją?",
+			"paragraph2": "Wiemy, że brak integracji systemów utrudnia realizację celów biznesowych. Dostarczamy usługi dopasowane do rzeczywistych potrzeb użytkownika. Zarządzanie inteligentnym biurem czy obiektami przemysłowymi to z nami łatwizna.",
+			"headerText2": "Chcesz zintegrować działające już systemy?",
+			"paragraph3": "Podczas wspólnych warsztatów dokonamy ewaluacji oraz podzielimy drogę do celu na poszczególne etapy. Prosto i transparentnie. Działamy głównie na terenie Wrocławia i okolic, ale świetnie radzimy sobie z pracą zdalną.",
+			"headerText3": "Jak przebiega współpraca z nami?"
+		}
+	},
+	"about": {
+		"header": "O nas",
+		"technologies": {
+			"title": "Technologie",
+			"content": "Wykorzystujemy zarówno najnowsze narzędzia z branży IT, jak i te, które miały już szansę  zostać solidnie sprawdzone na rynku. Są to przede wszystkim full-stack JavaScript oraz TypeScript, czyli Node.js jako back-end oraz React.js jako front-end."
+		},
+		"team": {
+			"title": "Zespół"
+		},
+		"values": {
+			"title": "Wartości",
+			"content": {
+				"paragraph1": "Pamiętasz, gdy będąc dzieckiem, odkrywałeś rzeczy, których działanie jeszcze do niedawna wydawało Ci się magią? Tą samą ścieżką podążał kiedyś każdy programista, który zaczynał poznawać nowe technologie i kształtować dzięki nim otaczającą rzeczywistość. Realizowanie kolejnych zadań przekonało nas, że fascynujące problemy do rozwiązania będą zawsze. Kto wie, może jednym z nich niedługo będzie właśnie Twój projekt?",
+				"paragraph2": "Firma dynak.com została założona przez rodzeństwo Emilię i Cezarego Dynaków 20 marca 2019 roku. Dlaczego akurat wtedy? Tak się składa, że właśnie tego dnia obchodzony jest Międzynarodowy Dzień Szczęścia. A naszym celem od początku  było to, aby klienci i pracownicy czerpali radość ze współpracy z nami. To właśnie radość nadaje rzeczom sens i pozwala na realizację naprawdę wartościowych projektów.",
+				"paragraph3": "Turkus to motyw kolorystyczny na stronie, ale też symbol ważnych dla nas wartości. Nie opieramy naszej pracy na sztywnej hierarchii, lecz na odpowiedzialności i wzajemnym zaufaniu - co jest charakterystyczne dla tzw. “turkusowych organizacji”. Wszystkie procesy i dokumenty w firmie są jawne. Śmiało podchodzimy do niestandardowych rozwiązań, jeśli wiemy, że przyczynią się do poprawy czyjegoś  życia. Takie podejście współgra ze zwinnym zarządzaniem projektami."
+			}
+		}
+	},
+	"projects": {
+		"header": "Nasze projekty:",
+		"posts": {
+			"text1": "Smart Home to już standard - pora na inteligentne biura i obiekty przemysłowe. Im większy obiekt, tym więcej niekoniecznie współgrających ze sobą systemów. Z tych potrzeb zrodziła się aplikacja dynak.io, która integruje systemy automatyki budynkowej. Najbardziej trywialne funkcjonalności mogą być wyceniane na niewyobrażalne kwoty. Czasem też po prostu ich nie ma. Tutaj natomiast może wystarczyć dopisanie jednego modułu.",
+			"text2": "Warehouse jest aplikacją usprawniającą procesy powtarzane w magazynach setki razy dziennie - takie jak  przyjmowanie czy wydawanie towaru. Interfejs użytkownika jest zaprojektowany dla wygody i czytelności. Ponieważ działa jako strona, może być uruchamiany na praktycznie każdym urządzeniu z przeglądarką internetową. Dodatkowo współgra z zewnętrzną autoryzacją użytkowników, drukarką naklejek oraz pobiera i zapisuje dane do systemu ERP.",
+			"text3": "Nawet do stosunkowo łatwych projektów, takich jak stworzenie strony internetowej, podchodzimy z pełnym zaangażowaniem. Social media nie wystarczą. Dobrze zrobiona strona internetowa będzie wspierać Twój biznes. Zrealizujemy projekt zgodnie z Twoją wizją i pozwolimy Ci wyróżnić się na tle konkurencji.  Niezależnie od tego, czy potrzebujesz prostej strony internetowej czy czegoś naprawdę niestandardowego - możesz zrobić to z nami!",
+			"headerText3": "strony internetowe"
+		}
+	},
+	"contact": {
+		"header": "Masz pytania? Chcesz nawiązać współpracę? Napisz do nas!",
+		"socials": "Albo... odwiedź nasze profile:",
+		"form": {
+			"subject": "Temat wiadomości",
+			"email": "Twój adres e-mail",
+			"message": "Treść wiadomości",
+			"contactAgreement": "Wyrażam zgodę na kontakt ze strony administratora danych osobowych, z użyciem telekomunikacyjnych urządzeń końcowych oraz automatycznych systemów wywołujących, zgodnie z art. 172 par. 1. Prawa telekomunikacyjnego.",
+			"privacyPolicyAgreement": "Zapoznałem/-am się z polityką prywatności i akceptuję jej treść.",
+			"policyPrivacy": "Polityka Prywatnosci",
+			"send": "Wyślij"
+		}
+	},
+	"modal": {
+		"modal_ok": {
+			"thanks": "Dziękujemy :)",
+			"sent": "Twoja wiadomość została wysłana.",
+			"close": "Zamknij"
+		}
+	}
 }

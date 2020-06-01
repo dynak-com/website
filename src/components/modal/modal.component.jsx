@@ -1,10 +1,13 @@
 import React from 'react';
+
+import { useTranslation } from 'react-i18next';
 import styles from './styles.module.css';
 
 const Modal = React.forwardRef((props, ref) => {
     const { content } = props;
     const modalId = content.modal_id;
     const headerTextAlignment = content.error_message ? 'text-justify' : 'text-center';
+    const { t } = useTranslation();
     return (
         <div
             className="modal show"
@@ -19,7 +22,7 @@ const Modal = React.forwardRef((props, ref) => {
                 <div className={`modal-content ${styles.modalContent}`}>
                     <div className="modal-header">
                         <h5 className="modal-title" id={`${modalId}Label`}>
-                            {content.thanks}
+                            {t(content.thanks)}
                         </h5>
                         <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                             <span className={`close ${styles.closeSign}`} aria-hidden="true">
@@ -28,11 +31,11 @@ const Modal = React.forwardRef((props, ref) => {
                         </button>
                     </div>
                     <div className="modal-body">
-                        <h3 className={headerTextAlignment}>{content.sent}</h3>
+                        <h3 className={headerTextAlignment}>{t(content.sent)}</h3>
                     </div>
                     <div className="text-right p-2">
                         <button type="button" className={`btn btn-sm ${styles.rodoCompButton}`} data-dismiss="modal">
-                            {content.close}
+                            {t(content.close)}
                         </button>
                     </div>
                 </div>

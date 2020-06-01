@@ -3,8 +3,66 @@
 		"pl": "Polish",
 		"en": "English"
 	},
-	"about": "about",
-	"home": "home",
-	"projects": "projects",
-	"contact": "contact"
+	"nav": {
+		"about": "about",
+		"home": "home",
+		"projects": "projects",
+		"contact": "contact"
+	},
+	"home": {
+		"header": "Getting people together for work!",
+		"posts": {
+			"paragraph1": "Here we go! We are fans of the latest full-stack solutions. We create convenient and readable web interfaces and an efficient back-end. In order for our cooperation to run smoothly, we develop projects using the agile methodology.",
+			"headerText1": "Looking for passionate programmers?",
+			"paragraph2": "We are aware of lack of system integration makes it difficult to achieve business goals. We provide services tailored to the real needs of the user. Managing a smart office or industrial facility is easy.",
+			"headerText2": "Would you care to integrate existing systems?",
+			"paragraph3": "During the joint workshops we will evaluate and divide the path to the goal into different stages. Straight and transparent. We operate mainly in Wrocław and the surrounding areas, but we do very well with remote work.",
+			"headerText3": "How does our workflow look like?"
+		}
+	},
+	"about": {
+		"header": "About us",
+		"technologies": {
+			"title": "Technologies",
+			"content": "We directly use the latest tools of the IT industry, as well as those that have already had the chance to be thoroughly tested on the market. These are primarily full-stack JavaScript and TypeScript, Node.js as back-end and React.js as front-end."
+		},
+		"team": {
+			"title": "Our Team"
+		},
+		"values": {
+			"title": "Values",
+			"content": {
+				"paragraph1": "Remember when you were a child, you were discovering things that until recently seemed magic? The same path used to be followed by every programmer, who begin to learn about new technologies and shape the surrounding reality with them. The pursuit of further tasks convinced us that there would always be problems to solve. Who knows, maybe one of the projects will soon be one of yours?",
+				"paragraph2": "The dynak.com was founded by siblings Emilia and Cesare Dynak on the 20th of March in 2019. The International Day of happiness became a reason for this. And our goal from the beginning was for customers and employees to enjoy working with us. This joy gives it a special meaning and pursue real worthwhile projects.",
+				"paragraph3": "Turquoise is not only a color theme of the website, but also a symbol of values that are important for us. We do not base our work on a rigid hierarchy, but on responsibility and mutual trust. These are the characteristics of so-called “Turquoise organizations.” All processes and documents within the company are public. We approach boldly non-standard solutions if we know they will improve someone's life. This approach is compatible with Agile project management."
+			}
+		}
+	},
+	"projects": {
+		"header": "Our projects:",
+		"posts": {
+			"text1": "Smart Home is now standard - time for smart offices and industrial facilities. The larger the object, the more systems that do not necessarily co-exist. Due to these needs the dynak.io app was born, which integrates building automation systems. The most trivial functions can be valued at increadible amounts. Sometimes they just don't exist. Here, however, just one module to add may be enough.",
+			"text2": "Warehouse is an app that streamlines processes repeated in warehouses hundreds of times a day - such as accepting or dispensing goods. The user interface is designed for convenience and readability. Because it works as a website, it can be run on virtually any device with a web browser. Additionally, it interacts with external user authorization, sticker printer, and downloads and writes data to the ERP system.",
+			"text3": "We approach even relatively easy projects such as creating a website with full commitment. Social media is not enough. Only a proper website will support your business. We will implement the project according to your vision and allow you to stand out from the competition. Whether you need a simple website or something really customized - you can achieve it with us!",
+			"headerText3": "web pages"
+		}
+	},
+	"contact": {
+		"header": "Questions? Wanna work with Us? Send message! ;-)",
+		"socials": "Or... check out our profiles:",
+		"form": {
+			"subject": "Subject",
+			"email": "Your email adress",
+			"message": "Message",
+			"contactAgreement": "I agree to contact by the controller of personal data, using telecommunications terminal devices and automated calling systems, in accordance to the Article 172 par.1. Telecommunications law.",
+			"privacyPolicyAgreement": "I have reviewed the Privacy Policy and accept the content.",
+			"policyPrivacy": "Policy Privacy",
+			"send": "Send"
+		}
+	},
+	"modal_ok": {
+		"thanks": "Thank you :)",
+		"sent": "Your message has been sent.",
+		"close": "Close"
+	}
 }

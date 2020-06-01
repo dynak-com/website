@@ -1,10 +1,12 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import styles from './styles.module.css';
 import useComponent from './hook';
 
 const ContactForm = ({ content }) => {
     const { state, onChangeInputDone, onSubmitFormDone, onPrivacyPolicyModalOpenDone } = useComponent();
     const { subject, message, email, isContactAgreed, isPrivacyPolicyAgreed } = state;
+    const { t } = useTranslation();
     return (
         <div className="mx-auto">
             <form onSubmit={onSubmitFormDone}>
@@ -16,7 +18,7 @@ const ContactForm = ({ content }) => {
                             name="subject"
                             value={subject}
                             onChange={onChangeInputDone}
-                            placeholder={content.subject}
+                            placeholder={t(content.subject)}
                             required
                         />
                     </div>
@@ -27,7 +29,7 @@ const ContactForm = ({ content }) => {
                             name="email"
                             value={email}
                             onChange={onChangeInputDone}
-                            placeholder={content.email}
+                            placeholder={t(content.email)}
                             required
                         />
                     </div>
@@ -39,7 +41,7 @@ const ContactForm = ({ content }) => {
                     rows="10"
                     value={message}
                     onChange={onChangeInputDone}
-                    placeholder={content.message}
+                    placeholder={t(content.message)}
                     required
                 ></textarea>
                 <div className="form-row my-3">
@@ -58,7 +60,7 @@ const ContactForm = ({ content }) => {
                                 htmlFor="isContactAgreed-input"
                                 className={`custom-control-label text-justify ${styles.label}`}
                             >
-                                {content.contactAgreement}
+                                {t(content.contactAgreement)}
                             </label>
                         </div>
                         <div className="custom-control custom-checkbox mr-sm-2">
@@ -75,7 +77,7 @@ const ContactForm = ({ content }) => {
                                 htmlFor="isPrivacyPolicyAgreed-input"
                                 className={`custom-control-label text-justify ${styles.label}`}
                             >
-                                {content.privacyPolicyAgreement}
+                                {t(content.privacyPolicyAgreement)}
                             </label>
                         </div>
                     </div>
@@ -83,14 +85,14 @@ const ContactForm = ({ content }) => {
                         <input
                             className="btn d-inline-block mx-1"
                             type="button"
-                            value="Polityka prywatności"
+                            value={t(content.policyPrivacy)}
                             onClick={onPrivacyPolicyModalOpenDone}
                         />
                         <input
                             id="buttonSubmit"
                             className="btn d-inline-block mx-1"
                             type="submit"
-                            value={content.send}
+                            value={t(content.send)}
                         />
                     </div>
                 </div>

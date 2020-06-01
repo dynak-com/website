@@ -1,12 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { makeStyles } from '@material-ui/core';
-import Container from '@material-ui/core/Container';
 import PlFlag from '../assets/images/plFlag.png';
 import EnFlag from '../assets/images/enFlag.png';
 
 export const LanguageSelector = () => {
-    const { i18n, t } = useTranslation();
+    const { i18n } = useTranslation();
     const classes = useStyles();
     const localStorageLanguage = localStorage.getItem('i18nextLng');
 
@@ -17,14 +16,13 @@ export const LanguageSelector = () => {
         return (
             <div className={classes.box} onClick={() => changeLanguage(language)}>
                 <img className={classes.img ? 'opened' : null} src={flag} alt={language} />
-                <span className={classes.name ? 'opened' : null}>{t(`languages.${language}`)}</span>
             </div>
         );
     };
     return (
-        <Container className={classes.container ? 'opened' : null}>
+        <div className={classes.container ? 'opened' : null}>
             {localStorageLanguage === 'pl' ? languageImage(EnFlag, 'en') : languageImage(PlFlag, 'pl')}
-        </Container>
+        </div>
     );
 };
 
@@ -37,16 +35,11 @@ const useStyles = makeStyles({
         },
     },
     container: {
-        position: 'absolute',
-        display: 'flex',
-        justifyContent: 'center',
-        bottom: 122,
-        padding: 5,
         '&.opened': {
-            width: '50%',
             marginLeft: 'auto',
             marginRight: 'auto',
             borderRadius: '5px',
+            padding: 'inherit',
             '&:hover': {
                 cursor: 'pointer',
                 transition: 'all 0.2s ease-in-out',
@@ -54,11 +47,12 @@ const useStyles = makeStyles({
         },
     },
     box: {
+        margin: '20px',
         display: 'flex',
     },
     name: {
         '&.opened': {
-            marginLeft: 5,
+            padding: '5px',
         },
     },
 });
