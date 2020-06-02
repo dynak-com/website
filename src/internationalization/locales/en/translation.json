@@ -64,5 +64,15 @@
 		"thanks": "Thank you :)",
 		"sent": "Your message has been sent.",
 		"close": "Close"
+	},
+	"modal_error": {
+		"thanks": "Unfortunately :(",
+		"sent": "Your message hasn't been sent. There have been an error on the server side. Try again later. Sorry!",
+		"close": "Close"
+	},
+	"modal_privacy_policy": {
+		"thanks": "Policy Privacy",
+		"sent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non nibh justo. Quisque aliquam dignissim magna, vitae consectetur ipsum vestibulum non. Ut vehicula tincidunt lorem nec consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed non tristique nisi. Nullam a malesuada metus. Suspendisse nec est porttitor, luctus nunc in, maximus erat. Sed faucibus felis ac malesuada vehicula. Suspendisse pharetra vulputate elit in scelerisque. Suspendisse vitae mi suscipit, ultricies nunc in, suscipit lorem. Pellentesque magna felis, convallis vitae ante egestas, placerat interdum est. Proin ligula neque, sollicitudin in dui laoreet, auctor egestas orci. Duis auctor condimentum mollis. Morbi varius consectetur neque, eget dapibus quam lacinia at. Suspendisse ac augue viverra, rutrum eros sit amet, facilisis velit.",
+		"close": "Understand"
 	}
 }

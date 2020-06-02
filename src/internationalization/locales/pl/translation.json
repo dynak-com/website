@@ -60,11 +60,19 @@
 			"send": "Wyślij"
 		}
 	},
-	"modal": {
-		"modal_ok": {
-			"thanks": "Dziękujemy :)",
-			"sent": "Twoja wiadomość została wysłana.",
-			"close": "Zamknij"
-		}
+	"modal_ok": {
+		"thanks": "Dziękujemy :)",
+		"sent": "Twoja wiadomość została wysłana.",
+		"close": "Zamknij"
+	},
+	"modal_error": {
+		"thanks": "Niestety :(",
+		"sent": "Twoja wiadomość nie została wysłana. Nastąpił błąd po stronie serwera. Spróbuj ponownie później. Przepraszamy!",
+		"close": "Zamknij"
+	},
+	"modal_privacy_policy": {
+		"thanks": "Polityka prywatności",
+		"sent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non nibh justo. Quisque aliquam dignissim magna, vitae consectetur ipsum vestibulum non. Ut vehicula tincidunt lorem nec consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed non tristique nisi. Nullam a malesuada metus. Suspendisse nec est porttitor, luctus nunc in, maximus erat. Sed faucibus felis ac malesuada vehicula. Suspendisse pharetra vulputate elit in scelerisque. Suspendisse vitae mi suscipit, ultricies nunc in, suscipit lorem. Pellentesque magna felis, convallis vitae ante egestas, placerat interdum est. Proin ligula neque, sollicitudin in dui laoreet, auctor egestas orci. Duis auctor condimentum mollis. Morbi varius consectetur neque, eget dapibus quam lacinia at. Suspendisse ac augue viverra, rutrum eros sit amet, facilisis velit.",
+		"close": "Rozumiem"
 	}
 }
