@@ -35,7 +35,7 @@ const ModalForPrivacyPolicy = React.forwardRef((props, ref) => {
                         </button>
                     </div>
                     <div className={`modal-body ${styles.privacyContainer}`}>
-                        <RODOContent />
+                        <RODOContent rodoContent={content.rodoContent} />
                     </div>
                     <div className="text-right p-2">
                         <button type="button" className={`btn btn-sm ${styles.rodoCompButton}`} data-dismiss="modal">
