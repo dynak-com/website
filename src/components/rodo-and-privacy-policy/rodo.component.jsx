@@ -8,17 +8,17 @@ const RodoContent = ({ rodoContent }) => {
         <div className={styles.rodoContentContainer}>
             <h6 className="text-center">{t(rodoContent.header)}</h6>
             <p>
-                {t(rodoContent.par1)}
+                {t(rodoContent.sentence1)}
                 <a className={styles.rodoLink} href="https://www.dynak.com" alt="dynak.com">
                     {t(rodoContent.website)}
                 </a>
-                {t(rodoContent.par2)}
+                {t(rodoContent.sentence2)}
             </p>
             <span>{t(rodoContent.generalProvisions)}</span>
             <p>
                 {t(rodoContent.text1)}
                 <a className={styles.rodoLink} href="https://www.dynak.com" alt="dynak.com">
-                    www.dynak.com
+                    {t('rodoContent.website')}
                 </a>
                 .
             </p>
@@ -35,7 +35,7 @@ const RodoContent = ({ rodoContent }) => {
                     href="https://pl.linkedin.com/company/dynak-com?trk=public_profile_topcard_current_company"
                     alt="dynak.com na LinkedIn"
                 >
-                    LinkedIn
+                    {t(rodoContent.linkedIn)}
                 </a>
                 {t(rodoContent.paragraph2)}
             </p>
@@ -48,15 +48,15 @@ const RodoContent = ({ rodoContent }) => {
                 <li>
                     {t(rodoContent.paragraph8)}&nbsp;
                     <a className={styles.rodoLink} href="https://www.linkedin.com" alt="LinkedIn">
-                        www.linkedin.com
+                        {t(rodoContent.webLinkedIn)}
                     </a>
                     ,{' '}
                     <a className={styles.rodoLink} href="https://www.github.com" alt="GitHub">
-                        www.github.com
+                        {t(rodoContent.github)}
                     </a>
                     ,{' '}
                     <a className={styles.rodoLink} href="https://www.gitlab.com" alt="GitLab">
-                        www.gitlab.com
+                        {t(rodoContent.gitlab)}
                     </a>
                     {t(rodoContent.paragraph9)}
                 </li>

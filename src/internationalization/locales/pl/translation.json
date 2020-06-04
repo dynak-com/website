@@ -77,18 +77,19 @@
 	"error": "Nie ma takiej strony! :(",
 	"rodoContent": {
 		"header": "POLITYKA PRYWATNOŚCI I POLITYKA COOKIES",
-		"par1": "Korzystanie z bloga i strony internetowej ",
+		"sentence1": "Korzystanie z bloga i strony internetowej ",
 		"website": "www.dynak.com",
-		"par2": " oznacza akceptację poniższych warunków Polityki Prywatności i Polityki Cookies. ",
+		"sentence2": " oznacza akceptację poniższych warunków Polityki Prywatności i Polityki Cookies. ",
 		"generalProvisions": "1. POSTANOWIENIA OGÓLNE",
 		"text1": "Niniejsza Polityka Prywatności i Polityka Cookies określa zasady przetwarzania i ochrony danych osobowych przekazanych przez Użytkowników oraz plików Cookies, a także innych technologii pojawiających się na stronie internetowej ",
-		"text2": "Administratorem strony i danych osobowych jest spółka dynak.com spółka z ograniczoną odpowiedzialnością z siedzibą we Wrocławiu przy ul. Przyjaźni 36 d, (53-030), wpisaną przez Sąd Rejonowy dla                Wrocławia-Fabrycznej we Wrocławiu, VI wydział gospodarczy krajowego rejestru sądowego pod numerem: 0000777960, zwany dalej Administratorem.",
+		"text2": "Administratorem strony i danych osobowych jest spółka dynak.com spółka z ograniczoną odpowiedzialnością z siedzibą we Wrocławiu przy ul. Przyjaźni 36 d, (53-030), wpisaną przez Sąd Rejonowy dla                Wrocławia-Fabrycznej we Wrocławiu, VI wydział gospodarczy krajowego rejestru sądowego pod numerem: 0000777960, zwany dalej Administratorem. ",
 		"text3": "Administrator zastrzega sobie prawo do wprowadzania zmian w polityce prywatności i polityce cookies, a każdego Użytkownika strony obowiązuje znajomość aktualnej polityki prywatności. Przyczyną zmian mogą być rozwój technologii internetowej, zmiany w powszechnie obowiązującym prawie czy też rozwój strony lub bloga. Na dole strony znajduje się data publikacji aktualnej Polityki prywatności.",
 		"definitions": "DEFINICJE",
 		"administrator": "2. „Administrator” – Spółka dynak.com spółka z ograniczoną odpowiedzialnością.",
 		"user": "„Użytkownik” – każdy podmiot przebywający na stronie i korzystający z niej.",
 		"personalData": "3. DANE OSOBOWE",
 		"paragraph1": "Dane osobowe przekazywane przez Użytkownika w ramach funkcjonowania Strony internetowej dynak.com, profilu na ",
+		"linkedIn": "LinkedIn",
 		"paragraph2": " mogą być przetwarzane w następujących celach i na następujących podstawach prawnych:",
 		"paragraph3": "wykonania usługi, przesłania oferty na prośbę Użytkownika — na podstawie art. 6 ust. 1 lit. b RODO",
 		"paragraph4": "wystawienia faktury — na podstawie art. 6 ust. 1 lit. c RODO;",
@@ -96,6 +97,9 @@
 		"paragraph6": "kontaktu telefonicznego w celu przedstawienia oferty i marketingu bezpośredniego – na podstawie art. 6 ust. 1 lit. a RODO oraz na podstawie art. 6 ust. 1 lit. f RODO;",
 		"paragraph7": "tworzenia rejestrów związanych z RODO i innymi przepisami — na podstawie art. 6 ust. 1 lit. c RODO oraz art. 6 ust. 1 lit. f RODO;",
 		"paragraph8": "tworzenie analizy polegającej na analizie danych zbieranych automatycznie przy korzystaniu ze strony internetowej, w tym",
+		"webLinkedIn": "www.linkedin.com",
+		"github": "www.github.com",
+		"gitlab": "www.gitlub.com",
 		"paragraph9": " — na podstawie art. 6 ust. 1 lit. f RODO;",
 		"paragraph10": "wykorzystywania cookies na Stronie i jej podstronach — na podstawie art. 6 ust. 1 lit. a RODO;",
 		"paragraph11": "zarządzania Stroną internetową i stronami Administratora na innych platformach — na podstawie art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes administratora);",
@@ -124,5 +128,9 @@
 		"part3": "rozpoznaje rodzaju urządzenia, z którego łączy się użytkownik. Parametry ",
 		"part4": " pozwalają na odczytanie informacji w nich zawartych.",
 		"created": "Utworzono dnia 2020-03-16"
+	},
+	"footer": {
+		"rodo": "RODO",
+		"dynak": "dynak.com "
 	}
 }

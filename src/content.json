@@ -187,9 +187,9 @@
         "close": "modal_privacy_policy.close",
         "rodoContent": {
           "header": "rodoContent.header",
-          "par1": "rodoContent.par1",
+          "sentence1": "rodoContent.sentence1",
           "website": "rodoContent.website",
-          "par2": "rodoContent.par2",
+          "sentence2": "rodoContent.sentence2",
           "generalProvisions": "rodoContent.generalProvisions",
           "text1": "rodoContent.text1",
           "text2": "rodoContent.text2",
@@ -199,6 +199,7 @@
           "user": "rodoContent.user",
           "personalData": "rodoContent.personalData",
           "paragraph1": "rodoContent.paragraph1",
+          "linkedIn": "rodoContent.linkedIn",
           "paragraph2": "rodoContent.paragraph2",
           "paragraph3": "rodoContent.paragraph3",
           "paragraph4": "rodoContent.paragraph4",
@@ -206,6 +207,9 @@
           "paragraph6": "rodoContent.paragraph6",
           "paragraph7": "rodoContent.paragraph7",
           "paragraph8": "rodoContent.paragraph8",
+          "webLinkedIn": "rodoContent.webLinkedIn",
+          "github": "rodoContent.github",
+          "gitlab": "rodoContent.gitlab",
           "paragraph9": "rodoContent.paragraph9",
           "paragraph10": "rodoContent.paragraph10",
           "paragraph11": "rodoContent.paragraph11",
@@ -237,6 +241,10 @@
         }
       }
     },
-    "error": "error"
+    "error": "error",
+    "footer": {
+      "rodo": "footer.rodo",
+      "dynak": "footer.dynak"
+    }
   }
 ]
