@@ -125,9 +125,5 @@
 		"part3": "rozpoznaje rodzaju urządzenia, z którego łączy się użytkownik. Parametry ",
 		"part4": " pozwalają na odczytanie informacji w nich zawartych.",
 		"created": "Created in 2020-03-16"
-	},
-	"footer": {
-		"rodo": "RODO",
-		"dynac": "dynac.com "
 	}
 }

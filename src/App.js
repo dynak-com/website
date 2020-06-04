@@ -29,7 +29,7 @@ const App = () => {
                 <Route exact path="/contact" component={() => <ContactPage content={content.contact} />} />
                 <Route component={() => <ErrorPage content={content.error} />} />
             </Switch>
-            <Footer content={content.footer} />
+            <Footer />
             <ModalsContainer modalsData={content.modal} />
         </div>
     );

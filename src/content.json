@@ -241,10 +241,6 @@
         }
       }
     },
-    "error": "error",
-    "footer": {
-      "rodo": "footer.rodo",
-      "dynak": "footer.dynak"
-    }
+    "error": "error"
   }
 ]

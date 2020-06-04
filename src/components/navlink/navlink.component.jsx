@@ -7,7 +7,6 @@ import { useTranslation } from 'react-i18next';
 export const CustomNavLink = ({ text, address, target }) => {
     const { navLinkRef } = useComponent();
     const { t } = useTranslation();
-    console.log(text);
     return (
         <Container exact to={address} className={styles.customNavlink} activeClassName={styles.activated}>
             <span
