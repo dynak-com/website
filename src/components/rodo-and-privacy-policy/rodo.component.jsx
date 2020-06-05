@@ -35,7 +35,7 @@ const RodoContent = ({ rodoContent }) => {
                     href="https://pl.linkedin.com/company/dynak-com?trk=public_profile_topcard_current_company"
                     alt="dynak.com na LinkedIn"
                 >
-                    {t(rodoContent.linkedIn)}
+                    LinkedIn
                 </a>
                 {t(rodoContent.paragraph2)}
             </p>
@@ -48,15 +48,15 @@ const RodoContent = ({ rodoContent }) => {
                 <li>
                     {t(rodoContent.paragraph8)}&nbsp;
                     <a className={styles.rodoLink} href="https://www.linkedin.com" alt="LinkedIn">
-                        {t(rodoContent.webLinkedIn)}
+                        www.linkedin.com
                     </a>
                     ,{' '}
                     <a className={styles.rodoLink} href="https://www.github.com" alt="GitHub">
-                        {t(rodoContent.github)}
+                        www.github.com
                     </a>
                     ,{' '}
                     <a className={styles.rodoLink} href="https://www.gitlab.com" alt="GitLab">
-                        {t(rodoContent.gitlab)}
+                        www.gitlub.com
                     </a>
                     {t(rodoContent.paragraph9)}
                 </li>
