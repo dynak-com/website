@@ -13,7 +13,7 @@ const langs = {
 export const LanguageSelector = () => {
     const { localStorageLanguage, onChangeToEng, onChangeToPl } = useComponent(langs);
     return (
-        <div className={styles.container ? 'opened' : null}>
+        <div className={styles.container ? styles.opened : ''}>
             {localStorageLanguage === langs.pl
                 ? changeLanguageImage(EnFlag, langs.en, onChangeToEng)
                 : changeLanguageImage(PlFlag, langs.pl, onChangeToPl)}
@@ -24,7 +24,7 @@ export const LanguageSelector = () => {
 function changeLanguageImage(flag, language, onChangeLanguage) {
     return (
         <div className={styles.box} onClick={onChangeLanguage}>
-            <img className={styles.img ? 'opened' : ''} src={flag} alt={language} />
+            <img className={styles.img ? styles.opened : ''} src={flag} alt={language} />
         </div>
     );
 }
