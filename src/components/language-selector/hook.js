@@ -1,15 +1,22 @@
-import { useEffect } from 'react';
+import { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import { changeLanguage } from '/callback';
 
-export const useComponent = (flag, language) => {
+export const useComponent = (languages) => {
     const { i18n } = useTranslation();
-    useEffect(() => {
-        window.addEventListener('languagechange', () => changeLanguage(language, i18n));
-        return () => window.removeEventListener('languagechange', () => changeLanguage(language, i18n));
-    }, [language, i18n]);
+
+    const onChangeToEng = useCallback(() => {
+        i18n.changeLanguage(languages.en);
+    }, [i18n, languages.en]);
+
+    const onChangeToPl = useCallback(() => {
+        i18n.changeLanguage(languages.pl);
+    }, [i18n, languages.pl]);
+
+    const localStorageLanguage = localStorage.getItem(languages.nextLang);
     return {
-        language,
+        localStorageLanguage,
+        onChangeToEng,
+        onChangeToPl,
     };
 };
 
