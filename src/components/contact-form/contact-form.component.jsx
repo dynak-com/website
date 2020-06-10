@@ -1,12 +1,10 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import styles from './styles.module.css';
 import useComponent from './hook';
 
 const ContactForm = ({ content }) => {
-    const { state, onChangeInputDone, onSubmitFormDone, onPrivacyPolicyModalOpenDone } = useComponent();
+    const { t, state, onChangeInputDone, onSubmitFormDone, onPrivacyPolicyModalOpenDone } = useComponent();
     const { subject, message, email, isContactAgreed, isPrivacyPolicyAgreed } = state;
-    const { t } = useTranslation();
     return (
         <div className="mx-auto">
             <form onSubmit={onSubmitFormDone}>

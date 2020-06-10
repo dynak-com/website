@@ -2,11 +2,9 @@ import React from 'react';
 import useComponent from './hook.js';
 import styles from './styles.module.css';
 import { NavLink as Container } from 'react-router-dom';
-import { useTranslationHook } from '../language-selector/translationHook';
 
 export const CustomNavLink = ({ text, address, target }) => {
-    const { navLinkRef } = useComponent();
-    const t = useTranslationHook();
+    const { navLinkRef, t } = useComponent();
     return (
         <Container exact to={address} className={styles.customNavlink} activeClassName={styles.activated}>
             <span
