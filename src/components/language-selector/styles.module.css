@@ -3,6 +3,7 @@
     margin-right: auto;
     border-radius: 5px;
     padding: inherit;
+    display: flex;
 }
 
 .container .opened :hover {
@@ -12,7 +13,6 @@
 
 .box {
     margin: 20px;
-    display: flex;
 }
 
 img:hover {

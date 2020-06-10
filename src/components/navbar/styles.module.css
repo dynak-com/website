@@ -1,15 +1,21 @@
 .customNavbar {
-  background-color: transparent;
-  overflow: hidden;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 992px) {
+    .customNavbar {
+        justify-content: flex-start;
+    }
 }
 
 .customNavbar h1 {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .customNavbar .navbarButton {
-  border: none;
-  outline: none;
+    border: none;
+    outline: none;
 }
 
 .customNavbar span {
@@ -17,16 +23,14 @@
     font-family: Tenby-five;
 }
 
-.websiteTitle  {
-  margin: 0;
-  font-size: 2.6rem;
-  font-weight: 900;
-  font-family: Tenby-five;
+.websiteTitle {
+    margin: 0;
+    font-size: 2.6rem;
+    font-weight: 900;
+    font-family: Tenby-five;
 }
 
 .websiteTitle .dot {
-  color: #3eafad;
-  font-size: 2.4rem;
+    color: #3eafad;
+    font-size: 2.4rem;
 }
-
-
